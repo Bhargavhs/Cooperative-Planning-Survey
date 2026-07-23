@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cooperative Driving with Language Agents — Method Survey</title>
+<meta name="description" content="A curated comparison of LLM negotiation agents and end-to-end V2X methods for cooperative autonomous driving.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F3F5F7;
+    --card: #FFFFFF;
+    --ink: #17222D;
+    --steel: #5C6C7C;
+    --hairline: #D8DFE6;
+    --closed: #0E7C66;
+    --closed-tint: #E3F2EE;
+    --open: #4757C9;
+    --open-tint: #E9EBFA;
+    --accent: #B96A00;
+    --display: "Space Grotesk", sans-serif;
+    --body: "Inter", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--open); outline-offset: 2px; }
+
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Header ---------- */
+  header {
+    border-bottom: 1px solid var(--hairline);
+    background:
+      radial-gradient(circle at 85% 20%, rgba(71,87,201,.06), transparent 42%),
+      radial-gradient(circle at 10% 85%, rgba(14,124,102,.06), transparent 42%),
+      var(--card);
+    padding: 56px 0 44px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(28px, 4.4vw, 46px);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    max-width: 15ch;
+  }
+  .lede {
+    margin-top: 18px;
+    max-width: 62ch;
+    color: var(--steel);
+    font-size: 16px;
+  }
+  .header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: center;
+  }
+  /* V2V link motif */
+  .v2v { width: 240px; height: 120px; flex-shrink: 0; }
+  .v2v .link { stroke: var(--open); stroke-width: 2; stroke-dasharray: 6 7; animation: msg 1.6s linear infinite; }
+  .v2v .node { fill: var(--card); stroke: var(--ink); stroke-width: 2; }
+  .v2v .halo { fill: none; stroke: var(--closed); stroke-width: 1.4; opacity: .45; }
+  .v2v text { font-family: var(--mono); font-size: 10px; fill: var(--steel); }
+  @keyframes msg { to { stroke-dashoffset: -26; } }
+  @media (prefers-reduced-motion: reduce) { .v2v .link { animation: none; } }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 10px 22px;
+    margin-top: 26px;
+    font-family: var(--mono); font-size: 12.5px; color: var(--steel);
+  }
+  .legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; vertical-align: 1px; }
+  .dot-closed { background: var(--closed); }
+  .dot-open { background: var(--open); }
+
+  /* ---------- Sections ---------- */
+  section { padding: 44px 0 8px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .sec-num {
+    font-family: var(--mono); font-size: 12px; color: var(--steel);
+    border: 1px solid var(--hairline); border-radius: 4px; padding: 2px 8px;
+    background: var(--card);
+  }
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(21px, 2.6vw, 28px);
+    letter-spacing: -0.01em;
+  }
+  .sec-desc { color: var(--steel); margin: 10px 0 20px; max-width: 72ch; }
+
+  /* ---------- Tables ---------- */
+  .table-card {
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 1px 2px rgba(23,34,45,.04);
+  }
+  table { border-collapse: collapse; width: 100%; min-width: 880px; }
+  thead th {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--steel);
+    text-align: left;
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--hairline);
+    background: #FAFBFC;
+    position: sticky; top: 0;
+  }
+  tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: #F7F9FB; }
+  td.method { min-width: 190px; }
+  .m-name { font-family: var(--display); font-weight: 600; font-size: 15.5px; }
+  .venue { font-family: var(--mono); font-size: 12px; color: var(--steel); margin-top: 3px; }
+  td.setting { font-family: var(--mono); font-size: 13px; color: var(--ink); min-width: 170px; }
+  td.metric { color: var(--steel); min-width: 240px; }
+  td.mech { min-width: 230px; }
+  .loop {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-family: var(--mono); font-size: 12px; font-weight: 500;
+    padding: 3px 10px; border-radius: 999px; white-space: nowrap;
+  }
+  .loop::before { content: ""; width: 7px; height: 7px; border-radius: 50%; }
+  .loop-closed { background: var(--closed-tint); color: var(--closed); }
+  .loop-closed::before { background: var(--closed); }
+  .loop-open { background: var(--open-tint); color: var(--open); }
+  .loop-open::before { background: var(--open); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 56px;
+    border-top: 1px solid var(--hairline);
+    padding: 28px 0 40px;
+    color: var(--steel);
+    font-size: 13.5px;
+  }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  @media (max-width: 760px) {
+    .header-grid { grid-template-columns: 1fr; }
+    .v2v { display: none; }
+    thead th, tbody td { padding: 11px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-grid">
+    <div>
+      <p class="eyebrow">Method Survey · Updated July 2026</p>
+      <h1>Cooperative Driving with Language Agents</h1>
+      <p class="lede">A running comparison of methods where connected vehicles perceive, negotiate, and plan together — from LLM-based negotiation agents in closed-loop simulators to end-to-end V2X stacks evaluated on real-world logs.</p>
+      <div class="legend">
+        <span><span class="dot dot-closed"></span>Closed loop — actions feed back into the simulator</span>
+        <span><span class="dot dot-open"></span>Open loop — evaluated on logged data / QA benchmarks</span>
+      </div>
+    </div>
+    <svg class="v2v" viewBox="0 0 240 120" aria-hidden="true">
+      <circle class="halo" cx="52" cy="60" r="34"/>
+      <circle class="halo" cx="188" cy="60" r="34"/>
+      <line class="link" x1="72" y1="60" x2="168" y2="60"/>
+      <circle class="node" cx="52" cy="60" r="16"/>
+      <circle class="node" cx="188" cy="60" r="16"/>
+      <text x="40" y="102">CAV-1</text>
+      <text x="176" y="102">CAV-2</text>
+      <text x="103" y="48">V2V msg</text>
+    </svg>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="language-agents">
+    <div class="sec-head">
+      <span class="sec-num">§1</span>
+      <h2>Language and Negotiation Agents</h2>
+    </div>
+    <p class="sec-desc">Methods where LLMs or small language models reason socially, negotiate intents, or refine V2V messages to coordinate multi-vehicle behavior.</p>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Primary Mechanism</th>
+            <th>Evaluation Setting</th>
+            <th>Loop</th>
+            <th>Metric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="method"><div class="m-name">AgentsCoDriver</div><div class="venue">IEEE T-ITS · 2024</div></td>
+            <td class="mech">LLM social reasoning</td>
+            <td class="setting">HighwayEnv</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Success rate, collision rate, communication/token cost</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">CoLMDriver</div><div class="venue">ICCV · 2025</div></td>
+            <td class="mech">LLM negotiation and waypoints</td>
+            <td class="setting">InterDrive/CARLA (MDrive)</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Driving Score (DS), Success Rate (SR)</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">CoopReflect</div><div class="venue">AAMAS · 2026</div></td>
+            <td class="mech">V2V message refinement</td>
+            <td class="setting">TalkingVehiclesGym</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Task success / collision avoidance rate, traffic efficiency (speed, completion)</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">CoMAL</div><div class="venue">SDM · 2025</div></td>
+            <td class="mech">Role memory and reasoning</td>
+            <td class="setting">Flow/SUMO</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Traffic-flow efficiency (avg. velocity / throughput vs. RL baselines)</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">KoMA</div><div class="venue">IEEE T-IV · 2024</div></td>
+            <td class="mech">Knowledge-driven LLM planning</td>
+            <td class="setting">HighwayEnv</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Success rate, efficiency (avg. speed)</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">AgentsCoMerge</div><div class="venue">IEEE Journal · 2024</div></td>
+            <td class="mech">LLM cooperative merging</td>
+            <td class="setting">SUMO/LimSim++, nuScenes, HighD</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Merging success, travel time / avg. speed, collision &amp; safety</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">V2V-LLM</div><div class="venue">ICRA · 2026</div></td>
+            <td class="mech">Centralized MLLM fuses shared CAV perception features</td>
+            <td class="setting">V2V-QA benchmark</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">Planning: L2 error, collision rate; grounding / notable-object: F1-type accuracy</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">V2V-GoT</div><div class="venue">ICRA · 2026</div></td>
+            <td class="mech">Graph-of-thoughts over occlusion-aware perception QAs + planning-aware prediction QAs</td>
+            <td class="setting">V2V-QA-style benchmark extending V2V-LLM</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">L2 error, collision rate</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">SwarmDrive</div><div class="venue">2026 · not yet published</div></td>
+            <td class="mech">Decentralized edge SLMs exchange post-inference intent distributions</td>
+            <td class="setting">Single occluded-intersection executable study</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Success rate, end-to-end latency</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="end-to-end">
+    <div class="sec-head">
+      <span class="sec-num">§2</span>
+      <h2>End-to-End Cooperative Driving</h2>
+    </div>
+    <p class="sec-desc">Methods that share latent features, requests, or fused 3D representations across V2V/V2X links and train perception-to-planning stacks end to end.</p>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Primary Mechanism</th>
+            <th>Evaluation Setting</th>
+            <th>Loop</th>
+            <th>Metric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="method"><div class="m-name">UniV2X</div><div class="venue">AAAI · 2025</div></td>
+            <td class="mech">Sparse-dense V2X E2E</td>
+            <td class="setting">DAIR-V2X, V2X-Sim</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS)</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">COOPERNAUT</div><div class="venue">CVPR · 2022</div></td>
+            <td class="mech">V2V latent sharing</td>
+            <td class="setting">AutoCastSim/CARLA</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Success rate, collision rate on 3 accident-prone scenario types</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">CoDriving</div><div class="venue">IEEE TPAMI · 2025</div></td>
+            <td class="mech">Driving-request V2X E2E</td>
+            <td class="setting">V2Xverse</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Driving Score (DS), Success Rate (SR), route completion, infraction score; plus modular perception metrics</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">V2X-VLM</div><div class="venue">TR Part C · 2025</div></td>
+            <td class="mech">VLM-based V2X planning</td>
+            <td class="setting">DAIR-V2X</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">L2 error, collision rate</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">CoGoal3D</div><div class="venue">ECCV · 2026</div></td>
+            <td class="mech">Two-stage V2X 3D fusion: multiscale 3D-aware global fusion for spatial misalignment from differing collaborator height/attitude, then proposal refinement with an auxiliary 3D point reconstruction task</td>
+            <td class="setting">DAIR-V2X, V2V4Real, V2X-Real</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Maintained as part of ongoing research on cooperative perception, prediction, and planning.</span>
+    <span>Contributions welcome — open a PR to add a method.</span>
+  </div>
+</footer>
+
+</body>
+</html>
