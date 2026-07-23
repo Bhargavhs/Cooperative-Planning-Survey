@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cooperative Driving with Language Agents — Method Survey</title>
+<title>Cooperative Driving Survey</title>
 <meta name="description" content="A curated comparison of LLM negotiation agents and end-to-end V2X methods for cooperative autonomous driving.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,6 +140,8 @@
   tbody tr:hover { background: #F7F9FB; }
   td.method { min-width: 190px; }
   .m-name { font-family: var(--display); font-weight: 600; font-size: 15.5px; }
+  .m-name a { color: inherit; text-decoration: none; }
+  .m-name a:hover, .m-name a:focus-visible { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
   .venue { font-family: var(--mono); font-size: 12px; color: var(--steel); margin-top: 3px; }
   td.setting { font-family: var(--mono); font-size: 13px; color: var(--ink); min-width: 170px; }
   td.metric { color: var(--steel); min-width: 240px; }
@@ -178,8 +180,7 @@
   <div class="wrap header-grid">
     <div>
       <p class="eyebrow">Method Survey · Updated July 2026</p>
-      <h1>Cooperative Driving with Language Agents</h1>
-      <p class="lede">A running comparison of methods where connected vehicles perceive, negotiate, and plan together — from LLM-based negotiation agents in closed-loop simulators to end-to-end V2X stacks evaluated on real-world logs.</p>
+      <h1>Cooperative Driving Survey</h1>
       <div class="legend">
         <span><span class="dot dot-closed"></span>Closed loop — actions feed back into the simulator</span>
         <span><span class="dot dot-open"></span>Open loop — evaluated on logged data / QA benchmarks</span>
@@ -219,28 +220,28 @@
         </thead>
         <tbody>
           <tr>
-            <td class="method"><div class="m-name">UniV2X</div><div class="venue">AAAI · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.00717" target="_blank" rel="noopener">UniV2X</a></div><div class="venue">AAAI · 2025</div></td>
             <td class="mech">Sparse-dense V2X E2E</td>
             <td class="setting">DAIR-V2X, V2X-Sim</td>
             <td><span class="loop loop-open">Open</span></td>
             <td class="metric">Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS)</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">COOPERNAUT</div><div class="venue">CVPR · 2022</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2205.02222" target="_blank" rel="noopener">COOPERNAUT</a></div><div class="venue">CVPR · 2022</div></td>
             <td class="mech">V2V latent sharing</td>
             <td class="setting">AutoCastSim/CARLA</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Success rate, collision rate on 3 accident-prone scenario types</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">CoDriving</div><div class="venue">IEEE TPAMI · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.09496" target="_blank" rel="noopener">CoDriving</a></div><div class="venue">IEEE TPAMI · 2025</div></td>
             <td class="mech">Driving-request V2X E2E</td>
             <td class="setting">V2Xverse</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Driving Score (DS), Success Rate (SR), route completion, infraction score; plus modular perception metrics</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">V2X-VLM</div><div class="venue">TR Part C · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2408.09251" target="_blank" rel="noopener">V2X-VLM</a></div><div class="venue">TR Part C · 2025</div></td>
             <td class="mech">VLM-based V2X planning</td>
             <td class="setting">DAIR-V2X</td>
             <td><span class="loop loop-open">Open</span></td>
@@ -252,6 +253,20 @@
             <td class="setting">DAIR-V2X, V2V4Real, V2X-Real</td>
             <td><span class="loop loop-open">Open</span></td>
             <td class="metric">—</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2511.00088" target="_blank" rel="noopener">Alpamayo-1</a></div><div class="venue">NVIDIA · 2025</div></td>
+            <td class="mech">Reasoning VLA (~10B): Chain-of-Causation reasoning traces paired with trajectory prediction (single-ego, not V2X)</td>
+            <td class="setting">NVIDIA internal AV data; closed-loop sim; real-vehicle tests</td>
+            <td><span class="loop loop-open">Open</span> <span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Open-loop trajectory metrics, reasoning quality, closed-loop safety, latency</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name"><a href="https://huggingface.co/nvidia/Alpamayo-1.5-10B" target="_blank" rel="noopener">Alpamayo-1.5</a></div><div class="venue">NVIDIA · 2026</div></td>
+            <td class="mech">Reasoning VLA on Cosmos-Reason2, RL post-trained; adds navigation guidance, flexible camera counts, and user question answering (single-ego, not V2X)</td>
+            <td class="setting">NVIDIA internal + public driving data; closed-loop sim</td>
+            <td><span class="loop loop-open">Open</span> <span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Trajectory planning quality, reasoning / QA, safety</td>
           </tr>
         </tbody>
       </table>
@@ -277,56 +292,56 @@
         </thead>
         <tbody>
           <tr>
-            <td class="method"><div class="m-name">AgentsCoDriver</div><div class="venue">IEEE T-ITS · 2024</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.06345" target="_blank" rel="noopener">AgentsCoDriver</a></div><div class="venue">IEEE T-ITS · 2024</div></td>
             <td class="mech">LLM social reasoning</td>
             <td class="setting">HighwayEnv</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Success rate, collision rate, communication/token cost</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">CoLMDriver</div><div class="venue">ICCV · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2503.08683" target="_blank" rel="noopener">CoLMDriver</a></div><div class="venue">ICCV · 2025</div></td>
             <td class="mech">LLM negotiation and waypoints</td>
             <td class="setting">InterDrive/CARLA (MDrive)</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Driving Score (DS), Success Rate (SR)</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">CoopReflect</div><div class="venue">AAMAS · 2026</div></td>
+            <td class="method"><div class="m-name"><a href="https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html" target="_blank" rel="noopener">CoopReflect</a></div><div class="venue">AAMAS · 2026</div></td>
             <td class="mech">V2V message refinement</td>
             <td class="setting">TalkingVehiclesGym</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Task success / collision avoidance rate, traffic efficiency (speed, completion)</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">CoMAL</div><div class="venue">SDM · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2410.14368" target="_blank" rel="noopener">CoMAL</a></div><div class="venue">SDM · 2025</div></td>
             <td class="mech">Role memory and reasoning</td>
             <td class="setting">Flow/SUMO</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Traffic-flow efficiency (avg. velocity / throughput vs. RL baselines)</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">KoMA</div><div class="venue">IEEE T-IV · 2024</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2407.14239" target="_blank" rel="noopener">KoMA</a></div><div class="venue">IEEE T-IV · 2024</div></td>
             <td class="mech">Knowledge-driven LLM planning</td>
             <td class="setting">HighwayEnv</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Success rate, efficiency (avg. speed)</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">AgentsCoMerge</div><div class="venue">IEEE Journal · 2024</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2408.03624" target="_blank" rel="noopener">AgentsCoMerge</a></div><div class="venue">IEEE Journal · 2024</div></td>
             <td class="mech">LLM cooperative merging</td>
             <td class="setting">SUMO/LimSim++, nuScenes, HighD</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Merging success, travel time / avg. speed, collision &amp; safety</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">V2V-LLM</div><div class="venue">ICRA · 2026</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2502.09980" target="_blank" rel="noopener">V2V-LLM</a></div><div class="venue">ICRA · 2026</div></td>
             <td class="mech">Centralized MLLM fuses shared CAV perception features</td>
             <td class="setting">V2V-QA benchmark</td>
             <td><span class="loop loop-open">Open</span></td>
             <td class="metric">Planning: L2 error, collision rate; grounding / notable-object: F1-type accuracy</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name">V2V-GoT</div><div class="venue">ICRA · 2026</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2509.18053" target="_blank" rel="noopener">V2V-GoT</a></div><div class="venue">ICRA · 2026</div></td>
             <td class="mech">Graph-of-thoughts over occlusion-aware perception QAs + planning-aware prediction QAs</td>
             <td class="setting">V2V-QA-style benchmark extending V2V-LLM</td>
             <td><span class="loop loop-open">Open</span></td>
