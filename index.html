@@ -200,9 +200,67 @@
 
 <main class="wrap">
 
-  <section id="language-agents">
+  <section id="end-to-end">
     <div class="sec-head">
       <span class="sec-num">§1</span>
+      <h2>End-to-End Cooperative Driving</h2>
+    </div>
+    <p class="sec-desc">Methods that share latent features, requests, or fused 3D representations across V2V/V2X links and train perception-to-planning stacks end to end.</p>
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Primary Mechanism</th>
+            <th>Evaluation Setting</th>
+            <th>Loop</th>
+            <th>Metric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="method"><div class="m-name">UniV2X</div><div class="venue">AAAI · 2025</div></td>
+            <td class="mech">Sparse-dense V2X E2E</td>
+            <td class="setting">DAIR-V2X, V2X-Sim</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS)</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">COOPERNAUT</div><div class="venue">CVPR · 2022</div></td>
+            <td class="mech">V2V latent sharing</td>
+            <td class="setting">AutoCastSim/CARLA</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Success rate, collision rate on 3 accident-prone scenario types</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">CoDriving</div><div class="venue">IEEE TPAMI · 2025</div></td>
+            <td class="mech">Driving-request V2X E2E</td>
+            <td class="setting">V2Xverse</td>
+            <td><span class="loop loop-closed">Closed</span></td>
+            <td class="metric">Driving Score (DS), Success Rate (SR), route completion, infraction score; plus modular perception metrics</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">V2X-VLM</div><div class="venue">TR Part C · 2025</div></td>
+            <td class="mech">VLM-based V2X planning</td>
+            <td class="setting">DAIR-V2X</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">L2 error, collision rate</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name">CoGoal3D</div><div class="venue">ECCV · 2026</div></td>
+            <td class="mech">Two-stage V2X 3D fusion: multiscale 3D-aware global fusion for spatial misalignment from differing collaborator height/attitude, then proposal refinement with an auxiliary 3D point reconstruction task</td>
+            <td class="setting">DAIR-V2X, V2V4Real, V2X-Real</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="metric">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="language-agents">
+    <div class="sec-head">
+      <span class="sec-num">§2</span>
       <h2>Language and Negotiation Agents</h2>
     </div>
     <p class="sec-desc">Methods where LLMs or small language models reason socially, negotiate intents, or refine V2V messages to coordinate multi-vehicle behavior.</p>
@@ -280,64 +338,6 @@
             <td class="setting">Single occluded-intersection executable study</td>
             <td><span class="loop loop-closed">Closed</span></td>
             <td class="metric">Success rate, end-to-end latency</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="end-to-end">
-    <div class="sec-head">
-      <span class="sec-num">§2</span>
-      <h2>End-to-End Cooperative Driving</h2>
-    </div>
-    <p class="sec-desc">Methods that share latent features, requests, or fused 3D representations across V2V/V2X links and train perception-to-planning stacks end to end.</p>
-    <div class="table-card">
-      <table>
-        <thead>
-          <tr>
-            <th>Method</th>
-            <th>Primary Mechanism</th>
-            <th>Evaluation Setting</th>
-            <th>Loop</th>
-            <th>Metric</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="method"><div class="m-name">UniV2X</div><div class="venue">AAAI · 2025</div></td>
-            <td class="mech">Sparse-dense V2X E2E</td>
-            <td class="setting">DAIR-V2X, V2X-Sim</td>
-            <td><span class="loop loop-open">Open</span></td>
-            <td class="metric">Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS)</td>
-          </tr>
-          <tr>
-            <td class="method"><div class="m-name">COOPERNAUT</div><div class="venue">CVPR · 2022</div></td>
-            <td class="mech">V2V latent sharing</td>
-            <td class="setting">AutoCastSim/CARLA</td>
-            <td><span class="loop loop-closed">Closed</span></td>
-            <td class="metric">Success rate, collision rate on 3 accident-prone scenario types</td>
-          </tr>
-          <tr>
-            <td class="method"><div class="m-name">CoDriving</div><div class="venue">IEEE TPAMI · 2025</div></td>
-            <td class="mech">Driving-request V2X E2E</td>
-            <td class="setting">V2Xverse</td>
-            <td><span class="loop loop-closed">Closed</span></td>
-            <td class="metric">Driving Score (DS), Success Rate (SR), route completion, infraction score; plus modular perception metrics</td>
-          </tr>
-          <tr>
-            <td class="method"><div class="m-name">V2X-VLM</div><div class="venue">TR Part C · 2025</div></td>
-            <td class="mech">VLM-based V2X planning</td>
-            <td class="setting">DAIR-V2X</td>
-            <td><span class="loop loop-open">Open</span></td>
-            <td class="metric">L2 error, collision rate</td>
-          </tr>
-          <tr>
-            <td class="method"><div class="m-name">CoGoal3D</div><div class="venue">ECCV · 2026</div></td>
-            <td class="mech">Two-stage V2X 3D fusion: multiscale 3D-aware global fusion for spatial misalignment from differing collaborator height/attitude, then proposal refinement with an auxiliary 3D point reconstruction task</td>
-            <td class="setting">DAIR-V2X, V2V4Real, V2X-Real</td>
-            <td><span class="loop loop-open">Open</span></td>
-            <td class="metric">—</td>
           </tr>
         </tbody>
       </table>

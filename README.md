@@ -4,6 +4,16 @@ A curated comparison of recent methods for **cooperative autonomous driving**, s
 
 🌐 **Webpage:** [Bhargavhs.github.io/cooperative-driving-survey](https://Bhargavhs.github.io/cooperative-driving-survey/) (served via GitHub Pages from `main` / root).
 
+## End-to-End Cooperative Driving
+
+| Method | Primary Mechanism | Evaluation Setting | Closed/Open Loop | Metric |
+|---|---|---|---|---|
+| **UniV2X** (AAAI, 2025) | Sparse-dense V2X E2E | DAIR-V2X, V2X-Sim | Open | Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS) |
+| **COOPERNAUT** (CVPR, 2022) | V2V latent sharing | AutoCastSim/CARLA | Closed | Success rate, collision rate on 3 accident-prone scenario types |
+| **CoDriving** (IEEE TPAMI, 2025) | Driving-request V2X E2E | V2Xverse | Closed | Driving Score (DS), Success Rate (SR), route completion, infraction score; plus modular perception metrics |
+| **V2X-VLM** (TR Part C, 2025) | VLM-based V2X planning | DAIR-V2X | Open | L2 error, collision rate |
+| **CoGoal3D** (ECCV, 2026) | Two-stage V2X 3D fusion: multiscale 3D-aware global fusion to handle spatial misalignment from differing collaborator height/attitude, then proposal refinement with an auxiliary 3D point reconstruction task | DAIR-V2X, V2V4Real, V2X-Real | Open | — |
+
 ## Language and Negotiation Agents
 
 | Method | Primary Mechanism | Evaluation Setting | Closed/Open Loop | Metric |
@@ -17,16 +27,6 @@ A curated comparison of recent methods for **cooperative autonomous driving**, s
 | **V2V-LLM** (ICRA, 2026) | Centralized MLLM fuses shared CAV perception features | V2V-QA benchmark | Open | Planning: L2 error, collision rate; grounding/notable-object: F1-type accuracy |
 | **V2V-GoT** (ICRA, 2026) | Graph-of-thoughts over occlusion-aware perception QAs + planning-aware prediction QAs | V2V-QA-style benchmark extending V2V-LLM | Open | L2 error, collision rate |
 | **SwarmDrive** (2026, not yet published) | Decentralized edge SLMs exchange post-inference intent distributions | Single occluded-intersection executable study | Closed | Success rate, end-to-end latency |
-
-## End-to-End Cooperative Driving
-
-| Method | Primary Mechanism | Evaluation Setting | Closed/Open Loop | Metric |
-|---|---|---|---|---|
-| **UniV2X** (AAAI, 2025) | Sparse-dense V2X E2E | DAIR-V2X, V2X-Sim | Open | Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS) |
-| **COOPERNAUT** (CVPR, 2022) | V2V latent sharing | AutoCastSim/CARLA | Closed | Success rate, collision rate on 3 accident-prone scenario types |
-| **CoDriving** (IEEE TPAMI, 2025) | Driving-request V2X E2E | V2Xverse | Closed | Driving Score (DS), Success Rate (SR), route completion, infraction score; plus modular perception metrics |
-| **V2X-VLM** (TR Part C, 2025) | VLM-based V2X planning | DAIR-V2X | Open | L2 error, collision rate |
-| **CoGoal3D** (ECCV, 2026) | Two-stage V2X 3D fusion: multiscale 3D-aware global fusion to handle spatial misalignment from differing collaborator height/attitude, then proposal refinement with an auxiliary 3D point reconstruction task | DAIR-V2X, V2V4Real, V2X-Real | Open | — |
 
 ## Notes
 
