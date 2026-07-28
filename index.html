@@ -157,6 +157,36 @@
   .loop-open { background: var(--open-tint); color: var(--open); }
   .loop-open::before { background: var(--open); }
 
+  /* ---------- Evolution map ---------- */
+  .map-legend { display:flex; flex-wrap:wrap; gap:8px 20px; margin:4px 0 16px; font-family:var(--mono); font-size:12.5px; color:var(--steel); }
+  .map-legend .item { display:inline-flex; align-items:center; }
+  .map-legend .sw { display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:7px; border:1.5px solid; }
+  .map-wrap { position:relative; }
+  .map-card { background:var(--card); border:1px solid var(--hairline); border-radius:10px; box-shadow:0 1px 2px rgba(23,34,45,.04); overflow-x:auto; }
+  .map-scroll { min-width:1000px; padding:6px 6px 2px; }
+  #evomap { display:block; width:100%; height:auto; }
+  .map-hint { font-family:var(--mono); font-size:12px; color:var(--steel); margin:10px 0 0; }
+  .evo-band { fill:#FAFBFC; }
+  .evo-band-label { font-family:var(--mono); font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; fill:var(--steel); opacity:.7; }
+  .evo-year { font-family:var(--mono); font-size:12px; fill:var(--steel); }
+  .evo-col { stroke:var(--hairline); stroke-dasharray:3 6; }
+  .evo-edge { fill:none; stroke:#C4CDD6; stroke-width:1.6; transition:stroke .15s ease, stroke-width .15s ease, opacity .15s ease; }
+  .evo-edge.ego { stroke-dasharray:5 4; }
+  .gnode text { font-family:var(--display); font-weight:600; font-size:13px; fill:var(--ink); pointer-events:none; }
+  .gnode rect { transition:filter .15s ease, opacity .15s ease; }
+  .gnode:focus-visible { outline:none; }
+  .gnode:focus-visible rect { stroke-width:3; }
+  svg.focused .gnode.dim { opacity:.18; }
+  svg.focused .evo-edge.dim { opacity:.1; }
+  svg.focused .evo-edge.hot { stroke:var(--steel); stroke-width:2.4; }
+  svg.focused .gnode.hot rect { filter:drop-shadow(0 3px 7px rgba(23,34,45,.20)); }
+  .map-tip { position:absolute; z-index:5; transform:translate(-50%,-100%); pointer-events:none; background:var(--ink); color:#fff; border-radius:8px; padding:9px 12px; max-width:250px; box-shadow:0 6px 20px rgba(23,34,45,.28); border-left:3px solid var(--acc,#fff); }
+  .map-tip[hidden] { display:none; }
+  .map-tip .tip-name { display:block; font-family:var(--display); font-weight:600; font-size:14px; }
+  .map-tip .tip-meta { display:block; font-family:var(--mono); font-size:11px; opacity:.72; margin-top:2px; }
+  .map-tip .tip-mech { display:block; font-size:12.5px; margin-top:6px; line-height:1.4; }
+  .map-tip .tip-loop { display:block; font-family:var(--mono); font-size:11px; opacity:.8; margin-top:5px; }
+
   /* ---------- Footer ---------- */
   footer {
     margin-top: 56px;
@@ -200,6 +230,29 @@
 </header>
 
 <main class="wrap">
+
+  <section id="evolution">
+    <div class="sec-head">
+      <span class="sec-num">Map</span>
+      <h2>How the Field Evolved</h2>
+    </div>
+    <p class="sec-desc">A conceptual lineage of cooperative-driving research — from V2V cooperative-perception roots, through two parallel thrusts (end-to-end V2X stacks and LLM negotiation agents), to their 2026 convergence in LLM/VLM-driven cooperation. Edges show thematic influence, not strict citation. Hover a method to trace its lineage; click to open the paper.</p>
+    <div class="map-legend">
+      <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>End-to-End V2X</span>
+      <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>Language &amp; negotiation</span>
+      <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>LLM / VLM × V2X</span>
+      <span class="item"><span class="sw" style="background:#EDF0F3;border-color:#5C6C7C"></span>Reasoning VLA · ego (reference)</span>
+    </div>
+    <div class="map-wrap">
+      <div class="map-card">
+        <div class="map-scroll">
+          <svg id="evomap" viewBox="0 0 1200 600" role="img" aria-label="Evolution map of cooperative-driving methods, from 2022 roots to the 2026 frontier"></svg>
+        </div>
+      </div>
+      <div class="map-tip" hidden></div>
+    </div>
+    <p class="map-hint">Scroll horizontally to see the full timeline · dashed border and dashed edge = ego-only (reference) line, not cooperative</p>
+  </section>
 
   <section id="end-to-end">
     <div class="sec-head">
@@ -367,6 +420,166 @@
     <span>Contributions welcome — open a PR to add a method.</span>
   </div>
 </footer>
+
+<script>
+(function () {
+  var CAT = {
+    e2e:  { label: 'End-to-End V2X',        color: '#0E7C66', tint: '#E3F2EE' },
+    lang: { label: 'Language & Negotiation', color: '#B96A00', tint: '#F6EAD9' },
+    conv: { label: 'LLM / VLM × V2X',       color: '#4757C9', tint: '#E9EBFA' },
+    ego:  { label: 'Reasoning VLA · ego',    color: '#5C6C7C', tint: '#EDF0F3' }
+  };
+  var N = [
+    { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:300,  y:126, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent feature sharing for cooperative perception', loop:'Closed' },
+    { id:'univ2x',        label:'UniV2X',        year:2025, x:775,  y:104, cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
+    { id:'codriving',     label:'CoDriving',     year:2025, x:775,  y:152, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
+    { id:'cogoal3d',      label:'CoGoal3D',      year:2026, x:1010, y:126, cat:'e2e',  url:'https://arxiv.org/abs/2607.19036',  mech:'Two-stage V2X 3D fusion for spatial misalignment', loop:'Open' },
+    { id:'agentscodriver',label:'AgentsCoDriver',year:2024, x:540,  y:214, cat:'lang', url:'https://arxiv.org/abs/2404.06345',  mech:'LLM social reasoning for collaborative driving', loop:'Closed' },
+    { id:'koma',          label:'KoMA',          year:2024, x:540,  y:266, cat:'lang', url:'https://arxiv.org/abs/2407.14239',  mech:'Knowledge-driven multi-agent LLM planning', loop:'Closed' },
+    { id:'agentscomerge', label:'AgentsCoMerge', year:2024, x:540,  y:318, cat:'lang', url:'https://arxiv.org/abs/2408.03624',  mech:'LLM cooperative ramp merging', loop:'Closed' },
+    { id:'comal',         label:'CoMAL',         year:2025, x:775,  y:232, cat:'lang', url:'https://arxiv.org/abs/2410.14368',  mech:'Role-memory multi-agent LLMs for mixed traffic', loop:'Closed' },
+    { id:'colmdriver',    label:'CoLMDriver',    year:2025, x:775,  y:306, cat:'lang', url:'https://arxiv.org/abs/2503.08683',  mech:'LLM negotiation + waypoint planning', loop:'Closed' },
+    { id:'coopreflect',   label:'CoopReflect',   year:2026, x:1010, y:232, cat:'lang', url:'https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html', mech:'V2V message refinement / reflection', loop:'Closed' },
+    { id:'swarmdrive',    label:'SwarmDrive',    year:2026, x:1010, y:306, cat:'lang', url:null,                                 mech:'Decentralized edge SLMs exchange intent', loop:'Closed' },
+    { id:'v2xvlm',        label:'V2X-VLM',       year:2025, x:775,  y:410, cat:'conv', url:'https://arxiv.org/abs/2408.09251',  mech:'VLM-based end-to-end V2X planning', loop:'Open' },
+    { id:'v2vllm',        label:'V2V-LLM',       year:2026, x:1010, y:388, cat:'conv', url:'https://arxiv.org/abs/2502.09980',  mech:'MLLM fuses shared V2V perception features', loop:'Open' },
+    { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1010, y:436, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts over V2V QAs (extends V2V-LLM)', loop:'Open' },
+    { id:'alpamayo1',     label:'Alpamayo-1',    year:2025, x:775,  y:512, cat:'ego',  url:'https://arxiv.org/abs/2511.00088',  mech:'Reasoning VLA, Chain-of-Causation (ego, not V2X)', loop:'Open · Closed' },
+    { id:'alpamayo15',    label:'Alpamayo-1.5',  year:2026, x:1010, y:512, cat:'ego',  url:'https://huggingface.co/nvidia/Alpamayo-1.5-10B', mech:'Reasoning VLA on Cosmos-Reason2 (ego, not V2X)', loop:'Open · Closed' }
+  ];
+  var E = [
+    { from:'coopernaut', to:'univ2x' },
+    { from:'coopernaut', to:'codriving' },
+    { from:'coopernaut', to:'v2xvlm' },
+    { from:'coopernaut', to:'v2vllm' },
+    { from:'univ2x', to:'cogoal3d' },
+    { from:'agentscodriver', to:'comal' },
+    { from:'agentscodriver', to:'colmdriver' },
+    { from:'agentscodriver', to:'v2xvlm' },
+    { from:'koma', to:'comal' },
+    { from:'agentscomerge', to:'colmdriver' },
+    { from:'colmdriver', to:'coopreflect' },
+    { from:'colmdriver', to:'v2vllm' },
+    { from:'comal', to:'swarmdrive' },
+    { from:'v2xvlm', to:'v2vllm' },
+    { from:'v2vllm', to:'v2vgot' },
+    { from:'alpamayo1', to:'alpamayo15', ego:true }
+  ];
+  var COLS = [[2022,300],[2024,540],[2025,775],[2026,1010]];
+  var BANDS = [
+    { label:'Cooperative perception → E2E V2X', y:70,  h:112 },
+    { label:'Language & negotiation agents',         y:188, h:168 },
+    { label:'LLM / VLM × V2X convergence',       y:362, h:104 },
+    { label:'Reasoning VLA — ego (reference)',   y:472, h:86 }
+  ];
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('evomap');
+  if (!svg) return;
+  var wrap = document.querySelector('.map-wrap');
+  var tip = document.querySelector('.map-tip');
+  var byId = {}; N.forEach(function (n) { byId[n.id] = n; });
+  function el(name, attrs) { var e = document.createElementNS(NS, name); for (var k in attrs) { e.setAttribute(k, attrs[k]); } return e; }
+  function nw(n) { return Math.max(88, n.label.length * 7.4 + 26); }
+
+  // bands
+  var gBands = el('g', {});
+  BANDS.forEach(function (b) {
+    gBands.appendChild(el('rect', { x:150, y:b.y, width:1034, height:b.h, rx:8, 'class':'evo-band' }));
+    var t = el('text', { x:14, y:b.y + 16, 'class':'evo-band-label' }); t.textContent = b.label; gBands.appendChild(t);
+  });
+  svg.appendChild(gBands);
+
+  // columns + years
+  var gCols = el('g', {});
+  COLS.forEach(function (c) {
+    gCols.appendChild(el('line', { x1:c[1], y1:64, x2:c[1], y2:566, 'class':'evo-col' }));
+    var t = el('text', { x:c[1], y:52, 'text-anchor':'middle', 'class':'evo-year' }); t.textContent = c[0]; gCols.appendChild(t);
+  });
+  svg.appendChild(gCols);
+
+  // edges
+  function edgePath(s, t) {
+    if (t.x - s.x < 60) {
+      var x = s.x, y1 = s.y + 16, y2 = t.y - 16, bow = 42;
+      return 'M ' + x + ' ' + y1 + ' C ' + (x + bow) + ' ' + y1 + ', ' + (x + bow) + ' ' + y2 + ', ' + x + ' ' + y2;
+    }
+    var sx = s.x + nw(s) / 2, sy = s.y, tx = t.x - nw(t) / 2, ty = t.y, mx = (sx + tx) / 2;
+    return 'M ' + sx + ' ' + sy + ' C ' + mx + ' ' + sy + ', ' + mx + ' ' + ty + ', ' + tx + ' ' + ty;
+  }
+  var gEdges = el('g', {});
+  E.forEach(function (e) {
+    e._el = el('path', { d: edgePath(byId[e.from], byId[e.to]), 'class': 'evo-edge' + (e.ego ? ' ego' : '') });
+    gEdges.appendChild(e._el);
+  });
+  svg.appendChild(gEdges);
+
+  // nodes
+  var gNodes = el('g', {});
+  N.forEach(function (n) {
+    var w = nw(n), c = CAT[n.cat];
+    var g = el('g', { 'class':'gnode', tabindex:'0', role: n.url ? 'link' : 'img',
+      'aria-label': n.label + ', ' + n.year + ', ' + c.label + (n.url ? ' — opens paper' : ' — no link yet') });
+    var r = el('rect', { x:n.x - w/2, y:n.y - 16, width:w, height:32, rx:8, fill:c.tint, stroke:c.color, 'stroke-width':1.6 });
+    if (n.cat === 'ego') r.setAttribute('stroke-dasharray', '5 4');
+    g.appendChild(r);
+    var t = el('text', { x:n.x, y:n.y + 1, 'text-anchor':'middle', 'dominant-baseline':'central' }); t.textContent = n.label; g.appendChild(t);
+    n._g = g;
+    g.addEventListener('mouseenter', function (ev) { highlight(n.id); showTip(n, ev); });
+    g.addEventListener('mousemove', moveTip);
+    g.addEventListener('mouseleave', function () { clearHi(); hideTip(); });
+    g.addEventListener('focus', function () { highlight(n.id); });
+    g.addEventListener('blur', function () { clearHi(); hideTip(); });
+    if (n.url) {
+      g.style.cursor = 'pointer';
+      g.addEventListener('click', function () { window.open(n.url, '_blank', 'noopener'); });
+      g.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); window.open(n.url, '_blank', 'noopener'); } });
+    }
+    gNodes.appendChild(g);
+  });
+  svg.appendChild(gNodes);
+
+  // lineage highlight
+  function lineage(id) {
+    var nodesOn = {}, edgesOn = {}; nodesOn[id] = 1;
+    function down(x) { E.forEach(function (e, i) { if (e.from === x) { edgesOn[i] = 1; if (!nodesOn[e.to]) { nodesOn[e.to] = 1; down(e.to); } } }); }
+    function up(x)   { E.forEach(function (e, i) { if (e.to === x)   { edgesOn[i] = 1; if (!nodesOn[e.from]) { nodesOn[e.from] = 1; up(e.from); } } }); }
+    down(id); up(id);
+    return { nodesOn: nodesOn, edgesOn: edgesOn };
+  }
+  function highlight(id) {
+    var L = lineage(id); svg.classList.add('focused');
+    N.forEach(function (n) { var on = !!L.nodesOn[n.id]; n._g.classList.toggle('dim', !on); n._g.classList.toggle('hot', on); });
+    E.forEach(function (e, i) { var on = !!L.edgesOn[i]; e._el.classList.toggle('dim', !on); e._el.classList.toggle('hot', on); });
+  }
+  function clearHi() {
+    svg.classList.remove('focused');
+    N.forEach(function (n) { n._g.classList.remove('dim', 'hot'); });
+    E.forEach(function (e) { e._el.classList.remove('dim', 'hot'); });
+  }
+
+  // tooltip
+  function showTip(n, ev) {
+    if (!tip) return;
+    var c = CAT[n.cat];
+    tip.innerHTML = '<span class="tip-name"></span><span class="tip-meta"></span><span class="tip-mech"></span><span class="tip-loop"></span>';
+    tip.querySelector('.tip-name').textContent = n.label;
+    tip.querySelector('.tip-meta').textContent = n.year + ' · ' + c.label;
+    tip.querySelector('.tip-mech').textContent = n.mech;
+    tip.querySelector('.tip-loop').textContent = n.loop + (n.url ? '' : ' · no link yet');
+    tip.style.setProperty('--acc', c.color);
+    tip.hidden = false;
+    moveTip(ev);
+  }
+  function moveTip(ev) {
+    if (!tip || tip.hidden || !wrap) return;
+    var b = wrap.getBoundingClientRect();
+    tip.style.left = (ev.clientX - b.left) + 'px';
+    tip.style.top = (ev.clientY - b.top - 14) + 'px';
+  }
+  function hideTip() { if (tip) tip.hidden = true; }
+})();
+</script>
 
 </body>
 </html>
