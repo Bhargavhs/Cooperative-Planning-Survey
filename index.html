@@ -174,6 +174,10 @@
   .yn.no   { color:var(--steel); opacity:.4; }
   .yn.part { color:var(--accent); cursor:help; }
   .pn-note { font-family:var(--mono); font-size:12px; color:var(--steel); margin:10px 0 0; line-height:1.6; }
+  .mtbl th.c, .mtbl td.c { text-align:center; white-space:nowrap; }
+  .mtbl td.coop { font-family:var(--mono); font-size:12.5px; }
+  .mtbl td.coop.ego { color:var(--steel); }
+  .stackmark { color:#17222D; font-size:10px; margin-left:5px; vertical-align:1px; cursor:help; }
   .map-hint { font-family:var(--mono); font-size:12px; color:var(--steel); margin:10px 0 0; }
   .evo-band { fill:#FAFBFC; }
   .evo-band-label { font-family:var(--mono); font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; fill:var(--steel); opacity:.7; }
@@ -277,7 +281,8 @@
       <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>Comm → language agents</span>
       <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>LLM / VLM × V2X</span>
       <span class="item"><span class="sw" style="background:#EDF0F3;border-color:#5C6C7C"></span>Reasoning VLA · ego (reference)</span>
-      <span class="item"><span class="sw" style="background:#17222D;border-color:#17222D;border-radius:50%"></span>cooperative-planning stage</span>
+      <span class="item"><span class="sw" style="background:#17222D;border-color:#17222D;border-radius:50%"></span>● cooperative-planning stage</span>
+      <span class="item"><span class="sw" style="background:#17222D;border-color:#17222D;transform:rotate(45deg)"></span>◆ sensor-to-trajectory stack</span>
     </div>
     <div class="map-wrap">
       <div class="map-card">
@@ -407,64 +412,108 @@
     </div>
     <p class="sec-desc">Methods that share latent features, requests, or fused 3D representations across V2V/V2X links and train perception-to-planning stacks end to end.</p>
     <div class="table-card">
-      <table>
+      <table class="mtbl">
         <thead>
           <tr>
             <th>Method</th>
+            <th class="c">Coop.</th>
             <th>Primary Mechanism</th>
             <th>Evaluation Setting</th>
             <th>Loop</th>
+            <th class="c">Perc.</th>
+            <th class="c">Nego.</th>
             <th>Metric</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.00717" target="_blank" rel="noopener">UniV2X</a></div><div class="venue">AAAI · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.00717" target="_blank" rel="noopener">UniV2X</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">AAAI · 2025</div></td>
+            <td class="c coop">V2I</td>
             <td class="mech">Sparse-dense V2X E2E</td>
             <td class="setting">DAIR-V2X, V2X-Sim</td>
             <td><span class="loop loop-open">Open</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS)</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2205.02222" target="_blank" rel="noopener">COOPERNAUT</a></div><div class="venue">CVPR · 2022</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2205.02222" target="_blank" rel="noopener">COOPERNAUT</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">CVPR · 2022</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">V2V latent sharing</td>
             <td class="setting">AutoCastSim/CARLA</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">Success rate, collision rate on 3 accident-prone scenario types</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.09496" target="_blank" rel="noopener">CoDriving</a></div><div class="venue">IEEE TPAMI · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.09496" target="_blank" rel="noopener">CoDriving</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">IEEE TPAMI · 2025</div></td>
+            <td class="c coop">V2X</td>
             <td class="mech">Driving-request V2X E2E</td>
             <td class="setting">V2Xverse</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn part" title="Broadcasts driving requests — a lightweight intent/plan-level signal, not dialogue">△</span></td>
             <td class="metric">Driving Score (DS), Success Rate (SR), route completion, infraction score; plus modular perception metrics</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2408.09251" target="_blank" rel="noopener">V2X-VLM</a></div><div class="venue">TR Part C · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2606.21165" target="_blank" rel="noopener">OmniV2X</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">arXiv · 2026</div></td>
+            <td class="c coop">V2X</td>
+            <td class="mech">Generative foundation planner; shares standard-compliant V2X tokens</td>
+            <td class="setting">DAIR-V2X-Seq</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="metric">Trajectory generation; reported at &lt;10% fine-tune data and &lt;1% communication bandwidth</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2408.09251" target="_blank" rel="noopener">V2X-VLM</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">TR Part C · 2025</div></td>
+            <td class="c coop">V2X</td>
             <td class="mech">VLM-based V2X planning</td>
             <td class="setting">DAIR-V2X</td>
             <td><span class="loop loop-open">Open</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">L2 error, collision rate</td>
           </tr>
           <tr>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2506.21041" target="_blank" rel="noopener">SEAL</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">arXiv · 2025</div></td>
+            <td class="c coop">V2X</td>
+            <td class="mech">VLM safe cooperative driving; adaptive long-tail / weather robustness</td>
+            <td class="setting">Vehicle + infrastructure views (eval setup not stated)</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="metric">Reasoning, safety, and planning accuracy (metrics not stated in abstract)</td>
+          </tr>
+          <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2607.19036" target="_blank" rel="noopener">CoGoal3D</a></div><div class="venue">ECCV · 2026</div></td>
-            <td class="mech">Two-stage V2X 3D fusion: multiscale 3D-aware global fusion for spatial misalignment from differing collaborator height/attitude, then proposal refinement with an auxiliary 3D point reconstruction task</td>
+            <td class="c coop">V2X</td>
+            <td class="mech">Collaborative 3D object detection: multiscale 3D-aware global fusion for collaborator pose (height/attitude) misalignment + proposal refinement with an auxiliary 3D point-reconstruction task <em>(perception, not planning)</em></td>
             <td class="setting">DAIR-V2X, V2V4Real, V2X-Real</td>
             <td><span class="loop loop-open">Open</span></td>
-            <td class="metric">—</td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="metric">3D AP@0.7 detection (+10.9 / 10.3 / 10.2% on DAIR-V2X / V2V4Real / V2X-Real)</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2511.00088" target="_blank" rel="noopener">Alpamayo-1</a></div><div class="venue">NVIDIA · 2025</div></td>
+            <td class="c coop ego">ego</td>
             <td class="mech">Reasoning VLA (~10B): Chain-of-Causation reasoning traces paired with trajectory prediction (single-ego, not V2X)</td>
             <td class="setting">NVIDIA internal AV data; closed-loop sim; real-vehicle tests</td>
             <td><span class="loop loop-open">Open</span> <span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">Open-loop trajectory metrics, reasoning quality, closed-loop safety, latency</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://huggingface.co/nvidia/Alpamayo-1.5-10B" target="_blank" rel="noopener">Alpamayo-1.5</a></div><div class="venue">NVIDIA · 2026</div></td>
+            <td class="c coop ego">ego</td>
             <td class="mech">Reasoning VLA on Cosmos-Reason2, RL post-trained; adds navigation guidance, flexible camera counts, and user question answering (single-ego, not V2X)</td>
             <td class="setting">NVIDIA internal + public driving data; closed-loop sim</td>
             <td><span class="loop loop-open">Open</span> <span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">Trajectory planning quality, reasoning / QA, safety</td>
           </tr>
         </tbody>
@@ -479,78 +528,108 @@
     </div>
     <p class="sec-desc">Methods where LLMs or small language models reason socially, negotiate intents, or refine V2V messages to coordinate multi-vehicle behavior.</p>
     <div class="table-card">
-      <table>
+      <table class="mtbl">
         <thead>
           <tr>
             <th>Method</th>
+            <th class="c">Coop.</th>
             <th>Primary Mechanism</th>
             <th>Evaluation Setting</th>
             <th>Loop</th>
+            <th class="c">Perc.</th>
+            <th class="c">Nego.</th>
             <th>Metric</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2404.06345" target="_blank" rel="noopener">AgentsCoDriver</a></div><div class="venue">IEEE T-ITS · 2024</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">LLM social reasoning</td>
             <td class="setting">HighwayEnv</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
             <td class="metric">Success rate, collision rate, communication/token cost</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2503.08683" target="_blank" rel="noopener">CoLMDriver</a></div><div class="venue">ICCV · 2025</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2503.08683" target="_blank" rel="noopener">CoLMDriver</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">ICCV · 2025</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">LLM negotiation and waypoints</td>
-            <td class="setting">InterDrive/CARLA (MDrive)</td>
+            <td class="setting">InterDrive / CARLA</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn part" title="Negotiation-first; whether it also fuses V2V perception is unclear from the paper">△</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
             <td class="metric">Driving Score (DS), Success Rate (SR)</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html" target="_blank" rel="noopener">CoopReflect</a></div><div class="venue">AAMAS · 2026</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">V2V message refinement</td>
             <td class="setting">TalkingVehiclesGym</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
             <td class="metric">Task success / collision avoidance rate, traffic efficiency (speed, completion)</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2410.14368" target="_blank" rel="noopener">CoMAL</a></div><div class="venue">SDM · 2025</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">Role memory and reasoning</td>
             <td class="setting">Flow/SUMO</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
             <td class="metric">Traffic-flow efficiency (avg. velocity / throughput vs. RL baselines)</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2407.14239" target="_blank" rel="noopener">KoMA</a></div><div class="venue">IEEE T-IV · 2024</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">Knowledge-driven LLM planning</td>
             <td class="setting">HighwayEnv</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
             <td class="metric">Success rate, efficiency (avg. speed)</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2408.03624" target="_blank" rel="noopener">AgentsCoMerge</a></div><div class="venue">IEEE Journal · 2024</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">LLM cooperative merging</td>
             <td class="setting">SUMO/LimSim++, nuScenes, HighD</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
             <td class="metric">Merging success, travel time / avg. speed, collision &amp; safety</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2502.09980" target="_blank" rel="noopener">V2V-LLM</a></div><div class="venue">ICRA · 2026</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2502.09980" target="_blank" rel="noopener">V2V-LLM</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">ICRA · 2026</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">Centralized MLLM fuses shared CAV perception features</td>
             <td class="setting">V2V-QA benchmark</td>
             <td><span class="loop loop-open">Open</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">Planning: L2 error, collision rate; grounding / notable-object: F1-type accuracy</td>
           </tr>
           <tr>
-            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2509.18053" target="_blank" rel="noopener">V2V-GoT</a></div><div class="venue">ICRA · 2026</div></td>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2509.18053" target="_blank" rel="noopener">V2V-GoT</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">ICRA · 2026</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">Graph-of-thoughts over occlusion-aware perception QAs + planning-aware prediction QAs</td>
             <td class="setting">V2V-QA-style benchmark extending V2V-LLM</td>
             <td><span class="loop loop-open">Open</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">L2 error, collision rate</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name">SwarmDrive</div><div class="venue">2026 · not yet published</div></td>
+            <td class="c coop">V2V</td>
             <td class="mech">Decentralized edge SLMs exchange post-inference intent distributions</td>
             <td class="setting">Single occluded-intersection executable study</td>
             <td><span class="loop loop-closed">Closed</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="c"><span class="yn part" title="Negotiates via intent-distribution exchange, not language dialogue">✓</span></td>
             <td class="metric">Success rate, end-to-end latency</td>
           </tr>
         </tbody>
@@ -588,7 +667,8 @@
     { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:1050, y:105, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent feature sharing for cooperative perception', loop:'Closed' },
     { id:'univ2x',        label:'UniV2X',        year:2025, x:1430, y:104, cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
     { id:'codriving',     label:'CoDriving',     year:2025, x:1430, y:152, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
-    { id:'cogoal3d',      label:'CoGoal3D',      year:2026, x:1620, y:126, cat:'e2e',  url:'https://arxiv.org/abs/2607.19036',  mech:'Two-stage V2X 3D fusion for spatial misalignment', loop:'Open' },
+    { id:'cogoal3d',      label:'CoGoal3D',      year:2026, x:1620, y:105, cat:'e2e',  url:'https://arxiv.org/abs/2607.19036',  mech:'Collaborative 3D object detection (perception, not planning)', loop:'Open' },
+    { id:'omniv2x',       label:'OmniV2X',       year:2026, x:1620, y:152, cat:'e2e',  url:'https://arxiv.org/abs/2606.21165',  mech:'Generative foundation planner; shares standard V2X tokens', loop:'Open' },
     { id:'agentscodriver',label:'AgentsCoDriver',year:2024, x:1240, y:214, cat:'lang', url:'https://arxiv.org/abs/2404.06345',  mech:'LLM social reasoning for collaborative driving', loop:'Closed' },
     { id:'koma',          label:'KoMA',          year:2024, x:1240, y:266, cat:'lang', url:'https://arxiv.org/abs/2407.14239',  mech:'Knowledge-driven multi-agent LLM planning', loop:'Closed' },
     { id:'agentscomerge', label:'AgentsCoMerge', year:2024, x:1240, y:318, cat:'lang', url:'https://arxiv.org/abs/2408.03624',  mech:'LLM cooperative ramp merging', loop:'Closed' },
@@ -596,7 +676,8 @@
     { id:'colmdriver',    label:'CoLMDriver',    year:2025, x:1430, y:306, cat:'lang', url:'https://arxiv.org/abs/2503.08683',  mech:'LLM negotiation + waypoint planning', loop:'Closed' },
     { id:'coopreflect',   label:'CoopReflect',   year:2026, x:1620, y:232, cat:'lang', url:'https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html', mech:'V2V message refinement / reflection', loop:'Closed' },
     { id:'swarmdrive',    label:'SwarmDrive',    year:2026, x:1620, y:306, cat:'lang', url:null,                                 mech:'Decentralized edge SLMs exchange intent', loop:'Closed' },
-    { id:'v2xvlm',        label:'V2X-VLM',       year:2025, x:1430, y:410, cat:'conv', url:'https://arxiv.org/abs/2408.09251',  mech:'VLM-based end-to-end V2X planning', loop:'Open' },
+    { id:'v2xvlm',        label:'V2X-VLM',       year:2025, x:1430, y:388, cat:'conv', url:'https://arxiv.org/abs/2408.09251',  mech:'VLM-based end-to-end V2X planning', loop:'Open' },
+    { id:'seal',          label:'SEAL',          year:2025, x:1430, y:432, cat:'conv', url:'https://arxiv.org/abs/2506.21041',  mech:'VLM safe cooperative driving; long-tail / weather robustness', loop:'Open' },
     { id:'v2vllm',        label:'V2V-LLM',       year:2026, x:1620, y:388, cat:'conv', url:'https://arxiv.org/abs/2502.09980',  mech:'MLLM fuses shared V2V perception features', loop:'Open' },
     { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1620, y:436, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts over V2V QAs (extends V2V-LLM)', loop:'Open' },
     { id:'alpamayo1',     label:'Alpamayo-1',    year:2025, x:1430, y:512, cat:'ego',  url:'https://arxiv.org/abs/2511.00088',  mech:'Reasoning VLA, Chain-of-Causation (ego, not V2X)', loop:'Open · Closed' },
@@ -631,6 +712,10 @@
     { from:'comal', to:'swarmdrive' },
     { from:'v2xvlm', to:'v2vllm' },
     { from:'v2vllm', to:'v2vgot' },
+    { from:'coopernaut', to:'seal' },
+    { from:'univ2x', to:'omniv2x' },
+    { from:'v2xvlm', to:'omniv2x' },
+    { from:'seal', to:'omniv2x' },
     { from:'alpamayo1', to:'alpamayo15', ego:true }
   ];
   var COLS = [[2016,230],[2018,400],[2019,560],[2020,720],[2021,880],[2022,1050],[2024,1240],[2025,1430],[2026,1620]];
@@ -641,7 +726,8 @@
     { label:'Reasoning VLA — ego (reference)',   y:472, h:86 }
   ];
 
-  var PLAN = { coopernaut:1, univ2x:1, codriving:1, v2xvlm:1, v2vllm:1, v2vgot:1, agentscodriver:1, koma:1, agentscomerge:1, comal:1, colmdriver:1, coopreflect:1, swarmdrive:1 };
+  var PLAN = { coopernaut:1, univ2x:1, codriving:1, omniv2x:1, v2xvlm:1, seal:1, v2vllm:1, v2vgot:1, agentscodriver:1, koma:1, agentscomerge:1, comal:1, colmdriver:1, coopreflect:1, swarmdrive:1 };
+  var STACK = { coopernaut:1, univ2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
   var NS = 'http://www.w3.org/2000/svg';
   var svg = document.getElementById('evomap');
   if (!svg) return;
@@ -694,6 +780,7 @@
     g.appendChild(r);
     var t = el('text', { x:n.x, y:n.y + 1, 'text-anchor':'middle', 'dominant-baseline':'central' }); t.textContent = n.label; g.appendChild(t);
     if (PLAN[n.id]) { g.appendChild(el('circle', { cx:n.x + w/2 - 7, cy:n.y - 9, r:4.2, fill:'#17222D', stroke:'#FFFFFF', 'stroke-width':1.4 })); }
+    if (STACK[n.id]) { var sbx = n.x - w/2 + 7, sby = n.y - 9; g.appendChild(el('rect', { x:sbx-4, y:sby-4, width:8, height:8, rx:1.5, fill:'#17222D', stroke:'#FFFFFF', 'stroke-width':1.2, transform:'rotate(45 ' + sbx + ' ' + sby + ')' })); }
     n._g = g;
     g.addEventListener('mouseenter', function (ev) { highlight(n.id); showTip(n, ev); });
     g.addEventListener('mousemove', moveTip);
@@ -764,7 +851,7 @@
     lang: { label: 'LLM negotiation agent',          color: '#B96A00', tint: '#F6EAD9' },
     conv: { label: 'LLM / VLM V2X planner',          color: '#4757C9', tint: '#E9EBFA' }
   };
-  var STACK = { univ2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
+  var STACK = { coopernaut:1, univ2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
   var N = [
     { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:300,  y:120, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent sharing → cooperative driving', loop:'Closed' },
     { id:'univ2x',        label:'UniV2X',        year:2025, x:840,  y:98,  cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
