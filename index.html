@@ -163,7 +163,7 @@
   .map-legend .sw { display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:7px; border:1.5px solid; }
   .map-wrap { position:relative; }
   .map-card { background:var(--card); border:1px solid var(--hairline); border-radius:10px; box-shadow:0 1px 2px rgba(23,34,45,.04); overflow-x:auto; }
-  .map-scroll { min-width:1000px; padding:6px 6px 2px; }
+  .map-scroll { min-width:1740px; padding:6px 6px 2px; }
   #evomap { display:block; width:100%; height:auto; }
   .map-hint { font-family:var(--mono); font-size:12px; color:var(--steel); margin:10px 0 0; }
   .evo-band { fill:#FAFBFC; }
@@ -262,17 +262,17 @@
       <span class="sec-num">Map</span>
       <h2>How the Field Evolved</h2>
     </div>
-    <p class="sec-desc">A conceptual lineage of cooperative-driving research — from V2V cooperative-perception roots, through two parallel thrusts (end-to-end V2X stacks and LLM negotiation agents), to their 2026 convergence in LLM/VLM-driven cooperation. Edges show thematic influence, not strict citation. Hover a method to trace its lineage; click to open the paper.</p>
+    <p class="sec-desc">A conceptual lineage of cooperative-driving research — from its <strong>2016–2021 foundations</strong> (learned multi-agent communication and V2V/V2X cooperative perception), through two parallel thrusts (end-to-end V2X stacks and LLM negotiation agents), to their 2026 convergence in LLM/VLM-driven cooperation. Edges show thematic influence, not strict citation. Hover a method to trace its lineage; click to open the paper. Scroll right to move from origin to frontier.</p>
     <div class="map-legend">
-      <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>End-to-End V2X</span>
-      <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>Language &amp; negotiation</span>
+      <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>Perception → E2E V2X</span>
+      <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>Comm → language agents</span>
       <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>LLM / VLM × V2X</span>
       <span class="item"><span class="sw" style="background:#EDF0F3;border-color:#5C6C7C"></span>Reasoning VLA · ego (reference)</span>
     </div>
     <div class="map-wrap">
       <div class="map-card">
         <div class="map-scroll">
-          <svg id="evomap" viewBox="0 0 1200 600" role="img" aria-label="Evolution map of cooperative-driving methods, from 2022 roots to the 2026 frontier"></svg>
+          <svg id="evomap" viewBox="0 0 1740 600" role="img" aria-label="Evolution map of cooperative-driving methods, from the 2016 foundations to the 2026 frontier"></svg>
         </div>
       </div>
       <div class="map-tip" hidden></div>
@@ -506,30 +506,52 @@
 <script>
 (function () {
   var CAT = {
-    e2e:  { label: 'End-to-End V2X',        color: '#0E7C66', tint: '#E3F2EE' },
-    lang: { label: 'Language & Negotiation', color: '#B96A00', tint: '#F6EAD9' },
+    e2e:  { label: 'Cooperative perception / E2E V2X', color: '#0E7C66', tint: '#E3F2EE' },
+    lang: { label: 'Multi-agent comm / language', color: '#B96A00', tint: '#F6EAD9' },
     conv: { label: 'LLM / VLM × V2X',       color: '#4757C9', tint: '#E9EBFA' },
     ego:  { label: 'Reasoning VLA · ego',    color: '#5C6C7C', tint: '#EDF0F3' }
   };
   var N = [
-    { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:300,  y:126, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent feature sharing for cooperative perception', loop:'Closed' },
-    { id:'univ2x',        label:'UniV2X',        year:2025, x:775,  y:104, cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
-    { id:'codriving',     label:'CoDriving',     year:2025, x:775,  y:152, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
-    { id:'cogoal3d',      label:'CoGoal3D',      year:2026, x:1010, y:126, cat:'e2e',  url:'https://arxiv.org/abs/2607.19036',  mech:'Two-stage V2X 3D fusion for spatial misalignment', loop:'Open' },
-    { id:'agentscodriver',label:'AgentsCoDriver',year:2024, x:540,  y:214, cat:'lang', url:'https://arxiv.org/abs/2404.06345',  mech:'LLM social reasoning for collaborative driving', loop:'Closed' },
-    { id:'koma',          label:'KoMA',          year:2024, x:540,  y:266, cat:'lang', url:'https://arxiv.org/abs/2407.14239',  mech:'Knowledge-driven multi-agent LLM planning', loop:'Closed' },
-    { id:'agentscomerge', label:'AgentsCoMerge', year:2024, x:540,  y:318, cat:'lang', url:'https://arxiv.org/abs/2408.03624',  mech:'LLM cooperative ramp merging', loop:'Closed' },
-    { id:'comal',         label:'CoMAL',         year:2025, x:775,  y:232, cat:'lang', url:'https://arxiv.org/abs/2410.14368',  mech:'Role-memory multi-agent LLMs for mixed traffic', loop:'Closed' },
-    { id:'colmdriver',    label:'CoLMDriver',    year:2025, x:775,  y:306, cat:'lang', url:'https://arxiv.org/abs/2503.08683',  mech:'LLM negotiation + waypoint planning', loop:'Closed' },
-    { id:'coopreflect',   label:'CoopReflect',   year:2026, x:1010, y:232, cat:'lang', url:'https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html', mech:'V2V message refinement / reflection', loop:'Closed' },
-    { id:'swarmdrive',    label:'SwarmDrive',    year:2026, x:1010, y:306, cat:'lang', url:null,                                 mech:'Decentralized edge SLMs exchange intent', loop:'Closed' },
-    { id:'v2xvlm',        label:'V2X-VLM',       year:2025, x:775,  y:410, cat:'conv', url:'https://arxiv.org/abs/2408.09251',  mech:'VLM-based end-to-end V2X planning', loop:'Open' },
-    { id:'v2vllm',        label:'V2V-LLM',       year:2026, x:1010, y:388, cat:'conv', url:'https://arxiv.org/abs/2502.09980',  mech:'MLLM fuses shared V2V perception features', loop:'Open' },
-    { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1010, y:436, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts over V2V QAs (extends V2V-LLM)', loop:'Open' },
-    { id:'alpamayo1',     label:'Alpamayo-1',    year:2025, x:775,  y:512, cat:'ego',  url:'https://arxiv.org/abs/2511.00088',  mech:'Reasoning VLA, Chain-of-Causation (ego, not V2X)', loop:'Open · Closed' },
-    { id:'alpamayo15',    label:'Alpamayo-1.5',  year:2026, x:1010, y:512, cat:'ego',  url:'https://huggingface.co/nvidia/Alpamayo-1.5-10B', mech:'Reasoning VLA on Cosmos-Reason2 (ego, not V2X)', loop:'Open · Closed' }
+    { id:'commnet',       label:'CommNet',       year:2016, x:230,  y:250, cat:'lang', url:null,                                 mech:'Learned continuous inter-agent messages', loop:'Foundational' },
+    { id:'dial',          label:'DIAL',          year:2016, x:230,  y:302, cat:'lang', url:null,                                 mech:'Differentiable inter-agent messaging', loop:'Foundational' },
+    { id:'avr',           label:'AVR',           year:2018, x:400,  y:126, cat:'e2e',  url:null,                                 mech:'First V2V raw sensor (point-cloud) sharing', loop:'Foundational' },
+    { id:'cooper',        label:'Cooper',        year:2019, x:560,  y:126, cat:'e2e',  url:null,                                 mech:'Cooperative point-cloud fusion', loop:'Foundational' },
+    { id:'v2vnet',        label:'V2VNet',        year:2020, x:720,  y:104, cat:'e2e',  url:null,                                 mech:'Graph-based intermediate feature fusion', loop:'Foundational' },
+    { id:'when2com',      label:'When2com',      year:2020, x:720,  y:152, cat:'e2e',  url:null,                                 mech:'Learns when / whom to communicate', loop:'Foundational' },
+    { id:'disconet',      label:'DiscoNet',      year:2021, x:880,  y:104, cat:'e2e',  url:null,                                 mech:'Distilled collaboration graph', loop:'Foundational' },
+    { id:'v2xsim',        label:'V2X-Sim',       year:2021, x:880,  y:152, cat:'e2e',  url:null,                                 mech:'Synthetic V2X cooperative-perception benchmark', loop:'Benchmark' },
+    { id:'opv2v',         label:'OPV2V',         year:2022, x:1050, y:152, cat:'e2e',  url:null,                                 mech:'Open V2V cooperative-perception dataset', loop:'Benchmark' },
+    { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:1050, y:105, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent feature sharing for cooperative perception', loop:'Closed' },
+    { id:'univ2x',        label:'UniV2X',        year:2025, x:1430, y:104, cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
+    { id:'codriving',     label:'CoDriving',     year:2025, x:1430, y:152, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
+    { id:'cogoal3d',      label:'CoGoal3D',      year:2026, x:1620, y:126, cat:'e2e',  url:'https://arxiv.org/abs/2607.19036',  mech:'Two-stage V2X 3D fusion for spatial misalignment', loop:'Open' },
+    { id:'agentscodriver',label:'AgentsCoDriver',year:2024, x:1240, y:214, cat:'lang', url:'https://arxiv.org/abs/2404.06345',  mech:'LLM social reasoning for collaborative driving', loop:'Closed' },
+    { id:'koma',          label:'KoMA',          year:2024, x:1240, y:266, cat:'lang', url:'https://arxiv.org/abs/2407.14239',  mech:'Knowledge-driven multi-agent LLM planning', loop:'Closed' },
+    { id:'agentscomerge', label:'AgentsCoMerge', year:2024, x:1240, y:318, cat:'lang', url:'https://arxiv.org/abs/2408.03624',  mech:'LLM cooperative ramp merging', loop:'Closed' },
+    { id:'comal',         label:'CoMAL',         year:2025, x:1430, y:232, cat:'lang', url:'https://arxiv.org/abs/2410.14368',  mech:'Role-memory multi-agent LLMs for mixed traffic', loop:'Closed' },
+    { id:'colmdriver',    label:'CoLMDriver',    year:2025, x:1430, y:306, cat:'lang', url:'https://arxiv.org/abs/2503.08683',  mech:'LLM negotiation + waypoint planning', loop:'Closed' },
+    { id:'coopreflect',   label:'CoopReflect',   year:2026, x:1620, y:232, cat:'lang', url:'https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html', mech:'V2V message refinement / reflection', loop:'Closed' },
+    { id:'swarmdrive',    label:'SwarmDrive',    year:2026, x:1620, y:306, cat:'lang', url:null,                                 mech:'Decentralized edge SLMs exchange intent', loop:'Closed' },
+    { id:'v2xvlm',        label:'V2X-VLM',       year:2025, x:1430, y:410, cat:'conv', url:'https://arxiv.org/abs/2408.09251',  mech:'VLM-based end-to-end V2X planning', loop:'Open' },
+    { id:'v2vllm',        label:'V2V-LLM',       year:2026, x:1620, y:388, cat:'conv', url:'https://arxiv.org/abs/2502.09980',  mech:'MLLM fuses shared V2V perception features', loop:'Open' },
+    { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1620, y:436, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts over V2V QAs (extends V2V-LLM)', loop:'Open' },
+    { id:'alpamayo1',     label:'Alpamayo-1',    year:2025, x:1430, y:512, cat:'ego',  url:'https://arxiv.org/abs/2511.00088',  mech:'Reasoning VLA, Chain-of-Causation (ego, not V2X)', loop:'Open · Closed' },
+    { id:'alpamayo15',    label:'Alpamayo-1.5',  year:2026, x:1620, y:512, cat:'ego',  url:'https://huggingface.co/nvidia/Alpamayo-1.5-10B', mech:'Reasoning VLA on Cosmos-Reason2 (ego, not V2X)', loop:'Open · Closed' }
   ];
   var E = [
+    { from:'avr', to:'cooper' },
+    { from:'cooper', to:'v2vnet' },
+    { from:'cooper', to:'when2com' },
+    { from:'v2vnet', to:'disconet' },
+    { from:'when2com', to:'disconet' },
+    { from:'v2vnet', to:'v2xsim' },
+    { from:'disconet', to:'opv2v' },
+    { from:'disconet', to:'coopernaut' },
+    { from:'v2xsim', to:'univ2x' },
+    { from:'commnet', to:'when2com' },
+    { from:'commnet', to:'agentscodriver' },
+    { from:'dial', to:'disconet' },
+    { from:'dial', to:'koma' },
     { from:'coopernaut', to:'univ2x' },
     { from:'coopernaut', to:'codriving' },
     { from:'coopernaut', to:'v2xvlm' },
@@ -547,10 +569,10 @@
     { from:'v2vllm', to:'v2vgot' },
     { from:'alpamayo1', to:'alpamayo15', ego:true }
   ];
-  var COLS = [[2022,300],[2024,540],[2025,775],[2026,1010]];
+  var COLS = [[2016,230],[2018,400],[2019,560],[2020,720],[2021,880],[2022,1050],[2024,1240],[2025,1430],[2026,1620]];
   var BANDS = [
     { label:'Cooperative perception → E2E V2X', y:70,  h:112 },
-    { label:'Language & negotiation agents',         y:188, h:168 },
+    { label:'Multi-agent comm → language agents',    y:188, h:168 },
     { label:'LLM / VLM × V2X convergence',       y:362, h:104 },
     { label:'Reasoning VLA — ego (reference)',   y:472, h:86 }
   ];
@@ -567,7 +589,7 @@
   // bands
   var gBands = el('g', {});
   BANDS.forEach(function (b) {
-    gBands.appendChild(el('rect', { x:150, y:b.y, width:1034, height:b.h, rx:8, 'class':'evo-band' }));
+    gBands.appendChild(el('rect', { x:150, y:b.y, width:1580, height:b.h, rx:8, 'class':'evo-band' }));
     var t = el('text', { x:14, y:b.y + 16, 'class':'evo-band-label' }); t.textContent = b.label; gBands.appendChild(t);
   });
   svg.appendChild(gBands);
