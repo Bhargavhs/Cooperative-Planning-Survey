@@ -164,7 +164,8 @@
   .map-wrap { position:relative; }
   .map-card { background:var(--card); border:1px solid var(--hairline); border-radius:10px; box-shadow:0 1px 2px rgba(23,34,45,.04); overflow-x:auto; }
   .map-scroll { min-width:1740px; padding:6px 6px 2px; }
-  #evomap { display:block; width:100%; height:auto; }
+  #evomap, #planmap { display:block; width:100%; height:auto; }
+  .plan-scroll { min-width:1300px; padding:6px 6px 2px; }
   .map-hint { font-family:var(--mono); font-size:12px; color:var(--steel); margin:10px 0 0; }
   .evo-band { fill:#FAFBFC; }
   .evo-band-label { font-family:var(--mono); font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; fill:var(--steel); opacity:.7; }
@@ -262,12 +263,13 @@
       <span class="sec-num">Map</span>
       <h2>How the Field Evolved</h2>
     </div>
-    <p class="sec-desc">A conceptual lineage of cooperative-driving research — from its <strong>2016–2021 foundations</strong> (learned multi-agent communication and V2V/V2X cooperative perception), through two parallel thrusts (end-to-end V2X stacks and LLM negotiation agents), to their 2026 convergence in LLM/VLM-driven cooperation. Edges show thematic influence, not strict citation. Hover a method to trace its lineage; click to open the paper. Scroll right to move from origin to frontier.</p>
+    <p class="sec-desc">A conceptual lineage of cooperative-driving research — from its <strong>2016–2021 foundations</strong> (learned multi-agent communication and V2V/V2X cooperative perception), through two parallel thrusts (end-to-end V2X stacks and LLM negotiation agents), to their 2026 convergence in LLM/VLM-driven cooperation. Edges show thematic influence, not strict citation. Hover a method to trace its lineage; click to open the paper. Scroll right to move from origin to frontier. Nodes marked ● are the cooperative-planning / decision stage — see the trimmed map below.</p>
     <div class="map-legend">
       <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>Perception → E2E V2X</span>
       <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>Comm → language agents</span>
       <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>LLM / VLM × V2X</span>
       <span class="item"><span class="sw" style="background:#EDF0F3;border-color:#5C6C7C"></span>Reasoning VLA · ego (reference)</span>
+      <span class="item"><span class="sw" style="background:#17222D;border-color:#17222D;border-radius:50%"></span>cooperative-planning stage</span>
     </div>
     <div class="map-wrap">
       <div class="map-card">
@@ -278,6 +280,28 @@
       <div class="map-tip" hidden></div>
     </div>
     <p class="map-hint">Scroll horizontally to see the full timeline · dashed border and dashed edge = ego-only (reference) line, not cooperative</p>
+  </section>
+
+  <section id="planning">
+    <div class="sec-head">
+      <span class="sec-num">Map</span>
+      <h2>The Cooperative-Planning Slice</h2>
+    </div>
+    <p class="sec-desc">The same lineage, filtered to the <strong>planning / joint-decision</strong> methods only — the ones that actually output a coordinated maneuver or trajectory (the ● nodes above). The cooperative-perception foundations, benchmarks, communication primitives, and the ego-only line are dropped. What remains splits into three families.</p>
+    <div class="map-legend">
+      <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>End-to-end cooperative planners</span>
+      <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>LLM negotiation agents</span>
+      <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>LLM / VLM V2X planners</span>
+    </div>
+    <div class="map-wrap" id="planwrap">
+      <div class="map-card">
+        <div class="plan-scroll">
+          <svg id="planmap" viewBox="0 0 1300 512" role="img" aria-label="Cooperative-planning methods only, 2022 to 2026, in three families"></svg>
+        </div>
+      </div>
+      <div class="map-tip" id="plantip" hidden></div>
+    </div>
+    <p class="map-hint">Only methods that produce a joint decision / plan · hover to trace lineage, click to open the paper</p>
   </section>
 
   <section id="taxonomy">
@@ -577,6 +601,7 @@
     { label:'Reasoning VLA — ego (reference)',   y:472, h:86 }
   ];
 
+  var PLAN = { coopernaut:1, univ2x:1, codriving:1, v2xvlm:1, v2vllm:1, v2vgot:1, agentscodriver:1, koma:1, agentscomerge:1, comal:1, colmdriver:1, coopreflect:1, swarmdrive:1 };
   var NS = 'http://www.w3.org/2000/svg';
   var svg = document.getElementById('evomap');
   if (!svg) return;
@@ -628,6 +653,7 @@
     if (n.cat === 'ego') r.setAttribute('stroke-dasharray', '5 4');
     g.appendChild(r);
     var t = el('text', { x:n.x, y:n.y + 1, 'text-anchor':'middle', 'dominant-baseline':'central' }); t.textContent = n.label; g.appendChild(t);
+    if (PLAN[n.id]) { g.appendChild(el('circle', { cx:n.x + w/2 - 7, cy:n.y - 9, r:4.2, fill:'#17222D', stroke:'#FFFFFF', 'stroke-width':1.4 })); }
     n._g = g;
     g.addEventListener('mouseenter', function (ev) { highlight(n.id); showTip(n, ev); });
     g.addEventListener('mousemove', moveTip);
@@ -681,6 +707,128 @@
     tip.style.left = (ev.clientX - b.left) + 'px';
     tip.style.top = (ev.clientY - b.top - 14) + 'px';
   }
+  function hideTip() { if (tip) tip.hidden = true; }
+})();
+</script>
+
+<script>
+/* Cooperative-planning slice map */
+(function () {
+  var NS = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('planmap');
+  if (!svg) return;
+  var wrap = document.getElementById('planwrap');
+  var tip = document.getElementById('plantip');
+  var CAT = {
+    e2e:  { label: 'End-to-end cooperative planner', color: '#0E7C66', tint: '#E3F2EE' },
+    lang: { label: 'LLM negotiation agent',          color: '#B96A00', tint: '#F6EAD9' },
+    conv: { label: 'LLM / VLM V2X planner',          color: '#4757C9', tint: '#E9EBFA' }
+  };
+  var N = [
+    { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:300,  y:120, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent sharing → cooperative driving', loop:'Closed' },
+    { id:'univ2x',        label:'UniV2X',        year:2025, x:840,  y:98,  cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
+    { id:'codriving',     label:'CoDriving',     year:2025, x:840,  y:146, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
+    { id:'agentscodriver',label:'AgentsCoDriver',year:2024, x:570,  y:210, cat:'lang', url:'https://arxiv.org/abs/2404.06345',  mech:'LLM social reasoning for collaborative driving', loop:'Closed' },
+    { id:'koma',          label:'KoMA',          year:2024, x:570,  y:262, cat:'lang', url:'https://arxiv.org/abs/2407.14239',  mech:'Knowledge-driven multi-agent LLM planning', loop:'Closed' },
+    { id:'agentscomerge', label:'AgentsCoMerge', year:2024, x:570,  y:314, cat:'lang', url:'https://arxiv.org/abs/2408.03624',  mech:'LLM cooperative ramp merging', loop:'Closed' },
+    { id:'comal',         label:'CoMAL',         year:2025, x:840,  y:232, cat:'lang', url:'https://arxiv.org/abs/2410.14368',  mech:'Role-memory multi-agent LLMs for mixed traffic', loop:'Closed' },
+    { id:'colmdriver',    label:'CoLMDriver',    year:2025, x:840,  y:304, cat:'lang', url:'https://arxiv.org/abs/2503.08683',  mech:'LLM negotiation + waypoint planning', loop:'Closed' },
+    { id:'coopreflect',   label:'CoopReflect',   year:2026, x:1110, y:232, cat:'lang', url:'https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html', mech:'V2V message refinement / reflection', loop:'Closed' },
+    { id:'swarmdrive',    label:'SwarmDrive',    year:2026, x:1110, y:304, cat:'lang', url:null,                                 mech:'Decentralized edge SLMs exchange intent', loop:'Closed' },
+    { id:'v2xvlm',        label:'V2X-VLM',       year:2025, x:840,  y:416, cat:'conv', url:'https://arxiv.org/abs/2408.09251',  mech:'VLM-based end-to-end V2X planning', loop:'Open' },
+    { id:'v2vllm',        label:'V2V-LLM',       year:2026, x:1110, y:394, cat:'conv', url:'https://arxiv.org/abs/2502.09980',  mech:'MLLM fuses shared V2V features → plan', loop:'Open' },
+    { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1110, y:442, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts planning (extends V2V-LLM)', loop:'Open' }
+  ];
+  var E = [
+    { from:'coopernaut', to:'univ2x' }, { from:'coopernaut', to:'codriving' },
+    { from:'coopernaut', to:'v2xvlm' }, { from:'coopernaut', to:'v2vllm' },
+    { from:'agentscodriver', to:'comal' }, { from:'agentscodriver', to:'colmdriver' }, { from:'agentscodriver', to:'v2xvlm' },
+    { from:'koma', to:'comal' }, { from:'agentscomerge', to:'colmdriver' },
+    { from:'colmdriver', to:'coopreflect' }, { from:'colmdriver', to:'v2vllm' },
+    { from:'comal', to:'swarmdrive' }, { from:'v2xvlm', to:'v2vllm' }, { from:'v2vllm', to:'v2vgot' }
+  ];
+  var COLS = [[2022,300],[2024,570],[2025,840],[2026,1110]];
+  var BANDS = [
+    { label:'End-to-end cooperative planners', y:68,  h:104 },
+    { label:'LLM negotiation agents',          y:178, h:180 },
+    { label:'LLM / VLM V2X planners',          y:364, h:104 }
+  ];
+  var byId = {}; N.forEach(function (n) { byId[n.id] = n; });
+  function el(name, attrs) { var e = document.createElementNS(NS, name); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+  function nw(n) { return Math.max(88, n.label.length * 7.4 + 26); }
+  var gBands = el('g', {});
+  BANDS.forEach(function (b) {
+    gBands.appendChild(el('rect', { x:150, y:b.y, width:1130, height:b.h, rx:8, 'class':'evo-band' }));
+    var bt = el('text', { x:14, y:b.y + 16, 'class':'evo-band-label' }); bt.textContent = b.label; gBands.appendChild(bt);
+  });
+  svg.appendChild(gBands);
+  var gCols = el('g', {});
+  COLS.forEach(function (c) {
+    gCols.appendChild(el('line', { x1:c[1], y1:64, x2:c[1], y2:478, 'class':'evo-col' }));
+    var ct = el('text', { x:c[1], y:52, 'text-anchor':'middle', 'class':'evo-year' }); ct.textContent = c[0]; gCols.appendChild(ct);
+  });
+  svg.appendChild(gCols);
+  function edgePath(s, t) {
+    if (t.x - s.x < 60) {
+      var x = s.x, y1 = s.y + 16, y2 = t.y - 16, bow = 42;
+      return 'M ' + x + ' ' + y1 + ' C ' + (x + bow) + ' ' + y1 + ', ' + (x + bow) + ' ' + y2 + ', ' + x + ' ' + y2;
+    }
+    var sx = s.x + nw(s) / 2, sy = s.y, tx = t.x - nw(t) / 2, ty = t.y, mx = (sx + tx) / 2;
+    return 'M ' + sx + ' ' + sy + ' C ' + mx + ' ' + sy + ', ' + mx + ' ' + ty + ', ' + tx + ' ' + ty;
+  }
+  var gEdges = el('g', {});
+  E.forEach(function (e) { e._el = el('path', { d: edgePath(byId[e.from], byId[e.to]), 'class':'evo-edge' }); gEdges.appendChild(e._el); });
+  svg.appendChild(gEdges);
+  var gNodes = el('g', {});
+  N.forEach(function (n) {
+    var w = nw(n), c = CAT[n.cat];
+    var g = el('g', { 'class':'gnode', tabindex:'0', role: n.url ? 'link' : 'img',
+      'aria-label': n.label + ', ' + n.year + ', ' + c.label + (n.url ? ' — opens paper' : ' — no link yet') });
+    g.appendChild(el('rect', { x:n.x - w/2, y:n.y - 16, width:w, height:32, rx:8, fill:c.tint, stroke:c.color, 'stroke-width':1.6 }));
+    var t = el('text', { x:n.x, y:n.y + 1, 'text-anchor':'middle', 'dominant-baseline':'central' }); t.textContent = n.label; g.appendChild(t);
+    n._g = g;
+    g.addEventListener('mouseenter', function (ev) { highlight(n.id); showTip(n, ev); });
+    g.addEventListener('mousemove', moveTip);
+    g.addEventListener('mouseleave', function () { clearHi(); hideTip(); });
+    g.addEventListener('focus', function () { highlight(n.id); });
+    g.addEventListener('blur', function () { clearHi(); hideTip(); });
+    if (n.url) {
+      g.style.cursor = 'pointer';
+      g.addEventListener('click', function () { window.open(n.url, '_blank', 'noopener'); });
+      g.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); window.open(n.url, '_blank', 'noopener'); } });
+    }
+    gNodes.appendChild(g);
+  });
+  svg.appendChild(gNodes);
+  function lineage(id) {
+    var nodesOn = {}, edgesOn = {}; nodesOn[id] = 1;
+    function down(x) { E.forEach(function (e, i) { if (e.from === x) { edgesOn[i] = 1; if (!nodesOn[e.to]) { nodesOn[e.to] = 1; down(e.to); } } }); }
+    function up(x)   { E.forEach(function (e, i) { if (e.to === x)   { edgesOn[i] = 1; if (!nodesOn[e.from]) { nodesOn[e.from] = 1; up(e.from); } } }); }
+    down(id); up(id); return { nodesOn: nodesOn, edgesOn: edgesOn };
+  }
+  function highlight(id) {
+    var Ln = lineage(id); svg.classList.add('focused');
+    N.forEach(function (n) { var on = !!Ln.nodesOn[n.id]; n._g.classList.toggle('dim', !on); n._g.classList.toggle('hot', on); });
+    E.forEach(function (e, i) { var on = !!Ln.edgesOn[i]; e._el.classList.toggle('dim', !on); e._el.classList.toggle('hot', on); });
+  }
+  function clearHi() {
+    svg.classList.remove('focused');
+    N.forEach(function (n) { n._g.classList.remove('dim', 'hot'); });
+    E.forEach(function (e) { e._el.classList.remove('dim', 'hot'); });
+  }
+  function showTip(n, ev) {
+    if (!tip) return;
+    var c = CAT[n.cat];
+    tip.innerHTML = '<span class="tip-name"></span><span class="tip-meta"></span><span class="tip-mech"></span><span class="tip-loop"></span>';
+    tip.querySelector('.tip-name').textContent = n.label;
+    tip.querySelector('.tip-meta').textContent = n.year + ' · ' + c.label;
+    tip.querySelector('.tip-mech').textContent = n.mech;
+    tip.querySelector('.tip-loop').textContent = n.loop + (n.url ? '' : ' · no link yet');
+    tip.style.setProperty('--acc', c.color);
+    tip.hidden = false;
+    moveTip(ev);
+  }
+  function moveTip(ev) { if (!tip || tip.hidden || !wrap) return; var b = wrap.getBoundingClientRect(); tip.style.left = (ev.clientX - b.left) + 'px'; tip.style.top = (ev.clientY - b.top - 14) + 'px'; }
   function hideTip() { if (tip) tip.hidden = true; }
 })();
 </script>
