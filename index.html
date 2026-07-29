@@ -300,6 +300,7 @@
       <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>End-to-end cooperative planners</span>
       <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>LLM negotiation agents</span>
       <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>LLM / VLM V2X planners</span>
+      <span class="item"><span class="sw" style="background:#17222D;border-color:#17222D;transform:rotate(45deg)"></span>◆ sensor-to-trajectory end-to-end stack</span>
     </div>
     <div class="map-wrap" id="planwrap">
       <div class="map-card">
@@ -309,7 +310,7 @@
       </div>
       <div class="map-tip" id="plantip" hidden></div>
     </div>
-    <p class="map-hint">Only methods that produce a joint decision / plan · hover to trace lineage, click to open the paper</p>
+    <p class="map-hint">Only methods that produce a joint decision / plan · hover to trace lineage, click to open the paper · ◆ marks the end-to-end sensor-to-trajectory stacks (vs symbolic-decision agents)</p>
 
     <p class="sec-desc" style="margin-top:26px"><strong>Perception sharing vs. negotiation.</strong> The MDrive benchmark (<a href="https://arxiv.org/abs/2605.10904" target="_blank" rel="noopener">arXiv:2605.10904</a>) tests cooperation along two axes — <em>sharing perception</em> and <em>negotiating intent</em>. Mapping the 15 planners onto them reveals an almost perfect split: methods do one <em>or</em> the other, and the “both” case is essentially empty (only CoDriving leans hybrid) — which is exactly the Shared-World-Model gap.</p>
     <div class="table-card">
@@ -763,6 +764,7 @@
     lang: { label: 'LLM negotiation agent',          color: '#B96A00', tint: '#F6EAD9' },
     conv: { label: 'LLM / VLM V2X planner',          color: '#4757C9', tint: '#E9EBFA' }
   };
+  var STACK = { univ2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
   var N = [
     { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:300,  y:120, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent sharing → cooperative driving', loop:'Closed' },
     { id:'univ2x',        label:'UniV2X',        year:2025, x:840,  y:98,  cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
@@ -828,6 +830,7 @@
       'aria-label': n.label + ', ' + n.year + ', ' + c.label + (n.url ? ' — opens paper' : ' — no link yet') });
     g.appendChild(el('rect', { x:n.x - w/2, y:n.y - 16, width:w, height:32, rx:8, fill:c.tint, stroke:c.color, 'stroke-width':1.6 }));
     var t = el('text', { x:n.x, y:n.y + 1, 'text-anchor':'middle', 'dominant-baseline':'central' }); t.textContent = n.label; g.appendChild(t);
+    if (STACK[n.id]) { var bx = n.x + w/2 - 6, by = n.y - 10; g.appendChild(el('rect', { x:bx-4, y:by-4, width:8, height:8, rx:1.5, fill:'#17222D', stroke:'#FFFFFF', 'stroke-width':1.2, transform:'rotate(45 ' + bx + ' ' + by + ')' })); }
     n._g = g;
     g.addEventListener('mouseenter', function (ev) { highlight(n.id); showTip(n, ev); });
     g.addEventListener('mousemove', moveTip);
