@@ -178,6 +178,7 @@
   .mtbl td.coop { font-family:var(--mono); font-size:12.5px; }
   .mtbl td.coop.ego { color:var(--steel); }
   .stackmark { color:#17222D; font-size:10px; margin-left:5px; vertical-align:1px; cursor:help; }
+  .pn-table tr.grp td { background:#EEF1F4; font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--steel); padding:7px 16px; }
   .map-hint { font-family:var(--mono); font-size:12px; color:var(--steel); margin:10px 0 0; }
   .evo-band { fill:#FAFBFC; }
   .evo-band-label { font-family:var(--mono); font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; fill:var(--steel); opacity:.7; }
@@ -317,7 +318,7 @@
     </div>
     <p class="map-hint">Only methods that produce a joint decision / plan · hover to trace lineage, click to open the paper · ◆ marks the end-to-end sensor-to-trajectory stacks (vs symbolic-decision agents)</p>
 
-    <p class="sec-desc" style="margin-top:26px"><strong>Perception sharing vs. negotiation.</strong> The MDrive benchmark (<a href="https://arxiv.org/abs/2605.10904" target="_blank" rel="noopener">arXiv:2605.10904</a>) tests cooperation along two axes — <em>sharing perception</em> and <em>negotiating intent</em>. Mapping the 15 planners onto them reveals an almost perfect split: methods do one <em>or</em> the other, and the “both” case is essentially empty (only CoDriving leans hybrid) — which is exactly the Shared-World-Model gap.</p>
+    <p class="sec-desc" style="margin-top:26px"><strong>Perception sharing vs. negotiation.</strong> The MDrive benchmark (<a href="https://arxiv.org/abs/2605.10904" target="_blank" rel="noopener">arXiv:2605.10904</a>) tests cooperation along two axes — <em>sharing perception</em> and <em>negotiating intent</em>. Mapping the 16 planners onto them reveals an almost perfect split: methods do one <em>or</em> the other, and the “both” case is essentially empty (only CoDriving leans hybrid) — which is exactly the Shared-World-Model gap.</p>
     <div class="table-card">
       <table class="pn-table">
         <thead>
@@ -328,6 +329,7 @@
           </tr>
         </thead>
         <tbody>
+          <tr class="grp"><td colspan="3">Perception-sharing camp — share / fuse perception, no negotiation (9)</td></tr>
           <tr><td class="method"><div class="m-name">COOPERNAUT</div><div class="venue">CVPR · 2022</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
           <tr><td class="method"><div class="m-name">UniV2X</div><div class="venue">AAAI · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
           <tr><td class="method"><div class="m-name">UniMM-V2X</div><div class="venue">arXiv · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
@@ -337,11 +339,12 @@
           <tr><td class="method"><div class="m-name">V2V-GoT</div><div class="venue">ICRA · 2026</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
           <tr><td class="method"><div class="m-name">OmniV2X</div><div class="venue">2026</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
           <tr><td class="method"><div class="m-name">SEAL</div><div class="venue">2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
+          <tr class="grp"><td colspan="3">Negotiation camp — exchange intents in language, no perception fusion (7)</td></tr>
           <tr><td class="method"><div class="m-name">AgentsCoDriver</div><div class="venue">IEEE T-ITS · 2024</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
           <tr><td class="method"><div class="m-name">KoMA</div><div class="venue">IEEE T-IV · 2024</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
           <tr><td class="method"><div class="m-name">AgentsCoMerge</div><div class="venue">IEEE · 2024</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
           <tr><td class="method"><div class="m-name">CoMAL</div><div class="venue">SDM · 2025</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
-          <tr><td class="method"><div class="m-name">CoLMDriver</div><div class="venue">ICCV · 2025</div></td><td class="pn"><span class="yn part" title="Negotiation-first; whether it also fuses V2V perception is unclear from the paper">△</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
+          <tr><td class="method"><div class="m-name">CoLMDriver</div><div class="venue">ICCV · 2025</div></td><td class="pn"><span class="yn no" title="Each vehicle perceives independently; V2V cooperation is language negotiation only (no perception fusion)">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
           <tr><td class="method"><div class="m-name">CoopReflect</div><div class="venue">AAMAS · 2026</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
           <tr><td class="method"><div class="m-name">SwarmDrive</div><div class="venue">2026</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn part" title="Negotiates via intent-distribution exchange, not language dialogue">✓</span></td></tr>
         </tbody>
@@ -469,13 +472,13 @@
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2606.21165" target="_blank" rel="noopener">OmniV2X</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">arXiv · 2026</div></td>
-            <td class="c coop">V2X</td>
-            <td class="mech">Generative foundation planner; shares standard-compliant V2X tokens</td>
+            <td class="c coop">V2I</td>
+            <td class="mech">Generative foundation planner; shares standard-compliant V2X object tokens (SDSM) via cross-attention, not feature fusion (extends UniMM-V2X)</td>
             <td class="setting">DAIR-V2X-Seq</td>
             <td><span class="loop loop-open">Open</span></td>
             <td class="c"><span class="yn yes">✓</span></td>
             <td class="c"><span class="yn no">✗</span></td>
-            <td class="metric">Trajectory generation; reported at &lt;10% fine-tune data and &lt;1% communication bandwidth</td>
+            <td class="metric">Planning L2 avg 0.86 m (vs 1.49 m UniMM-V2X), collision 0.06% @3s; ~574× less bandwidth</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2408.09251" target="_blank" rel="noopener">V2X-VLM</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">TR Part C · 2025</div></td>
@@ -491,11 +494,11 @@
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2506.21041" target="_blank" rel="noopener">SEAL</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">arXiv · 2025</div></td>
             <td class="c coop">V2X</td>
             <td class="mech">VLM safe cooperative driving; adaptive long-tail / weather robustness</td>
-            <td class="setting">Vehicle + infrastructure views (eval setup not stated)</td>
+            <td class="setting">DAIR-V2X (+ synthetic snow/fog long-tail)</td>
             <td><span class="loop loop-open">Open</span></td>
             <td class="c"><span class="yn yes">✓</span></td>
             <td class="c"><span class="yn no">✗</span></td>
-            <td class="metric">Reasoning, safety, and planning accuracy (metrics not stated in abstract)</td>
+            <td class="metric">L2 0.69 m, collision 0.085% @4.5s; +9.6% accuracy / −17.5% collision vs V2X-VLM</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2607.19036" target="_blank" rel="noopener">CoGoal3D</a></div><div class="venue">ECCV · 2026</div></td>
@@ -569,7 +572,7 @@
             <td class="mech">LLM negotiation and waypoints</td>
             <td class="setting">InterDrive / CARLA</td>
             <td><span class="loop loop-closed">Closed</span></td>
-            <td class="c"><span class="yn part" title="Negotiation-first; whether it also fuses V2V perception is unclear from the paper">△</span></td>
+            <td class="c"><span class="yn no" title="Each vehicle perceives independently; V2V cooperation is language negotiation only (no perception fusion)">✗</span></td>
             <td class="c"><span class="yn yes">✓</span></td>
             <td class="metric">Driving Score (DS), Success Rate (SR)</td>
           </tr>
