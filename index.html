@@ -187,6 +187,32 @@
   .map-tip .tip-mech { display:block; font-size:12.5px; margin-top:6px; line-height:1.4; }
   .map-tip .tip-loop { display:block; font-family:var(--mono); font-size:11px; opacity:.8; margin-top:5px; }
 
+  /* ---------- Taxonomy map ---------- */
+  .tax-cite { font-family:var(--mono); font-size:12px; color:var(--steel); margin:-6px 0 14px; }
+  .swm-wrap { background:var(--card); border:1px solid var(--hairline); border-radius:10px; padding:12px 10px 6px; margin-bottom:18px; overflow-x:auto; }
+  .swm-wrap .lbl { font-family:var(--mono); font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--steel); padding:0 6px 6px; }
+  #swmloop { display:block; min-width:900px; width:100%; height:auto; }
+  .swm-box { fill:#FAFBFC; stroke:var(--hairline); stroke-width:1.4; }
+  .swm-t { font-family:var(--display); font-weight:600; font-size:13px; fill:var(--ink); }
+  .swm-s { font-family:var(--body); font-size:11px; fill:var(--steel); }
+  .swm-arrow { fill:none; stroke:var(--steel); stroke-width:1.8; }
+  .swm-fb { fill:none; stroke:#C4CDD6; stroke-width:1.6; stroke-dasharray:5 4; }
+  .swm-fb-lbl { font-family:var(--mono); font-size:11px; fill:var(--steel); }
+  .tax-controls { display:flex; gap:10px; align-items:center; margin:2px 0 10px; font-family:var(--mono); font-size:12.5px; color:var(--steel); flex-wrap:wrap; }
+  .tax-btn { cursor:pointer; border:1px solid var(--hairline); background:var(--card); color:var(--steel); border-radius:6px; padding:4px 10px; font-family:var(--mono); font-size:12px; }
+  .tax-btn:hover { border-color:var(--steel); color:var(--ink); }
+  .tax-card { background:var(--card); border:1px solid var(--hairline); border-radius:10px; box-shadow:0 1px 2px rgba(23,34,45,.04); overflow:auto; max-height:640px; }
+  #taxtree { display:block; }
+  .tnode { cursor:pointer; }
+  .tnode rect { transition:filter .12s ease; }
+  .tnode .tlabel { font-family:var(--display); font-weight:600; font-size:12.5px; pointer-events:none; }
+  .tnode .tyear { font-family:var(--mono); font-weight:400; font-size:10.5px; pointer-events:none; }
+  .tnode .tcaret { font-family:var(--mono); font-weight:700; font-size:12px; pointer-events:none; }
+  .tedge { fill:none; stroke:#D3DAE1; stroke-width:1.4; }
+  .tnode:hover rect { filter:drop-shadow(0 2px 5px rgba(23,34,45,.16)); }
+  .tnode:focus-visible { outline:none; }
+  .tnode:focus-visible rect { stroke-width:2.6; }
+
   /* ---------- Footer ---------- */
   footer {
     margin-top: 56px;
@@ -252,6 +278,62 @@
       <div class="map-tip" hidden></div>
     </div>
     <p class="map-hint">Scroll horizontally to see the full timeline · dashed border and dashed edge = ego-only (reference) line, not cooperative</p>
+  </section>
+
+  <section id="taxonomy">
+    <div class="sec-head">
+      <span class="sec-num">§IV–VIII</span>
+      <h2>Field Taxonomy — the MAEAD Survey</h2>
+    </div>
+    <p class="sec-desc">A detailed, interactive map of the field's structure, built from the survey <em>“Multi-Agent Embodied Autonomous Driving: From V2X Information Exchange to Shared World Models”</em> (Hu et al., 2026, 380+ works). Everything hangs off the survey's unifying idea — a <strong>Shared World Model (SWM)</strong> that agents co-construct from exchanged observations. Click a branch to reveal its representative methods; hover a node for venue and mechanism.</p>
+    <p class="tax-cite"><a href="https://arxiv.org/abs/2606.13840" target="_blank" rel="noopener">arXiv:2606.13840</a> · taxonomy §IV–VIII · method years as reported by the survey</p>
+    <div class="map-legend">
+      <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>Collaborative Perception §IV</span>
+      <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>Cognition &amp; Communication §V</span>
+      <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>Decision-Making &amp; Planning §VI</span>
+      <span class="item"><span class="sw" style="background:#EDE7F8;border-color:#7A4FC9"></span>End-to-End §VII</span>
+      <span class="item"><span class="sw" style="background:#F7E4EE;border-color:#B0447A"></span>Simulation &amp; Data §VIII</span>
+    </div>
+
+    <div class="swm-wrap">
+      <div class="lbl">The Shared-World-Model coordination loop · Fig. 2</div>
+      <svg id="swmloop" viewBox="0 0 1120 160" role="img" aria-label="Shared World Model coordination loop: perception and V2X exchange, shared-state alignment (C1), intent and plan alignment (C2), coordinated action (C3), with execution feedback closing the loop">
+        <defs>
+          <marker id="swmarrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#5C6C7C"></path></marker>
+          <marker id="swmarrowfb" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#C4CDD6"></path></marker>
+        </defs>
+        <rect class="swm-box" x="6" y="20" width="244" height="56" rx="9"></rect>
+        <text class="swm-t" x="128" y="44" text-anchor="middle">Perception &amp; evidence</text>
+        <text class="swm-s" x="128" y="61" text-anchor="middle">local sensing + V2X queries</text>
+        <rect class="swm-box" x="286" y="20" width="244" height="56" rx="9"></rect>
+        <text class="swm-t" x="408" y="44" text-anchor="middle">Shared-state · SWM</text>
+        <text class="swm-s" x="408" y="61" text-anchor="middle">C1 · cross-agent state alignment</text>
+        <rect class="swm-box" x="566" y="20" width="244" height="56" rx="9"></rect>
+        <text class="swm-t" x="688" y="44" text-anchor="middle">Intent &amp; plan reasoning</text>
+        <text class="swm-s" x="688" y="61" text-anchor="middle">C2 · intent / plan alignment</text>
+        <rect class="swm-box" x="846" y="20" width="244" height="56" rx="9"></rect>
+        <text class="swm-t" x="968" y="44" text-anchor="middle">Coordinated action</text>
+        <text class="swm-s" x="968" y="61" text-anchor="middle">C3 · safe coordinated action</text>
+        <path class="swm-arrow" marker-end="url(#swmarrow)" d="M250 48 L284 48"></path>
+        <path class="swm-arrow" marker-end="url(#swmarrow)" d="M530 48 L564 48"></path>
+        <path class="swm-arrow" marker-end="url(#swmarrow)" d="M810 48 L844 48"></path>
+        <path class="swm-fb" marker-end="url(#swmarrowfb)" d="M968 76 C968 136, 128 136, 128 80"></path>
+        <text class="swm-fb-lbl" x="548" y="152" text-anchor="middle">execution feedback → next sensing / communication cycle</text>
+      </svg>
+    </div>
+
+    <div class="tax-controls">
+      <span>Taxonomy tree —</span>
+      <button class="tax-btn" id="taxExpand">Expand all</button>
+      <button class="tax-btn" id="taxCollapse">Collapse to pillars</button>
+    </div>
+    <div class="map-wrap" id="taxwrap">
+      <div class="tax-card">
+        <svg id="taxtree" role="img" aria-label="Interactive taxonomy tree of multi-agent embodied autonomous driving, from the Shared World Model root through five pillars to representative methods"></svg>
+      </div>
+      <div class="map-tip" id="taxtip" hidden></div>
+    </div>
+    <p class="map-hint">Root → 5 pillars → sub-paradigms → representative methods · click a branch to drill in · scroll to pan the tree</p>
   </section>
 
   <section id="end-to-end">
@@ -578,6 +660,257 @@
     tip.style.top = (ev.clientY - b.top - 14) + 'px';
   }
   function hideTip() { if (tip) tip.hidden = true; }
+})();
+</script>
+
+<script>
+(function () {
+  function L(name, year, venue, mech) { return { name: name, year: year, venue: venue, mech: mech }; }
+  var TINT = { '#0E7C66':'#E3F2EE', '#B96A00':'#F6EAD9', '#4757C9':'#E9EBFA', '#7A4FC9':'#EDE7F8', '#B0447A':'#F7E4EE' };
+
+  var TREE = {
+    name: 'Shared World Models', kind: 'root',
+    children: [
+      { name: 'Collaborative Perception', color: '#0E7C66', ref: '§IV', children: [
+        { name: 'Early / Raw Fusion', ref: '§IV-A', children: [
+          L('AVR', 2018, 'MobiSys', 'V2V stereo point-cloud sharing'),
+          L('Cooper', 2019, 'ICDCS', 'Point-cloud V2V fusion'),
+          L('EMP', 2021, 'MobiCom', 'Edge point-cloud partitioning'),
+          L('AutoCast', 2022, 'MobiSys', 'Scheduled raw sensor sharing') ] },
+        { name: 'Intermediate / Feature Fusion', ref: '§IV-B', children: [
+          L('F-Cooper', 2019, 'SEC', 'Feature-level V2V fusion'),
+          L('V2VNet', 2020, 'ECCV', 'Graph feature fusion'),
+          L('V2X-ViT', 2022, 'ECCV', 'Transformer V2X fusion'),
+          L('CoBEVT', 2022, 'CoRL', 'Cooperative BEV transformer'),
+          L('CoCa3D', 2023, 'CVPR', 'Camera-only collaboration'),
+          L('HM-ViT', 2023, 'ICCV', 'Hetero-modal fusion'),
+          L('SCOPE', 2023, 'ICCV', 'Spatio-temporal aggregation') ] },
+        { name: 'Comm-Efficient Exchange', ref: '§IV-B', children: [
+          L('When2com', 2020, 'CVPR', 'Learn when to communicate'),
+          L('Who2com', 2020, 'ICRA', 'Handshake partner selection'),
+          L('DiscoNet', 2021, 'NeurIPS', 'Distilled collaboration graph'),
+          L('Where2Comm', 2022, 'NeurIPS', 'Sparse feature exchange'),
+          L('How2comm', 2023, 'NeurIPS', 'Efficient message design'),
+          L('CodeFilling', 2024, 'CVPR', 'Codebook message coding') ] },
+        { name: 'Robust · Temporal · Hetero', ref: '§IV-B', children: [
+          L('SyncNet', 2022, 'ECCV', 'Latency compensation'),
+          L('CoBEVFlow', 2023, 'NeurIPS', 'BEV-flow temporal alignment'),
+          L('CoAlign', 2023, 'ICRA', 'Pose-robust fusion'),
+          L('HEAL', 2024, 'ICLR', 'Heterogeneous agent alignment'),
+          L('STAMP', 2025, 'ICLR', 'Adapter-reverter BEV alignment') ] },
+        { name: 'Late / Object Fusion', ref: '§IV-C', children: [
+          L('OPV2V Late', 2022, 'ICRA', 'Box broadcast + NMS'),
+          L('TCLF', 2022, 'CVPR', 'Time-compensated V2I boxes'),
+          L('VIPS', 2022, 'MobiCom', 'Object-graph matching') ] },
+        { name: 'Emerging · Malicious-Robust', ref: '§IV-E', children: [
+          L('ROBOSAC', 2023, 'ICCV', 'Sampling-consensus defense'),
+          L('CP-Guard', 2025, 'AAAI', 'Collaborator consistency filter') ] },
+        { name: 'Emerging · LLM-Augmented', ref: '§IV-E', children: [
+          L('DriveGPT4', 2024, 'RA-L', 'LLM-driven interpretation'),
+          L('DriveLM', 2024, 'ECCV', 'Graph visual QA'),
+          L('Talk2BEV', 2024, 'ICRA', 'Language over BEV'),
+          L('V2X-UniPool', 2025, '—', 'Time-indexed V2X knowledge pool') ] },
+        { name: 'Emerging · Generative WM', ref: '§IV-E', children: [
+          L('GAIA-2', 2025, '—', 'Generative driving world model'),
+          L('Epona', 2025, 'ICCV', 'Autoregressive diffusion WM'),
+          L('ShareVerse', 2026, '—', 'Multi-agent consistent video'),
+          L('V2XCrafter', 2026, '—', 'Cross-agent scene generation') ] } ] },
+
+      { name: 'Cognition & Communication', color: '#B96A00', ref: '§V', full: 'Inter-Agent Cognition & Communication', children: [
+        { name: 'Explicit V2X Standards', ref: '§V-A', children: [
+          L('IEEE 802.11p / WAVE', null, 'Standard', 'DSRC access layer'),
+          L('ETSI CAM / DENM', null, 'Standard', 'Awareness / event messages'),
+          L('C-V2X / NR-V2X', null, '3GPP', 'Cellular V2X'),
+          L('SAE J2735 BSM', null, 'Standard', 'Basic safety message'),
+          L('ETSI CPS', 2023, 'Standard', 'Collective perception service'),
+          L('MISO-V', 2021, 'IV', 'CPM trust checking') ] },
+        { name: 'Implicit / Behavior-Driven', ref: '§V-B', children: [
+          L('CommNet', 2016, 'NeurIPS', 'Learned continuous messages'),
+          L('DIAL', 2016, 'NeurIPS', 'Differentiable messaging'),
+          L('IntentNet', 2018, 'CoRL', 'Visual intent prediction'),
+          L('HiVT', 2022, 'CVPR', 'Hierarchical vector transformer'),
+          L('EqMotion', 2023, 'CVPR', 'Equivariant motion prediction'),
+          L('MTR++', 2024, 'TPAMI', 'Guided intention queries') ] },
+        { name: 'Semantic & Intent Comm', ref: '§V-C', children: [
+          L('DJSCC', null, '—', 'Deep joint source-channel coding'),
+          L('Agent-Driver', 2024, 'CoLM', 'Tool-using LLM agent'),
+          L('CoLMDriver', 2025, 'ICCV', 'LLM negotiation + waypoints'),
+          L('AgentsCoMerge', 2025, 'TMC', 'Ramp-merge dialogue'),
+          L('CMP', 2025, 'RA-L', 'Plan-level prediction messages'),
+          L('CoopReflect', 2026, 'AAMAS', 'NL V2V message refinement') ] } ] },
+
+      { name: 'Decision-Making & Planning', color: '#4757C9', ref: '§VI', children: [
+        { name: 'Game-Theoretic', ref: '§VI-A', children: [
+          L('HGT', 2019, 'ICRA', 'Stackelberg response'),
+          L('SIS-CM', 2022, 'TIV', 'Delay-aware conflict management'),
+          L('iLQR / ADMM', 2023, 'TITS', 'Decentralized trajectory opt.'),
+          L('MT-GTF', 2023, 'TIV', 'Game-theoretic framework'),
+          L('GTDM', 2024, '—', 'Nash / Stackelberg / coalition'),
+          L('LEAD', 2025, 'TITS', 'IRL-enhanced game') ] },
+        { name: 'Multi-Agent RL', ref: '§VI-B', children: [
+          L('MADDPG', 2017, 'NeurIPS', 'Centralized critic'),
+          L('LC-MADRL', 2022, 'TITS', 'Right-of-way collaboration'),
+          L('MAPPO', 2022, 'NeurIPS', 'CTDE baseline'),
+          L('SAPO', 2023, 'CoRL', 'Social attention policy'),
+          L('STL-MARL', 2023, '—', 'Logic-guided rewards'),
+          L('MAPPO-PIS', 2024, '—', 'Prior intent sharing'),
+          L('SMPE', 2025, 'ICML', 'Belief-state learning') ] },
+        { name: 'Generative / LLM Planning', ref: '§VI-C', note: 'paper roster partial', children: [
+          L('MotionDiffuser', 2023, 'CVPR', 'Diffusion trajectory generation'),
+          L('SCORP', 2024, '—', 'Diffusion planning + RL'),
+          L('GAIA-2', 2025, '—', 'World-model-driven planning') ] } ] },
+
+      { name: 'End-to-End Driving', color: '#7A4FC9', ref: '§VII', full: 'End-to-End Multi-Agent Driving', children: [
+        { name: 'End-to-End Cooperative', children: [
+          L('COOPERNAUT', 2022, 'CVPR', 'V2V latent feature sharing'),
+          L('UniV2X', 2025, 'AAAI', 'Sparse-dense V2X end-to-end'),
+          L('CoDriving', 2025, 'TPAMI', 'Driving-request coordination'),
+          L('V2X-VLM', 2025, 'TR-C', 'VLM-based V2X planning') ] },
+        { name: 'Language / Negotiation', children: [
+          L('AgentsCoDriver', 2024, 'T-ITS', 'LLM social reasoning'),
+          L('KoMA', 2024, 'T-IV', 'Knowledge-driven LLM planning'),
+          L('CoMAL', 2025, 'SDM', 'Role memory & reasoning'),
+          L('CoLMDriver', 2025, 'ICCV', 'LLM negotiation + waypoints'),
+          L('AgentsCoMerge', 2025, '—', 'LLM cooperative merging'),
+          L('CoopReflect', 2026, 'AAMAS', 'V2V message refinement') ] } ] },
+
+      { name: 'Simulation & Data', color: '#B0447A', ref: '§VIII', full: 'Embodied Simulation & Data Engine', children: [
+        { name: 'V2X Perception Datasets', children: [
+          L('V2X-Sim', 2021, '—', 'Synthetic V2X benchmark'),
+          L('OPV2V', 2022, 'ICRA', 'Open V2V dataset'),
+          L('V2XSet', 2022, '—', 'V2X perception set'),
+          L('DAIR-V2X', 2022, 'CVPR', 'Real infrastructure + V2X'),
+          L('V2V4Real', 2023, 'CVPR', 'Real-world V2V'),
+          L('V2X-Real', 2024, 'ECCV', 'Real-world V2X'),
+          L('V2Xverse', 2024, '—', 'Multi-modal V2X benchmark') ] },
+        { name: 'Simulators / Testbeds', children: [
+          L('CARLA', 2017, 'CoRL', 'Multi-agent AD simulator'),
+          L('SMARTS', 2020, 'CoRL', 'Scalable MARL traffic'),
+          L('AutoCastSim', 2023, '—', 'Closed-loop V2X sim'),
+          L('InterDrive', 2025, '—', 'Interactive driving sim'),
+          L('TalkingVehiclesGym', 2026, '—', 'Language V2V negotiation'),
+          L('Flow / SUMO', null, '—', 'Mixed-autonomy traffic') ] },
+        { name: 'Generative Simulation', children: [
+          L('DriveGen', 2025, '—', 'Controllable generative traffic'),
+          L('MiLA', 2025, '—', 'Long-term multi-view'),
+          L('Epona', 2025, 'ICCV', 'Autoregressive diffusion WM'),
+          L('ShareVerse', 2026, '—', 'Multi-agent consistent video'),
+          L('V2XCrafter', 2026, '—', 'Cross-agent scene generation') ] } ] }
+    ]
+  };
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('taxtree');
+  if (!svg) return;
+  var wrap = document.getElementById('taxwrap');
+  var tip = document.getElementById('taxtip');
+  var leftPad = 16, topPad = 20, colW = 260, rowH = 30;
+
+  (function initm(node, depth, color) {
+    node._color = node.color || color || '#17222D';
+    if (node.children && node.children.length) {
+      if (typeof node.collapsed === 'undefined') node.collapsed = depth >= 2;
+      node.children.forEach(function (c) { initm(c, depth + 1, node.color || color); });
+    }
+  })(TREE, 0, null);
+
+  function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); return e; }
+  function isInt(n) { return !!(n.children && n.children.length); }
+  function leafCount(n) { if (!isInt(n)) return 1; var s = 0; n.children.forEach(function (c) { s += leafCount(c); }); return s; }
+  function nodeW(n) {
+    var caret = isInt(n) ? 16 : 0;
+    var w = caret + n.name.length * 7.2 + 18;
+    if (!isInt(n) && n.year) w += String(n.year).length * 6.5 + 8;
+    return Math.max(94, w);
+  }
+
+  function layout() {
+    var order = 0, maxDepth = 0;
+    (function walk(node, depth) {
+      node._depth = depth; node._x = leftPad + depth * colW; if (depth > maxDepth) maxDepth = depth;
+      if (isInt(node) && !node.collapsed) {
+        node.children.forEach(function (c) { walk(c, depth + 1); });
+        node._y = (node.children[0]._y + node.children[node.children.length - 1]._y) / 2;
+      } else { node._y = topPad + order * rowH + rowH / 2; order++; }
+    })(TREE, 0);
+    return { leaves: order, maxDepth: maxDepth };
+  }
+  function collect() {
+    var arr = [];
+    (function rec(node, parent) { arr.push({ n: node, p: parent }); if (isInt(node) && !node.collapsed) node.children.forEach(function (c) { rec(c, node); }); })(TREE, null);
+    return arr;
+  }
+
+  function render() {
+    var lo = layout(), vis = collect();
+    var W = leftPad + lo.maxDepth * colW + 210;
+    var H = topPad * 2 + lo.leaves * rowH;
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('width', W); svg.setAttribute('height', H);
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var gE = el('g', {}), gN = el('g', {}); svg.appendChild(gE); svg.appendChild(gN);
+    vis.forEach(function (o) {
+      if (!o.p) return;
+      var p = o.p, c = o.n, px = p._x + nodeW(p), py = p._y, cx = c._x, cy = c._y, mx = (px + cx) / 2;
+      gE.appendChild(el('path', { d: 'M ' + px + ' ' + py + ' C ' + mx + ' ' + py + ', ' + mx + ' ' + cy + ', ' + cx + ' ' + cy, 'class': 'tedge' }));
+    });
+    vis.forEach(function (o) { gN.appendChild(drawNode(o.n)); });
+  }
+
+  function drawNode(n) {
+    var w = nodeW(n), col = n._color, internal = isInt(n), depth = n._depth;
+    var g = el('g', { 'class': 'tnode', tabindex: '0', role: internal ? 'button' : 'img',
+      'aria-label': (n.full || n.name) + (n.year ? ', ' + n.year : '') + (internal ? ', ' + (n.collapsed ? 'collapsed, ' : 'expanded, ') + leafCount(n) + ' methods' : '') });
+    var fill, stroke = col, sw = 1.4, nameFill = '#17222D';
+    if (depth === 0) { fill = '#17222D'; stroke = '#17222D'; nameFill = '#FFFFFF'; }
+    else if (depth === 1) { fill = TINT[col] || '#F0F2F4'; sw = 1.7; }
+    else if (internal) { fill = '#FFFFFF'; }
+    else { fill = TINT[col] || '#F2F4F6'; sw = 1.2; }
+    g.appendChild(el('rect', { x: n._x, y: n._y - 12, width: w, height: 24, rx: 7, fill: fill, stroke: stroke, 'stroke-width': sw }));
+    var tx = n._x + 10;
+    if (internal) {
+      var car = el('text', { x: n._x + 9, y: n._y, 'dominant-baseline': 'central', 'class': 'tcaret', fill: col });
+      car.textContent = n.collapsed ? '▸' : '▾'; g.appendChild(car); tx = n._x + 22;
+    }
+    var t = el('text', { x: tx, y: n._y, 'dominant-baseline': 'central', 'class': 'tlabel', fill: nameFill });
+    var ns = document.createElementNS(NS, 'tspan'); ns.textContent = n.name; t.appendChild(ns);
+    if (!internal && n.year) {
+      var ys = document.createElementNS(NS, 'tspan');
+      ys.setAttribute('dx', '8'); ys.setAttribute('class', 'tyear'); ys.setAttribute('fill', '#5C6C7C');
+      ys.textContent = n.year; t.appendChild(ys);
+    }
+    g.appendChild(t);
+    g.addEventListener('click', function () { if (internal) { n.collapsed = !n.collapsed; render(); } });
+    g.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); if (internal) { n.collapsed = !n.collapsed; render(); } } });
+    g.addEventListener('mouseenter', function (ev) { showTip(n, internal); moveTip(ev); });
+    g.addEventListener('mousemove', moveTip);
+    g.addEventListener('mouseleave', hideTip);
+    g.addEventListener('focus', function () { showTip(n, internal); posTipEl(g); });
+    g.addEventListener('blur', hideTip);
+    return g;
+  }
+
+  function showTip(n, internal) {
+    if (!tip) return;
+    var meta = internal ? ((n.ref ? n.ref + ' · ' : '') + leafCount(n) + ' methods')
+                        : ((n.year ? n.year : '') + (n.venue && n.venue !== '—' ? ' · ' + n.venue : ''));
+    var mech = internal ? (n.note ? '(' + n.note + ')' : '') : (n.mech || '');
+    tip.innerHTML = '<span class="tip-name"></span><span class="tip-meta"></span><span class="tip-mech"></span>';
+    tip.querySelector('.tip-name').textContent = n.full || n.name;
+    tip.querySelector('.tip-meta').textContent = meta;
+    tip.querySelector('.tip-mech').textContent = mech;
+    tip.style.setProperty('--acc', n._color);
+    tip.hidden = false;
+  }
+  function moveTip(ev) { if (!tip || tip.hidden || !wrap) return; var b = wrap.getBoundingClientRect(); tip.style.left = (ev.clientX - b.left) + 'px'; tip.style.top = (ev.clientY - b.top - 14) + 'px'; }
+  function posTipEl(g) { if (!tip || tip.hidden || !wrap) return; var b = wrap.getBoundingClientRect(), r = g.getBoundingClientRect(); tip.style.left = (r.left - b.left + r.width / 2) + 'px'; tip.style.top = (r.top - b.top - 10) + 'px'; }
+  function hideTip() { if (tip) tip.hidden = true; }
+
+  var eb = document.getElementById('taxExpand'), cb = document.getElementById('taxCollapse');
+  if (eb) eb.addEventListener('click', function () { (function w(node) { if (isInt(node)) { node.collapsed = false; node.children.forEach(w); } })(TREE); render(); });
+  if (cb) cb.addEventListener('click', function () { (function w(node, depth) { if (isInt(node)) { node.collapsed = depth >= 2; node.children.forEach(function (c) { w(c, depth + 1); }); } })(TREE, 0); render(); });
+
+  render();
 })();
 </script>
 
