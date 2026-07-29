@@ -330,6 +330,7 @@
         <tbody>
           <tr><td class="method"><div class="m-name">COOPERNAUT</div><div class="venue">CVPR · 2022</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
           <tr><td class="method"><div class="m-name">UniV2X</div><div class="venue">AAAI · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
+          <tr><td class="method"><div class="m-name">UniMM-V2X</div><div class="venue">arXiv · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
           <tr><td class="method"><div class="m-name">CoDriving</div><div class="venue">IEEE TPAMI · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn part" title="Broadcasts driving requests — a lightweight intent/plan-level signal, not full dialogue">△</span></td></tr>
           <tr><td class="method"><div class="m-name">V2X-VLM</div><div class="venue">TR Part C · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
           <tr><td class="method"><div class="m-name">V2V-LLM</div><div class="venue">ICRA · 2026</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
@@ -435,6 +436,16 @@
             <td class="c"><span class="yn yes">✓</span></td>
             <td class="c"><span class="yn no">✗</span></td>
             <td class="metric">Planning: L2 error, collision rate; stage-wise perception (detection mAP, tracking), occupancy IoU, transmission cost (BPS)</td>
+          </tr>
+          <tr>
+            <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2511.09013" target="_blank" rel="noopener">UniMM-V2X</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">arXiv · 2025</div></td>
+            <td class="c coop">V2I</td>
+            <td class="mech">MoE-enhanced multi-level fusion; shares perception + prediction queries across agents for cooperative planning (extends UniV2X)</td>
+            <td class="setting">DAIR-V2X (V2X-Seq)</td>
+            <td><span class="loop loop-open">Open</span></td>
+            <td class="c"><span class="yn yes">✓</span></td>
+            <td class="c"><span class="yn no">✗</span></td>
+            <td class="metric">Planning L2 error (avg 1.49 m, −33.2% vs UniV2X); detection / tracking / mapping / motion</td>
           </tr>
           <tr>
             <td class="method"><div class="m-name"><a href="https://arxiv.org/abs/2205.02222" target="_blank" rel="noopener">COOPERNAUT</a><span class="stackmark" title="Sensor-to-trajectory end-to-end stack">◆</span></div><div class="venue">CVPR · 2022</div></td>
@@ -665,8 +676,9 @@
     { id:'v2xsim',        label:'V2X-Sim',       year:2021, x:880,  y:152, cat:'e2e',  url:null,                                 mech:'Synthetic V2X cooperative-perception benchmark', loop:'Benchmark' },
     { id:'opv2v',         label:'OPV2V',         year:2022, x:1050, y:152, cat:'e2e',  url:null,                                 mech:'Open V2V cooperative-perception dataset', loop:'Benchmark' },
     { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:1050, y:105, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent feature sharing for cooperative perception', loop:'Closed' },
-    { id:'univ2x',        label:'UniV2X',        year:2025, x:1430, y:104, cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
-    { id:'codriving',     label:'CoDriving',     year:2025, x:1430, y:152, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
+    { id:'univ2x',        label:'UniV2X',        year:2025, x:1430, y:86,  cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
+    { id:'unimmv2x',      label:'UniMM-V2X',     year:2025, x:1430, y:122, cat:'e2e',  url:'https://arxiv.org/abs/2511.09013',  mech:'MoE multi-level fusion; shares perception + prediction queries (extends UniV2X)', loop:'Open' },
+    { id:'codriving',     label:'CoDriving',     year:2025, x:1430, y:158, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
     { id:'cogoal3d',      label:'CoGoal3D',      year:2026, x:1620, y:105, cat:'e2e',  url:'https://arxiv.org/abs/2607.19036',  mech:'Collaborative 3D object detection (perception, not planning)', loop:'Open' },
     { id:'omniv2x',       label:'OmniV2X',       year:2026, x:1620, y:152, cat:'e2e',  url:'https://arxiv.org/abs/2606.21165',  mech:'Generative foundation planner; shares standard V2X tokens', loop:'Open' },
     { id:'agentscodriver',label:'AgentsCoDriver',year:2024, x:1240, y:214, cat:'lang', url:'https://arxiv.org/abs/2404.06345',  mech:'LLM social reasoning for collaborative driving', loop:'Closed' },
@@ -698,6 +710,7 @@
     { from:'dial', to:'disconet' },
     { from:'dial', to:'koma' },
     { from:'coopernaut', to:'univ2x' },
+    { from:'coopernaut', to:'unimmv2x' },
     { from:'coopernaut', to:'codriving' },
     { from:'coopernaut', to:'v2xvlm' },
     { from:'coopernaut', to:'v2vllm' },
@@ -726,8 +739,8 @@
     { label:'Reasoning VLA — ego (reference)',   y:472, h:86 }
   ];
 
-  var PLAN = { coopernaut:1, univ2x:1, codriving:1, omniv2x:1, v2xvlm:1, seal:1, v2vllm:1, v2vgot:1, agentscodriver:1, koma:1, agentscomerge:1, comal:1, colmdriver:1, coopreflect:1, swarmdrive:1 };
-  var STACK = { coopernaut:1, univ2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
+  var PLAN = { coopernaut:1, univ2x:1, unimmv2x:1, codriving:1, omniv2x:1, v2xvlm:1, seal:1, v2vllm:1, v2vgot:1, agentscodriver:1, koma:1, agentscomerge:1, comal:1, colmdriver:1, coopreflect:1, swarmdrive:1 };
+  var STACK = { coopernaut:1, univ2x:1, unimmv2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
   var NS = 'http://www.w3.org/2000/svg';
   var svg = document.getElementById('evomap');
   if (!svg) return;
@@ -851,11 +864,12 @@
     lang: { label: 'LLM negotiation agent',          color: '#B96A00', tint: '#F6EAD9' },
     conv: { label: 'LLM / VLM V2X planner',          color: '#4757C9', tint: '#E9EBFA' }
   };
-  var STACK = { coopernaut:1, univ2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
+  var STACK = { coopernaut:1, univ2x:1, unimmv2x:1, codriving:1, omniv2x:1, colmdriver:1, v2xvlm:1, v2vllm:1, v2vgot:1, seal:1 };
   var N = [
     { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:300,  y:120, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent sharing → cooperative driving', loop:'Closed' },
-    { id:'univ2x',        label:'UniV2X',        year:2025, x:840,  y:98,  cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
-    { id:'codriving',     label:'CoDriving',     year:2025, x:840,  y:146, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
+    { id:'univ2x',        label:'UniV2X',        year:2025, x:840,  y:84,  cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
+    { id:'unimmv2x',      label:'UniMM-V2X',     year:2025, x:840,  y:120, cat:'e2e',  url:'https://arxiv.org/abs/2511.09013',  mech:'MoE multi-level fusion; shares perception + prediction queries (extends UniV2X)', loop:'Open' },
+    { id:'codriving',     label:'CoDriving',     year:2025, x:840,  y:156, cat:'e2e',  url:'https://arxiv.org/abs/2404.09496',  mech:'Driving-request end-to-end V2X (V2Xverse)', loop:'Closed' },
     { id:'omniv2x',       label:'OmniV2X',       year:2026, x:1110, y:120, cat:'e2e',  url:'https://arxiv.org/abs/2606.21165',  mech:'Generative foundation planner; shares standard V2X tokens (<1% bandwidth)', loop:'Open' },
     { id:'agentscodriver',label:'AgentsCoDriver',year:2024, x:570,  y:210, cat:'lang', url:'https://arxiv.org/abs/2404.06345',  mech:'LLM social reasoning for collaborative driving', loop:'Closed' },
     { id:'koma',          label:'KoMA',          year:2024, x:570,  y:262, cat:'lang', url:'https://arxiv.org/abs/2407.14239',  mech:'Knowledge-driven multi-agent LLM planning', loop:'Closed' },
@@ -870,7 +884,7 @@
     { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1110, y:442, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts planning (extends V2V-LLM)', loop:'Open' }
   ];
   var E = [
-    { from:'coopernaut', to:'univ2x' }, { from:'coopernaut', to:'codriving' },
+    { from:'coopernaut', to:'univ2x' }, { from:'coopernaut', to:'unimmv2x' }, { from:'coopernaut', to:'codriving' },
     { from:'coopernaut', to:'v2xvlm' }, { from:'coopernaut', to:'v2vllm' },
     { from:'agentscodriver', to:'comal' }, { from:'agentscodriver', to:'colmdriver' }, { from:'agentscodriver', to:'v2xvlm' },
     { from:'koma', to:'comal' }, { from:'agentscomerge', to:'colmdriver' },
