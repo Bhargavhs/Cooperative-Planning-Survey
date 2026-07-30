@@ -2,7 +2,7 @@
 
 A curated comparison of recent methods for **cooperative autonomous driving**, spanning LLM-based negotiation agents and end-to-end V2X driving stacks. For each method we track the primary mechanism, evaluation setting, whether evaluation is closed- or open-loop, and the reported metrics.
 
-🌐 **Webpage:** [Bhargavhs.github.io/cooperative-driving-survey](https://Bhargavhs.github.io/cooperative-driving-survey/) (served via GitHub Pages from `main` / root).
+🌐 **Webpage:** [bhargavhs.github.io/Cooperative-Planning-Survey](https://bhargavhs.github.io/Cooperative-Planning-Survey/) (served via GitHub Pages from `main` / root).
 
 ## End-to-End Cooperative Driving
 

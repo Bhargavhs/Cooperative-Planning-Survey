@@ -317,40 +317,6 @@
       <div class="map-tip" id="plantip" hidden></div>
     </div>
     <p class="map-hint">Only methods that produce a joint decision / plan · hover to trace lineage, click to open the paper · ◆ marks the end-to-end sensor-to-trajectory stacks (vs symbolic-decision agents)</p>
-
-    <p class="sec-desc" style="margin-top:26px"><strong>Perception sharing vs. negotiation.</strong> The MDrive benchmark (<a href="https://arxiv.org/abs/2605.10904" target="_blank" rel="noopener">arXiv:2605.10904</a>) tests cooperation along two axes — <em>sharing perception</em> and <em>negotiating intent</em>. Mapping the 16 planners onto them reveals an almost perfect split: methods do one <em>or</em> the other, and the “both” case is essentially empty (only CoDriving leans hybrid) — which is exactly the Shared-World-Model gap.</p>
-    <div class="table-card">
-      <table class="pn-table">
-        <thead>
-          <tr>
-            <th>Method</th>
-            <th class="pn">Perception sharing</th>
-            <th class="pn">Negotiation</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="grp"><td colspan="3">Perception-sharing camp — share / fuse perception, no negotiation (9)</td></tr>
-          <tr><td class="method"><div class="m-name">COOPERNAUT</div><div class="venue">CVPR · 2022</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr><td class="method"><div class="m-name">UniV2X</div><div class="venue">AAAI · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr><td class="method"><div class="m-name">UniMM-V2X</div><div class="venue">arXiv · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr><td class="method"><div class="m-name">CoDriving</div><div class="venue">IEEE TPAMI · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn part" title="Broadcasts driving requests — a lightweight intent/plan-level signal, not full dialogue">△</span></td></tr>
-          <tr><td class="method"><div class="m-name">V2X-VLM</div><div class="venue">TR Part C · 2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr><td class="method"><div class="m-name">V2V-LLM</div><div class="venue">ICRA · 2026</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr><td class="method"><div class="m-name">V2V-GoT</div><div class="venue">ICRA · 2026</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr><td class="method"><div class="m-name">OmniV2X</div><div class="venue">2026</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr><td class="method"><div class="m-name">SEAL</div><div class="venue">2025</div></td><td class="pn"><span class="yn yes">✓</span></td><td class="pn"><span class="yn no">✗</span></td></tr>
-          <tr class="grp"><td colspan="3">Negotiation camp — exchange intents in language, no perception fusion (7)</td></tr>
-          <tr><td class="method"><div class="m-name">AgentsCoDriver</div><div class="venue">IEEE T-ITS · 2024</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
-          <tr><td class="method"><div class="m-name">KoMA</div><div class="venue">IEEE T-IV · 2024</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
-          <tr><td class="method"><div class="m-name">AgentsCoMerge</div><div class="venue">IEEE · 2024</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
-          <tr><td class="method"><div class="m-name">CoMAL</div><div class="venue">SDM · 2025</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
-          <tr><td class="method"><div class="m-name">CoLMDriver</div><div class="venue">ICCV · 2025</div></td><td class="pn"><span class="yn no" title="Each vehicle perceives independently; V2V cooperation is language negotiation only (no perception fusion)">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
-          <tr><td class="method"><div class="m-name">CoopReflect</div><div class="venue">AAMAS · 2026</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn yes">✓</span></td></tr>
-          <tr><td class="method"><div class="m-name">SwarmDrive</div><div class="venue">2026</div></td><td class="pn"><span class="yn no">✗</span></td><td class="pn"><span class="yn part" title="Negotiates via intent-distribution exchange, not language dialogue">✓</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="pn-note">✓ yes · ✗ no · <span style="color:var(--accent)">△</span> partial (hover for why). Perception-sharing camp = end-to-end / fusion / MLLM-over-features; negotiation camp = LLM agents. The empty “both ✓✓” cell is the Shared-World-Model frontier.</p>
   </section>
 
   <section id="taxonomy">
