@@ -224,6 +224,7 @@
   .tnode .tcaret { font-family:var(--mono); font-weight:700; font-size:12px; pointer-events:none; }
   .tedge { fill:none; stroke:#D3DAE1; stroke-width:1.4; }
   .tnode:hover rect { filter:drop-shadow(0 2px 5px rgba(23,34,45,.16)); }
+  .tnode.linked:hover .tlabel { text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:2px; }
   .tnode:focus-visible { outline:none; }
   .tnode:focus-visible rect { stroke-width:2.6; }
 
@@ -627,15 +628,15 @@
     ego:  { label: 'Reasoning VLA · ego',    color: '#5C6C7C', tint: '#EDF0F3' }
   };
   var N = [
-    { id:'commnet',       label:'CommNet',       year:2016, x:230,  y:250, cat:'lang', url:null,                                 mech:'Learned continuous inter-agent messages', loop:'Foundational' },
-    { id:'dial',          label:'DIAL',          year:2016, x:230,  y:302, cat:'lang', url:null,                                 mech:'Differentiable inter-agent messaging', loop:'Foundational' },
-    { id:'avr',           label:'AVR',           year:2018, x:400,  y:126, cat:'e2e',  url:null,                                 mech:'First V2V raw sensor (point-cloud) sharing', loop:'Foundational' },
-    { id:'cooper',        label:'Cooper',        year:2019, x:560,  y:126, cat:'e2e',  url:null,                                 mech:'Cooperative point-cloud fusion', loop:'Foundational' },
-    { id:'v2vnet',        label:'V2VNet',        year:2020, x:720,  y:104, cat:'e2e',  url:null,                                 mech:'Graph-based intermediate feature fusion', loop:'Foundational' },
-    { id:'when2com',      label:'When2com',      year:2020, x:720,  y:152, cat:'e2e',  url:null,                                 mech:'Learns when / whom to communicate', loop:'Foundational' },
-    { id:'disconet',      label:'DiscoNet',      year:2021, x:880,  y:104, cat:'e2e',  url:null,                                 mech:'Distilled collaboration graph', loop:'Foundational' },
-    { id:'v2xsim',        label:'V2X-Sim',       year:2021, x:880,  y:152, cat:'e2e',  url:null,                                 mech:'Synthetic V2X cooperative-perception benchmark', loop:'Benchmark' },
-    { id:'opv2v',         label:'OPV2V',         year:2022, x:1050, y:152, cat:'e2e',  url:null,                                 mech:'Open V2V cooperative-perception dataset', loop:'Benchmark' },
+    { id:'commnet',       label:'CommNet',       year:2016, x:230,  y:250, cat:'lang', url:'https://arxiv.org/abs/1605.07736', mech:'Learned continuous inter-agent messages', loop:'Foundational' },
+    { id:'dial',          label:'DIAL',          year:2016, x:230,  y:302, cat:'lang', url:'https://arxiv.org/abs/1605.06676', mech:'Differentiable inter-agent messaging', loop:'Foundational' },
+    { id:'avr',           label:'AVR',           year:2018, x:400,  y:126, cat:'e2e',  url:'https://dl.acm.org/doi/10.1145/3210240.3210319', mech:'First V2V raw sensor (point-cloud) sharing', loop:'Foundational' },
+    { id:'cooper',        label:'Cooper',        year:2019, x:560,  y:126, cat:'e2e',  url:'https://arxiv.org/abs/1905.05265', mech:'Cooperative point-cloud fusion', loop:'Foundational' },
+    { id:'v2vnet',        label:'V2VNet',        year:2020, x:720,  y:104, cat:'e2e',  url:'https://arxiv.org/abs/2008.07519', mech:'Graph-based intermediate feature fusion', loop:'Foundational' },
+    { id:'when2com',      label:'When2com',      year:2020, x:720,  y:152, cat:'e2e',  url:'https://arxiv.org/abs/2006.00176', mech:'Learns when / whom to communicate', loop:'Foundational' },
+    { id:'disconet',      label:'DiscoNet',      year:2021, x:880,  y:104, cat:'e2e',  url:'https://arxiv.org/abs/2111.00643', mech:'Distilled collaboration graph', loop:'Foundational' },
+    { id:'v2xsim',        label:'V2X-Sim',       year:2021, x:880,  y:152, cat:'e2e',  url:'https://arxiv.org/abs/2202.08449', mech:'Synthetic V2X cooperative-perception benchmark', loop:'Benchmark' },
+    { id:'opv2v',         label:'OPV2V',         year:2022, x:1050, y:152, cat:'e2e',  url:'https://arxiv.org/abs/2109.07644', mech:'Open V2V cooperative-perception dataset', loop:'Benchmark' },
     { id:'coopernaut',    label:'COOPERNAUT',    year:2022, x:1050, y:105, cat:'e2e',  url:'https://arxiv.org/abs/2205.02222',  mech:'V2V latent feature sharing for cooperative perception', loop:'Closed' },
     { id:'univ2x',        label:'UniV2X',        year:2025, x:1430, y:86,  cat:'e2e',  url:'https://arxiv.org/abs/2404.00717',  mech:'Sparse-dense end-to-end V2X cooperation', loop:'Open' },
     { id:'unimmv2x',      label:'UniMM-V2X',     year:2025, x:1430, y:122, cat:'e2e',  url:'https://arxiv.org/abs/2511.09013',  mech:'MoE multi-level fusion; shares perception + prediction queries (extends UniV2X)', loop:'Open' },
@@ -1088,6 +1089,98 @@
     }
   })(TREE, 0, null);
 
+  var LINKS = {
+    'AVR': 'https://dl.acm.org/doi/10.1145/3210240.3210319',
+    'Cooper': 'https://arxiv.org/abs/1905.05265',
+    'EMP': 'https://dl.acm.org/doi/10.1145/3447993.3483242',
+    'AutoCast': 'https://arxiv.org/abs/2112.14947',
+    'F-Cooper': 'https://arxiv.org/abs/1909.06459',
+    'V2VNet': 'https://arxiv.org/abs/2008.07519',
+    'V2X-ViT': 'https://arxiv.org/abs/2203.10638',
+    'CoBEVT': 'https://arxiv.org/abs/2207.02202',
+    'CoCa3D': 'https://arxiv.org/abs/2303.13560',
+    'HM-ViT': 'https://arxiv.org/abs/2304.10628',
+    'SCOPE': 'https://arxiv.org/abs/2307.13929',
+    'When2com': 'https://arxiv.org/abs/2006.00176',
+    'Who2com': 'https://arxiv.org/abs/2003.09575',
+    'DiscoNet': 'https://arxiv.org/abs/2111.00643',
+    'Where2Comm': 'https://arxiv.org/abs/2209.12836',
+    'How2comm': 'https://proceedings.neurips.cc/paper_files/paper/2023/hash/4f31327e046913c7238d5b671f5d820e-Abstract-Conference.html',
+    'CodeFilling': 'https://arxiv.org/abs/2405.04966',
+    'SyncNet': 'https://arxiv.org/abs/2207.08560',
+    'CoBEVFlow': 'https://arxiv.org/abs/2309.16940',
+    'CoAlign': 'https://arxiv.org/abs/2211.07214',
+    'HEAL': 'https://arxiv.org/abs/2401.13964',
+    'STAMP': 'https://arxiv.org/abs/2501.18616',
+    'OPV2V Late': 'https://arxiv.org/abs/2109.07644',
+    'TCLF': 'https://arxiv.org/abs/2204.05575',
+    'VIPS': 'https://dl.acm.org/doi/10.1145/3495243.3560539',
+    'ROBOSAC': 'https://arxiv.org/abs/2303.09495',
+    'CP-Guard': 'https://arxiv.org/abs/2412.12000',
+    'DriveGPT4': 'https://arxiv.org/abs/2310.01412',
+    'DriveLM': 'https://arxiv.org/abs/2312.14150',
+    'Talk2BEV': 'https://arxiv.org/abs/2310.02251',
+    'V2X-UniPool': 'https://arxiv.org/abs/2506.02580',
+    'GAIA-2': 'https://arxiv.org/abs/2503.20523',
+    'Epona': 'https://arxiv.org/abs/2506.24113',
+    'ShareVerse': 'https://arxiv.org/abs/2603.02697',
+    'V2XCrafter': 'https://arxiv.org/abs/2605.29471',
+    'CoGoal3D': 'https://arxiv.org/abs/2607.19036',
+    'CommNet': 'https://arxiv.org/abs/1605.07736',
+    'DIAL': 'https://arxiv.org/abs/1605.06676',
+    'IntentNet': 'https://arxiv.org/abs/2101.07907',
+    'HiVT': 'https://openaccess.thecvf.com/content/CVPR2022/html/Zhou_HiVT_Hierarchical_Vector_Transformer_for_Multi-Agent_Motion_Prediction_CVPR_2022_paper.html',
+    'EqMotion': 'https://arxiv.org/abs/2303.10876',
+    'MTR++': 'https://arxiv.org/abs/2306.17770',
+    'DJSCC': 'https://arxiv.org/abs/1809.01733',
+    'Agent-Driver': 'https://arxiv.org/abs/2311.10813',
+    'CoLMDriver': 'https://arxiv.org/abs/2503.08683',
+    'AgentsCoMerge': 'https://arxiv.org/abs/2408.03624',
+    'CMP': 'https://arxiv.org/abs/2403.17916',
+    'CoopReflect': 'https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-cui2026coopreflect.html',
+    'HGT': 'https://arxiv.org/abs/1810.05766',
+    'SIS-CM': 'https://ieeexplore.ieee.org/document/9998111/',
+    'iLQR / ADMM': 'https://arxiv.org/abs/2301.04386',
+    'MT-GTF': 'https://ieeexplore.ieee.org/document/10268996/',
+    'MADDPG': 'https://arxiv.org/abs/1706.02275',
+    'LC-MADRL': 'https://ieeexplore.ieee.org/document/9932003/',
+    'MAPPO': 'https://arxiv.org/abs/2103.01955',
+    'SAPO': 'https://proceedings.mlr.press/v205/dai23a.html',
+    'STL-MARL': 'https://arxiv.org/abs/2306.06808',
+    'MAPPO-PIS': 'https://arxiv.org/abs/2408.06656',
+    'SMPE': 'https://arxiv.org/abs/2505.05262',
+    'MotionDiffuser': 'https://arxiv.org/abs/2306.03083',
+    'SCORP': 'https://arxiv.org/abs/2604.11734',
+    'MISO-V': 'https://ieeexplore.ieee.org/document/9575970/',
+    'IEEE 802.11p / WAVE': 'https://standards.ieee.org/ieee/802.11p/3953/',
+    'ETSI CAM / DENM': 'https://www.etsi.org/deliver/etsi_en/302600_302699/30263702/',
+    'C-V2X / NR-V2X': 'https://www.3gpp.org/news-events/3gpp-news/v2x-r14',
+    'SAE J2735 BSM': 'https://www.sae.org/standards/content/j2735_202309/',
+    'ETSI CPS': 'https://www.etsi.org/deliver/etsi_ts/103300_103399/103324/',
+    'V2X-Sim': 'https://arxiv.org/abs/2202.08449',
+    'OPV2V': 'https://arxiv.org/abs/2109.07644',
+    'V2XSet': 'https://arxiv.org/abs/2203.10638',
+    'DAIR-V2X': 'https://arxiv.org/abs/2204.05575',
+    'V2V4Real': 'https://arxiv.org/abs/2303.07601',
+    'V2X-Real': 'https://arxiv.org/abs/2403.16034',
+    'V2Xverse': 'https://arxiv.org/abs/2404.09496',
+    'CARLA': 'https://arxiv.org/abs/1711.03938',
+    'SMARTS': 'https://arxiv.org/abs/2010.09776',
+    'AutoCastSim': 'https://github.com/hangqiu/AutoCastSim',
+    'InterDrive': 'https://arxiv.org/abs/2503.08683',
+    'TalkingVehiclesGym': 'https://arxiv.org/abs/2505.18334',
+    'Flow / SUMO': 'https://arxiv.org/abs/1710.05465',
+    'DriveGen': 'https://arxiv.org/abs/2503.05808',
+    'MiLA': 'https://arxiv.org/abs/2503.15875',
+    'COOPERNAUT': 'https://arxiv.org/abs/2205.02222',
+    'UniV2X': 'https://arxiv.org/abs/2404.00717',
+    'CoDriving': 'https://arxiv.org/abs/2404.09496',
+    'V2X-VLM': 'https://arxiv.org/abs/2408.09251',
+    'AgentsCoDriver': 'https://arxiv.org/abs/2404.06345',
+    'KoMA': 'https://arxiv.org/abs/2407.14239',
+    'CoMAL': 'https://arxiv.org/abs/2410.14368'
+  };
+
   function el(n, a) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); return e; }
   function isInt(n) { return !!(n.children && n.children.length); }
   function leafCount(n) { if (!isInt(n)) return 1; var s = 0; n.children.forEach(function (c) { s += leafCount(c); }); return s; }
@@ -1135,8 +1228,9 @@
 
   function drawNode(n) {
     var w = nodeW(n), col = n._color, internal = isInt(n), depth = n._depth;
-    var g = el('g', { 'class': 'tnode', tabindex: '0', role: internal ? 'button' : 'img',
-      'aria-label': (n.full || n.name) + (n.year ? ', ' + n.year : '') + (internal ? ', ' + (n.collapsed ? 'collapsed, ' : 'expanded, ') + leafCount(n) + ' methods' : '') });
+    var link = (!internal && LINKS[n.name]) ? LINKS[n.name] : null;
+    var g = el('g', { 'class': 'tnode' + (link ? ' linked' : ''), tabindex: '0', role: internal ? 'button' : (link ? 'link' : 'img'),
+      'aria-label': (n.full || n.name) + (n.year ? ', ' + n.year : '') + (internal ? ', ' + (n.collapsed ? 'collapsed, ' : 'expanded, ') + leafCount(n) + ' methods' : (link ? ' — opens paper' : '')) });
     var fill, stroke = col, sw = 1.4, nameFill = '#17222D';
     if (depth === 0) { fill = '#17222D'; stroke = '#17222D'; nameFill = '#FFFFFF'; }
     else if (depth === 1) { fill = TINT[col] || '#F0F2F4'; sw = 1.7; }
@@ -1156,8 +1250,8 @@
       ys.textContent = n.year; t.appendChild(ys);
     }
     g.appendChild(t);
-    g.addEventListener('click', function () { if (internal) { n.collapsed = !n.collapsed; render(); } });
-    g.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); if (internal) { n.collapsed = !n.collapsed; render(); } } });
+    g.addEventListener('click', function () { if (internal) { n.collapsed = !n.collapsed; render(); } else if (link) { window.open(link, '_blank', 'noopener'); } });
+    g.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); if (internal) { n.collapsed = !n.collapsed; render(); } else if (link) { window.open(link, '_blank', 'noopener'); } } });
     g.addEventListener('mouseenter', function (ev) { showTip(n, internal); moveTip(ev); });
     g.addEventListener('mousemove', moveTip);
     g.addEventListener('mouseleave', hideTip);
