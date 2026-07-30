@@ -281,19 +281,18 @@
       <span class="item"><span class="sw" style="background:#E3F2EE;border-color:#0E7C66"></span>Perception → E2E V2X</span>
       <span class="item"><span class="sw" style="background:#F6EAD9;border-color:#B96A00"></span>Comm → language agents</span>
       <span class="item"><span class="sw" style="background:#E9EBFA;border-color:#4757C9"></span>LLM / VLM × V2X</span>
-      <span class="item"><span class="sw" style="background:#EDF0F3;border-color:#5C6C7C"></span>Reasoning VLA · ego (reference)</span>
       <span class="item"><span class="sw" style="background:#17222D;border-color:#17222D;border-radius:50%"></span>● cooperative-planning stage</span>
       <span class="item"><span class="sw" style="background:#17222D;border-color:#17222D;transform:rotate(45deg)"></span>◆ sensor-to-trajectory stack</span>
     </div>
     <div class="map-wrap">
       <div class="map-card">
         <div class="map-scroll">
-          <svg id="evomap" viewBox="0 0 1740 600" role="img" aria-label="Evolution map of cooperative-driving methods, from the 2016 foundations to the 2026 frontier"></svg>
+          <svg id="evomap" viewBox="0 0 1740 490" role="img" aria-label="Evolution map of cooperative-driving methods, from the 2016 foundations to the 2026 frontier"></svg>
         </div>
       </div>
       <div class="map-tip" hidden></div>
     </div>
-    <p class="map-hint">Scroll horizontally to see the full timeline · dashed border and dashed edge = ego-only (reference) line, not cooperative</p>
+    <p class="map-hint">Scroll horizontally to see the full timeline · ● = cooperative-planning stage · ◆ = sensor-to-trajectory stack</p>
   </section>
 
   <section id="planning">
@@ -368,7 +367,7 @@
     </div>
     <div class="map-wrap" id="taxwrap">
       <div class="tax-card">
-        <svg id="taxtree" role="img" aria-label="Interactive taxonomy tree of multi-agent embodied autonomous driving, from the Shared World Model root through five pillars to representative methods"></svg>
+        <svg id="taxtree" role="img" aria-label="Interactive taxonomy of multi-agent embodied autonomous driving — five pillars and their representative methods"></svg>
       </div>
       <div class="map-tip" id="taxtip" hidden></div>
     </div>
@@ -619,13 +618,6 @@
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <span>Maintained as part of ongoing research on cooperative perception, prediction, and planning.</span>
-    <span>Contributions welcome — open a PR to add a method.</span>
-  </div>
-</footer>
-
 <script>
 (function () {
   var CAT = {
@@ -660,9 +652,7 @@
     { id:'v2xvlm',        label:'V2X-VLM',       year:2025, x:1430, y:388, cat:'conv', url:'https://arxiv.org/abs/2408.09251',  mech:'VLM-based end-to-end V2X planning', loop:'Open' },
     { id:'seal',          label:'SEAL',          year:2025, x:1430, y:432, cat:'conv', url:'https://arxiv.org/abs/2506.21041',  mech:'VLM safe cooperative driving; long-tail / weather robustness', loop:'Open' },
     { id:'v2vllm',        label:'V2V-LLM',       year:2026, x:1620, y:388, cat:'conv', url:'https://arxiv.org/abs/2502.09980',  mech:'MLLM fuses shared V2V perception features', loop:'Open' },
-    { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1620, y:436, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts over V2V QAs (extends V2V-LLM)', loop:'Open' },
-    { id:'alpamayo1',     label:'Alpamayo-1',    year:2025, x:1430, y:512, cat:'ego',  url:'https://arxiv.org/abs/2511.00088',  mech:'Reasoning VLA, Chain-of-Causation (ego, not V2X)', loop:'Open · Closed' },
-    { id:'alpamayo15',    label:'Alpamayo-1.5',  year:2026, x:1620, y:512, cat:'ego',  url:'https://huggingface.co/nvidia/Alpamayo-1.5-10B', mech:'Reasoning VLA on Cosmos-Reason2 (ego, not V2X)', loop:'Open · Closed' }
+    { id:'v2vgot',        label:'V2V-GoT',       year:2026, x:1620, y:436, cat:'conv', url:'https://arxiv.org/abs/2509.18053',  mech:'Graph-of-thoughts over V2V QAs (extends V2V-LLM)', loop:'Open' }
   ];
   var E = [
     { from:'avr', to:'cooper' },
@@ -697,15 +687,13 @@
     { from:'coopernaut', to:'seal' },
     { from:'univ2x', to:'omniv2x' },
     { from:'v2xvlm', to:'omniv2x' },
-    { from:'seal', to:'omniv2x' },
-    { from:'alpamayo1', to:'alpamayo15', ego:true }
+    { from:'seal', to:'omniv2x' }
   ];
   var COLS = [[2016,230],[2018,400],[2019,560],[2020,720],[2021,880],[2022,1050],[2024,1240],[2025,1430],[2026,1620]];
   var BANDS = [
     { label:'Cooperative perception → E2E V2X', y:70,  h:112 },
     { label:'Multi-agent comm → language agents',    y:188, h:168 },
-    { label:'LLM / VLM × V2X convergence',       y:362, h:104 },
-    { label:'Reasoning VLA — ego (reference)',   y:472, h:86 }
+    { label:'LLM / VLM × V2X convergence',       y:362, h:104 }
   ];
 
   var PLAN = { coopernaut:1, univ2x:1, unimmv2x:1, codriving:1, omniv2x:1, v2xvlm:1, seal:1, v2vllm:1, v2vgot:1, agentscodriver:1, koma:1, agentscomerge:1, comal:1, colmdriver:1, coopreflect:1, swarmdrive:1 };
@@ -730,7 +718,7 @@
   // columns + years
   var gCols = el('g', {});
   COLS.forEach(function (c) {
-    gCols.appendChild(el('line', { x1:c[1], y1:64, x2:c[1], y2:566, 'class':'evo-col' }));
+    gCols.appendChild(el('line', { x1:c[1], y1:64, x2:c[1], y2:470, 'class':'evo-col' }));
     var t = el('text', { x:c[1], y:52, 'text-anchor':'middle', 'class':'evo-year' }); t.textContent = c[0]; gCols.appendChild(t);
   });
   svg.appendChild(gCols);
@@ -1112,18 +1100,20 @@
 
   function layout() {
     var order = 0, maxDepth = 0;
-    (function walk(node, depth) {
+    function walk(node, depth) {
       node._depth = depth; node._x = leftPad + depth * colW; if (depth > maxDepth) maxDepth = depth;
       if (isInt(node) && !node.collapsed) {
         node.children.forEach(function (c) { walk(c, depth + 1); });
         node._y = (node.children[0]._y + node.children[node.children.length - 1]._y) / 2;
       } else { node._y = topPad + order * rowH + rowH / 2; order++; }
-    })(TREE, 0);
+    }
+    TREE.children.forEach(function (r) { walk(r, 0); });
     return { leaves: order, maxDepth: maxDepth };
   }
   function collect() {
     var arr = [];
-    (function rec(node, parent) { arr.push({ n: node, p: parent }); if (isInt(node) && !node.collapsed) node.children.forEach(function (c) { rec(c, node); }); })(TREE, null);
+    function rec(node, parent) { arr.push({ n: node, p: parent }); if (isInt(node) && !node.collapsed) node.children.forEach(function (c) { rec(c, node); }); }
+    TREE.children.forEach(function (r) { rec(r, null); });
     return arr;
   }
 
