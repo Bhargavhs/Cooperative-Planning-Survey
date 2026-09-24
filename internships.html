@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Tracker</title>
+<meta name="description" content="Intern roles in autonomy, robotics and ML research across major US, Singapore and India career pages, rescanned daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F3F5F7;
+    --card: #FFFFFF;
+    --ink: #17222D;
+    --steel: #5C6C7C;
+    --hairline: #D8DFE6;
+    --closed: #0E7C66;
+    --closed-tint: #E3F2EE;
+    --open: #4757C9;
+    --open-tint: #E9EBFA;
+    --accent: #B96A00;
+    --accent-tint: #F8EEDF;
+    --display: "Space Grotesk", sans-serif;
+    --body: "Inter", system-ui, sans-serif;
+    --mono: "IBM Plex Mono", monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--open); outline-offset: 2px; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    border-bottom: 1px solid var(--hairline);
+    background:
+      radial-gradient(circle at 85% 20%, rgba(71,87,201,.06), transparent 42%),
+      radial-gradient(circle at 10% 85%, rgba(14,124,102,.06), transparent 42%),
+      var(--card);
+    padding: 44px 0 36px;
+  }
+  .back { font-family: var(--mono); font-size: 12.5px; display: inline-block; margin-bottom: 18px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4.4vw, 46px); line-height: 1.08; letter-spacing: -0.015em; }
+  .lede { margin-top: 14px; max-width: 64ch; color: var(--steel); font-size: 16px; }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .stat { background: var(--paper); border: 1px solid var(--hairline); border-radius: 8px; padding: 10px 16px; min-width: 120px; }
+  .stat b { display: block; font-family: var(--display); font-size: 24px; font-weight: 600; line-height: 1.1; }
+  .stat span { font-family: var(--mono); font-size: 11.5px; color: var(--steel); letter-spacing: .04em; }
+
+  section { padding: 32px 0 8px; }
+  h2 { font-family: var(--display); font-weight: 600; font-size: clamp(20px, 2.4vw, 26px); letter-spacing: -0.01em; }
+  .sec-desc { color: var(--steel); margin: 8px 0 18px; max-width: 72ch; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-bottom: 14px; }
+  .seg { display: inline-flex; border: 1px solid var(--hairline); border-radius: 7px; overflow: hidden; background: var(--card); }
+  .seg button { cursor: pointer; border: 0; background: none; font-family: var(--mono); font-size: 12.5px; color: var(--steel); padding: 6px 12px; }
+  .seg button + button { border-left: 1px solid var(--hairline); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .controls input[type=search], .controls select {
+    font: inherit; font-size: 14px; border: 1px solid var(--hairline); border-radius: 7px;
+    background: var(--card); color: var(--ink); padding: 6px 10px;
+  }
+  .controls input[type=search] { flex: 1 1 220px; min-width: 0; }
+  .chk { font-family: var(--mono); font-size: 12.5px; color: var(--steel); display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  .count { font-family: var(--mono); font-size: 12px; color: var(--steel); margin: 0 0 10px; }
+
+  .table-card { background: var(--card); border: 1px solid var(--hairline); border-radius: 10px; overflow-x: auto; box-shadow: 0 1px 2px rgba(23,34,45,.04); }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; }
+  thead th {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--steel); text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--hairline);
+    background: #FAFBFC; position: sticky; top: 0;
+  }
+  tbody td { padding: 12px 16px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: #F7F9FB; }
+  .co { font-family: var(--display); font-weight: 600; white-space: nowrap; }
+  .role a { color: var(--ink); }
+  .role a:hover { text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  .loc { font-family: var(--mono); font-size: 12.5px; color: var(--steel); max-width: 260px; }
+  .seen { font-family: var(--mono); font-size: 12.5px; color: var(--steel); white-space: nowrap; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11.5px; font-weight: 500; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+  .pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .t-core { background: var(--closed-tint); color: var(--closed); }
+  .t-research { background: var(--open-tint); color: var(--open); }
+  .t-eng { background: #EEF1F4; color: var(--steel); }
+  .new { font-family: var(--mono); font-size: 10.5px; font-weight: 500; letter-spacing: .06em; color: var(--accent); background: var(--accent-tint); border-radius: 4px; padding: 1px 6px; margin-left: 6px; }
+  .rg { font-family: var(--mono); font-size: 11px; border: 1px solid var(--hairline); border-radius: 4px; padding: 0 5px; margin-right: 4px; color: var(--ink); }
+  .empty { padding: 36px 16px; text-align: center; color: var(--steel); }
+
+  .src-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; }
+  .src { background: var(--card); border: 1px solid var(--hairline); border-radius: 8px; padding: 8px 12px; font-size: 13.5px; display: flex; justify-content: space-between; gap: 8px; }
+  .src .n { font-family: var(--mono); font-size: 12px; color: var(--steel); }
+  .src.bad { border-color: #E3B5B5; }
+  .src.bad .n { color: #A33; }
+  .manual { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .manual a { font-family: var(--mono); font-size: 12.5px; background: var(--card); border: 1px solid var(--hairline); border-radius: 6px; padding: 4px 10px; }
+  footer { margin-top: 48px; border-top: 1px solid var(--hairline); padding: 24px 0 36px; color: var(--steel); font-size: 13px; }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 0 16px; }
+    thead th, tbody td { padding: 10px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="back" href="./">← Cooperative Driving Survey</a>
+    <p class="eyebrow" id="updated">Internship tracker · loading…</p>
+    <h1>Internship Tracker</h1>
+    <p class="lede">Intern roles in autonomy, robotics and ML research, pulled from the career pages of major companies in the USA, Singapore and India. A scheduled job rescans every board once a day, and roles that are new that day are marked.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Open roles</h2>
+    <p class="sec-desc"><b>Core</b>: autonomy, driving, planning, perception, robotics or simulation, plus any technical role at an AV or robotics company. <b>Research</b>: ML, AI and research-scientist roles elsewhere. <b>Engineering</b>: general software and hardware roles.</p>
+    <div class="controls">
+      <div class="seg" id="region" role="group" aria-label="Region">
+        <button data-v="all" aria-pressed="true">All</button><button data-v="US" aria-pressed="false">USA</button><button data-v="SG" aria-pressed="false">Singapore</button><button data-v="IN" aria-pressed="false">India</button>
+      </div>
+      <div class="seg" id="tier" role="group" aria-label="Relevance">
+        <button data-v="core" aria-pressed="true">Core</button><button data-v="research" aria-pressed="true">Research</button><button data-v="eng" aria-pressed="false">Engineering</button>
+      </div>
+      <select id="company" aria-label="Company"><option value="">All companies</option></select>
+      <input type="search" id="q" placeholder="Search title, e.g. planning, PhD, 2027" aria-label="Search">
+      <label class="chk"><input type="checkbox" id="newonly"> New in last 7 days</label>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="table-card">
+      <table>
+        <thead><tr><th>Company</th><th>Role</th><th>Location</th><th>Fit</th><th>First seen</th></tr></thead>
+        <tbody id="rows"><tr><td colspan="5" class="empty">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sources</h2>
+    <p class="sec-desc">Boards scanned in the latest run. If a board fails, its postings from the previous day are kept until it works again.</p>
+    <div class="src-grid" id="sources"></div>
+    <p class="sec-desc" style="margin-top:22px">These portals block automated scans, so check them by hand:</p>
+    <div class="manual" id="manual"></div>
+  </section>
+</main>
+
+<footer><div class="wrap">Updated daily by <code>scripts/scan_internships.py</code> through GitHub Actions. Always check the posting itself before you apply.</div></footer>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const TIER = { core: "Core", research: "Research", eng: "Engineering" };
+  const state = { region: "all", tiers: new Set(["core", "research"]), company: "", q: "", newOnly: false };
+  let data = null, weekAgo = "";
+
+  function seg(id, onClick) {
+    $(id).addEventListener("click", e => {
+      const b = e.target.closest("button"); if (!b) return;
+      onClick(b); render();
+    });
+  }
+  seg("#region", b => {
+    state.region = b.dataset.v;
+    $("#region").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  });
+  seg("#tier", b => {
+    const on = b.getAttribute("aria-pressed") !== "true";
+    b.setAttribute("aria-pressed", on);
+    on ? state.tiers.add(b.dataset.v) : state.tiers.delete(b.dataset.v);
+  });
+  $("#company").addEventListener("change", e => { state.company = e.target.value; render(); });
+  $("#q").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); render(); });
+  $("#newonly").addEventListener("change", e => { state.newOnly = e.target.checked; render(); });
+
+  function render() {
+    const rows = data.jobs.filter(j =>
+      state.tiers.has(j.tier) &&
+      (state.region === "all" || j.regions.includes(state.region)) &&
+      (!state.company || j.company === state.company) &&
+      (!state.newOnly || j.first_seen >= weekAgo) &&
+      (!state.q || (j.title + " " + j.company + " " + j.location).toLowerCase().includes(state.q)));
+    $("#count").textContent = `${rows.length} of ${data.jobs.length} roles`;
+    $("#rows").innerHTML = rows.length ? rows.map(j => `<tr>
+      <td class="co">${esc(j.company)}</td>
+      <td class="role"><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>${j.first_seen === data.today ? '<span class="new">NEW</span>' : ""}</td>
+      <td class="loc">${j.regions.map(r => `<span class="rg">${r}</span>`).join("")}${esc(j.location)}</td>
+      <td><span class="pill t-${j.tier}">${TIER[j.tier]}</span></td>
+      <td class="seen">${esc(j.first_seen)}</td></tr>`).join("")
+      : `<tr><td colspan="5" class="empty">No roles match these filters.</td></tr>`;
+  }
+
+  fetch("data/internships.json", { cache: "no-cache" }).then(r => r.json()).then(d => {
+    data = d;
+    data.today = d.jobs.reduce((m, j) => j.first_seen > m ? j.first_seen : m, "");
+    const t = new Date(data.today + "T00:00:00Z"); t.setUTCDate(t.getUTCDate() - 6);
+    weekAgo = t.toISOString().slice(0, 10);
+    $("#updated").textContent = `Internship tracker · last scan ${d.updated}`;
+
+    const n = f => d.jobs.filter(f).length;
+    const okSrc = d.sources.filter(s => s.ok).length;
+    $("#stats").innerHTML = [
+      [n(j => j.tier === "core"), "core roles"],
+      [n(j => j.first_seen === data.today), "new today"],
+      [n(j => j.regions.includes("US")), "in the USA"],
+      [n(j => j.regions.includes("SG")), "in Singapore"],
+      [n(j => j.regions.includes("IN")), "in India"],
+      [`${okSrc}/${d.sources.length}`, "boards scanned"],
+    ].map(([v, l]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
+
+    [...new Set(d.jobs.map(j => j.company))].sort().forEach(c =>
+      $("#company").insertAdjacentHTML("beforeend", `<option>${esc(c)}</option>`));
+    $("#sources").innerHTML = d.sources.map(s => `<div class="src${s.ok ? "" : " bad"}" ${s.ok ? "" : `title="${esc(s.error)}"`}>
+      <span>${esc(s.source)}</span><span class="n">${s.ok ? s.count : "failed"}</span></div>`).join("");
+    $("#manual").innerHTML = d.manual.map(m => `<a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.company)} ↗</a>`).join("");
+    render();
+  }).catch(() => {
+    $("#rows").innerHTML = `<tr><td colspan="5" class="empty">Could not load data/internships.json.</td></tr>`;
+  });
+})();
+</script>
+</body>
+</html>
