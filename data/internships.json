@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-26 16:50 UTC",
+ "updated": "2026-09-27 17:23 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -195,66 +195,6 @@
   }
  ],
  "jobs": [
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, BS, Software Engineer, Driver Refinement Foundations",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8224900",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Perception, Machine Learning",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8227411",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Sys Intel & Machine Learning",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8233746",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Software Engineering, Sys Intel & ML",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234161",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Systems Engineer, Autonomous Vehicle Networks & Diagnostics",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8231711",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-26"
-  },
   {
    "company": "Amazon",
    "title": "Industrial Development Engineer Intern/Co-op, ROBOTICS - 2027",
@@ -617,6 +557,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, BS, Software Engineer, Driver Refinement Foundations",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8224900",
+   "posted": "2026-09-25",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, BS, SysEng Software Engineer",
    "location": "Mountain View, California, USA",
    "regions": [
@@ -761,6 +713,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Perception, Machine Learning",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8227411",
+   "posted": "2026-09-25",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Product Data Science",
    "location": "San Francisco, California, United States",
    "regions": [
@@ -833,6 +797,30 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Sys Intel & Machine Learning",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8233746",
+   "posted": "2026-09-25",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Software Engineering, Sys Intel & ML",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234161",
+   "posted": "2026-09-25",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Software/ML Engineer, Simulation",
    "location": "Mountain View, California, USA",
    "regions": [
@@ -842,6 +830,18 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8221851",
    "posted": "2026-09-21",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Systems Engineer, Autonomous Vehicle Networks & Diagnostics",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8231711",
+   "posted": "2026-09-25",
+   "first_seen": "2026-09-26"
   },
   {
    "company": "Waymo",
@@ -938,42 +938,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8189848",
    "posted": "2026-09-10",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Software Solutions PhD Intern New 2027",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Solutions-PhD-Intern-New-2027_JR0287314",
-   "posted": "",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Intel",
-   "title": "System Software Engineering - PhD Intern",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/System-Software-Engineering---PhD-Intern_JR0287457",
-   "posted": "",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Data Systems",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557008574",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-26"
   },
   {
    "company": "Adobe",
@@ -1349,6 +1313,30 @@
   },
   {
    "company": "Intel",
+   "title": "Software Solutions PhD Intern New 2027",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Solutions-PhD-Intern-New-2027_JR0287314",
+   "posted": "",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Intel",
+   "title": "System Software Engineering - PhD Intern",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/System-Software-Engineering---PhD-Intern_JR0287457",
+   "posted": "",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Intel",
    "title": "System Technology Research Engineer - (PhD Intern)",
    "location": "US, Oregon, Hillsboro; US, California, Santa Clara; US, Texas, Austin",
    "regions": [
@@ -1442,6 +1430,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556978904",
    "posted": "2026-09-01",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Data Systems",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557008574",
+   "posted": "2026-09-25",
+   "first_seen": "2026-09-26"
   },
   {
    "company": "Microsoft",
@@ -2274,24 +2274,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7686283601340369205",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7672920375646488885",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7686283601340369205",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -2766,24 +2766,24 @@
   {
    "company": "TikTok",
    "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7662672903447988485",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7662674242861074741",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7662672903447988485",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -2906,18 +2906,6 @@
    "url": "https://lifeattiktok.com/search/7670062655184308533",
    "posted": "",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Intern Opportunities for University Students, Atlanta",
-   "location": "United States, Georgia, Atlanta",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557008714",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-26"
   },
   {
    "company": "Adobe",
@@ -3521,6 +3509,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Software Engineer: Intern Opportunities for University Students, Atlanta",
+   "location": "United States, Georgia, Atlanta",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557008714",
+   "posted": "2026-09-25",
+   "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Microsoft",
    "title": "Software Engineer: Intern Opportunity for University Students",
    "location": "United States, California, Mountain View",
    "regions": [
@@ -3918,24 +3918,24 @@
   {
    "company": "TikTok",
    "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7668834837268138293",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7668834837268416821",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7668834837268138293",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4290,24 +4290,24 @@
   {
    "company": "TikTok",
    "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7670738362521520437",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7670700387322300677",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7670738362521520437",
    "posted": "",
    "first_seen": "2026-09-24"
   },
