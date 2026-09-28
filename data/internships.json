@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-27 17:23 UTC",
+ "updated": "2026-09-28 19:56 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 14
+   "count": 13
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -49,7 +49,7 @@
   {
    "source": "Google",
    "ok": true,
-   "count": 23
+   "count": 21
   },
   {
    "source": "Grab (SmartRecruiters)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 24
+   "count": 23
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 32
+   "count": 33
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -195,6 +195,18 @@
   }
  ],
  "jobs": [
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Perception Systems Engineering: Pedestrian Detection Precision",
+   "location": "San Francisco, California",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234670",
+   "posted": "2026-09-28",
+   "first_seen": "2026-09-28"
+  },
   {
    "company": "Amazon",
    "title": "Industrial Development Engineer Intern/Co-op, ROBOTICS - 2027",
@@ -940,6 +952,18 @@
    "first_seen": "2026-09-24"
   },
   {
+   "company": "Bosch",
+   "title": "Radar Sensing AI Research Intern",
+   "location": "Pittsburgh, PA, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152219569",
+   "posted": "2026-09-28",
+   "first_seen": "2026-09-28"
+  },
+  {
    "company": "Adobe",
    "title": "2027 Intern - Machine Learning Engineer",
    "location": "San Jose; San Francisco; Austin; Seattle",
@@ -998,18 +1022,6 @@
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000150014319",
    "posted": "2026-09-17",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Bosch",
-   "title": "Multi-modal Sensing AI Research Intern",
-   "location": "Pittsburgh, PA, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000151890105",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-25"
   },
   {
    "company": "Cohere",
@@ -2274,24 +2286,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7672920375646488885",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7686283601340369205",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7672920375646488885",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -2766,24 +2778,24 @@
   {
    "company": "TikTok",
    "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7662674242861074741",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7662672903447988485",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7662674242861074741",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -3002,18 +3014,6 @@
    "url": "https://www.amazon.jobs/en/jobs/10559746/software-development-engineer-intern-summer-2027-usa-amazon-dedicated-cloud-adc",
    "posted": "2026-09-24",
    "first_seen": "2026-09-25"
-  },
-  {
-   "company": "Amazon",
-   "title": "Software Development Engineer Intern, AWS Data Services - Fall 2026 (US)",
-   "location": "Seattle, WA United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10412530/software-development-engineer-intern-aws-data-services-fall-2026-us",
-   "posted": "2026-05-06",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Amazon",
@@ -3305,30 +3305,6 @@
   },
   {
    "company": "Google",
-   "title": "Software Engineering Intern, BS, Summer 2027",
-   "location": "Mountain View, CA, USA; Austin, TX, USA; Cambridge, MA, USA; Chicago, IL, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/100648618540573382-software-engineering-intern-bs-summer-2027",
-   "posted": "2026-08-31",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Google",
-   "title": "Software Engineering Intern, MS, Summer 2027",
-   "location": "Mountain View, CA, USA; Austin, TX, USA; Atlanta, GA, USA; Boulder, CO, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/94172495052972742-software-engineering-intern-ms-summer-2027",
-   "posted": "2026-08-31",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Google",
    "title": "User Experience Engineer Intern, BS/MS, Summer 2027",
    "location": "Mountain View, CA, USA; Atlanta, GA, USA; Austin, TX, USA; Boulder, CO, USA",
    "regions": [
@@ -3337,18 +3313,6 @@
    "tier": "eng",
    "url": "https://www.google.com/about/careers/applications/jobs/results/112499004540887750-user-experience-engineer-intern-bs-ms-summer-2027",
    "posted": "2026-09-14",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Advanced Packaging Integration and Simulation Intern",
-   "location": "US, Arizona, Phoenix; US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Arizona-Phoenix/Advanced-Packaging-Integration-and-Simulation-Intern_JR0287009",
-   "posted": "",
    "first_seen": "2026-09-24"
   },
   {
@@ -3918,24 +3882,24 @@
   {
    "company": "TikTok",
    "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7668834837268416821",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7668834837268138293",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7668834837268416821",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4290,24 +4254,24 @@
   {
    "company": "TikTok",
    "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7670700387322300677",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7670738362521520437",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7670700387322300677",
    "posted": "",
    "first_seen": "2026-09-24"
   },
