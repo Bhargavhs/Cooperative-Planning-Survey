@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 19:56 UTC",
+ "updated": "2026-09-29 18:24 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 13
+   "count": 15
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 18
+   "count": 15
   },
   {
    "source": "Motional (Greenhouse)",
@@ -124,7 +124,7 @@
   {
    "source": "TikTok",
    "ok": true,
-   "count": 190
+   "count": 189
   },
   {
    "source": "Toyota Research Institute (Lever)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 33
+   "count": 30
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -197,15 +197,27 @@
  "jobs": [
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Perception Systems Engineering: Pedestrian Detection Precision",
+   "title": "2027 Summer Intern, PhD, Machine Learning Research, Planning/Prediction",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8237997",
+   "posted": "2026-09-28",
+   "first_seen": "2026-09-29"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Planner Machine Learning",
    "location": "San Francisco, California",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234670",
-   "posted": "2026-09-28",
-   "first_seen": "2026-09-28"
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234876",
+   "posted": "2026-09-29",
+   "first_seen": "2026-09-29"
   },
   {
    "company": "Amazon",
@@ -581,18 +593,6 @@
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, BS, SysEng Software Engineer",
-   "location": "Mountain View, California, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8174099",
-   "posted": "2026-09-03",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
    "title": "2027 Summer Intern, BS/MS, Embedded, Software Engineer",
    "location": "Mountain View, CA, USA",
    "regions": [
@@ -605,30 +605,6 @@
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, BS/MS, Pipeline and Test Health Engineer",
-   "location": "San Francisco, California, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8177651",
-   "posted": "2026-09-03",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, BS/MS, Software Engineer",
-   "location": "San Francisco, California",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8193731",
-   "posted": "2026-09-14",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
    "title": "2027 Summer Intern, BS/MS, Software Engineering, Commercialization",
    "location": "Mountain View, California, United States; San Francisco, California, United States",
    "regions": [
@@ -637,18 +613,6 @@
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8198218",
    "posted": "2026-09-14",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, BS/MS, Software Engineering, Maneuvering Tech",
-   "location": "San Francisco, California",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8203200",
-   "posted": "2026-09-16",
    "first_seen": "2026-09-24"
   },
   {
@@ -673,18 +637,6 @@
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8210138",
    "posted": "2026-09-17",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Data Science - Commercialization Testing",
-   "location": "San Francisco, California, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8167323",
-   "posted": "2026-08-31",
    "first_seen": "2026-09-24"
   },
   {
@@ -821,7 +773,7 @@
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Software Engineering, Sys Intel & ML",
+   "title": "2027 Summer Intern, MS/PhD, Software Engineering, Onboard Software Integrity",
    "location": "Mountain View, CA, USA",
    "regions": [
     "US"
@@ -905,6 +857,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Perception Systems Engineering: Pedestrian Detection Precision",
+   "location": "San Francisco, California",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234670",
+   "posted": "2026-09-28",
+   "first_seen": "2026-09-28"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Quantitative Software Engineer",
    "location": "Mountain View, California, United States | San Francisco, California, United States",
    "regions": [
@@ -952,16 +916,28 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Bosch",
-   "title": "Radar Sensing AI Research Intern",
-   "location": "Pittsburgh, PA, United States",
+   "company": "Amazon",
+   "title": "PhD Economics Intern – Reduced Form Causal Inference, Summer 2027",
+   "location": "Seattle, WA United States",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152219569",
-   "posted": "2026-09-28",
-   "first_seen": "2026-09-28"
+   "url": "https://www.amazon.jobs/en/jobs/10564111/phd-economics-intern-reduced-form-causal-inference-summer-2027",
+   "posted": "2026-09-29",
+   "first_seen": "2026-09-29"
+  },
+  {
+   "company": "Amazon",
+   "title": "PhD Economics Intern – Structural IO, Summer 2027",
+   "location": "Seattle, WA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://www.amazon.jobs/en/jobs/10564110/phd-economics-intern-structural-io-summer-2027",
+   "posted": "2026-09-29",
+   "first_seen": "2026-09-29"
   },
   {
    "company": "Adobe",
@@ -1022,6 +998,18 @@
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000150014319",
    "posted": "2026-09-17",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Bosch",
+   "title": "Radar Sensing AI Research Intern",
+   "location": "Pittsburgh, PA, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152219569",
+   "posted": "2026-09-28",
+   "first_seen": "2026-09-28"
   },
   {
    "company": "Cohere",
@@ -1465,18 +1453,6 @@
    "tier": "research",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556641091",
    "posted": "2026-02-27",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Security Research INTERN",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556962157",
-   "posted": "2026-09-21",
    "first_seen": "2026-09-24"
   },
   {
@@ -3437,42 +3413,6 @@
   },
   {
    "company": "Microsoft",
-   "title": "Electrical Engineering Internship (6-Month Program)",
-   "location": "United States, Washington, Seattle; United States, California, San Jose; United States, North Carolina, Raleigh",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556982262",
-   "posted": "2026-09-18",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Hardware Engineering Internship (6-Month Program)",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557002608",
-   "posted": "2026-09-19",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Silicon Engineering Internship (6-month Program)",
-   "location": "United States, California, Mountain View; United States, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556982259",
-   "posted": "2026-09-18",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
    "title": "Software Engineer: Intern Opportunities for University Students, Atlanta",
    "location": "United States, Georgia, Atlanta",
    "regions": [
@@ -3529,18 +3469,6 @@
    "tier": "eng",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556983223",
    "posted": "2026-09-11",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineering Internship (6-month Program)",
-   "location": "United States, California, Santa Clara; United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556982258",
-   "posted": "2026-09-18",
    "first_seen": "2026-09-24"
   },
   {
@@ -4320,18 +4248,6 @@
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7663326108122515717",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Mobile Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7673663349758675205",
    "posted": "",
    "first_seen": "2026-09-24"
   },
