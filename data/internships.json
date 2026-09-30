@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29 18:24 UTC",
+ "updated": "2026-09-30 18:13 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 15
+   "count": 16
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 19
+   "count": 20
   },
   {
    "source": "CRED (Lever)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 23
+   "count": 24
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 15
+   "count": 14
   },
   {
    "source": "Motional (Greenhouse)",
@@ -89,7 +89,7 @@
   {
    "source": "NVIDIA (Workday)",
    "ok": true,
-   "count": 31
+   "count": 32
   },
   {
    "source": "Nuro (Greenhouse)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 30
+   "count": 32
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -196,28 +196,40 @@
  ],
  "jobs": [
   {
+   "company": "Bosch",
+   "title": "Material Planning Intern - Summer 2027",
+   "location": "Lincolnshire, IL, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000152705426",
+   "posted": "2026-09-30",
+   "first_seen": "2026-09-30"
+  },
+  {
    "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Machine Learning Research, Planning/Prediction",
+   "title": "2027 Summer Intern, BS, Software Engineering, Labeling",
    "location": "Mountain View, CA, USA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8237997",
-   "posted": "2026-09-28",
-   "first_seen": "2026-09-29"
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8238525",
+   "posted": "2026-09-30",
+   "first_seen": "2026-09-30"
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Planner Machine Learning",
-   "location": "San Francisco, California",
+   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Onboard Developer Platform",
+   "location": "Mountain View, CA, USA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234876",
-   "posted": "2026-09-29",
-   "first_seen": "2026-09-29"
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8240198",
+   "posted": "2026-09-30",
+   "first_seen": "2026-09-30"
   },
   {
    "company": "Amazon",
@@ -713,18 +725,6 @@
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Road Understanding, ML Engineer",
-   "location": "Mountain View, California",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8224746",
-   "posted": "2026-09-23",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Software Engineer",
    "location": "Mountain View, California",
    "regions": [
@@ -833,15 +833,15 @@
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
-   "location": "Mountain View, California, United States",
+   "title": "2027 Summer Intern, PhD, Machine Learning Research, Planning/Prediction",
+   "location": "Mountain View, CA, USA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
-   "posted": "2026-09-16",
-   "first_seen": "2026-09-24"
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8237997",
+   "posted": "2026-09-28",
+   "first_seen": "2026-09-29"
   },
   {
    "company": "Waymo",
@@ -853,6 +853,18 @@
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8193295",
    "posted": "2026-09-10",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
+   "location": "Mountain View, California, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
+   "posted": "2026-09-16",
    "first_seen": "2026-09-24"
   },
   {
@@ -869,6 +881,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Planner Machine Learning",
+   "location": "San Francisco, California",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8234876",
+   "posted": "2026-09-29",
+   "first_seen": "2026-09-29"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Quantitative Software Engineer",
    "location": "Mountain View, California, United States | San Francisco, California, United States",
    "regions": [
@@ -877,6 +901,18 @@
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8197554",
    "posted": "2026-09-16",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Road Understanding, ML Engineer",
+   "location": "Mountain View, California",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8224746",
+   "posted": "2026-09-23",
    "first_seen": "2026-09-24"
   },
   {
@@ -916,6 +952,54 @@
    "first_seen": "2026-09-24"
   },
   {
+   "company": "Intel",
+   "title": "AI SOC Power Delivery Pathfinding PhD Intern",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/AI-SOC-Power-Delivery-Pathfinding-PhD-Intern_JR0287538",
+   "posted": "",
+   "first_seen": "2026-09-30"
+  },
+  {
+   "company": "Intel",
+   "title": "Research Scientist Intern - Graphics, ML",
+   "location": "Virtual US",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Virtual-US/Research-Scientist-Intern---Graphics--ML_JR0287525",
+   "posted": "",
+   "first_seen": "2026-09-30"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "PhD Research Intern, AI Accelerator Design and VLSI - 2027",
+   "location": "US, CA, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--AI-Accelerator-Design-and-VLSI---2027_JR2026584-1",
+   "posted": "",
+   "first_seen": "2026-09-30"
+  },
+  {
+   "company": "Adobe",
+   "title": "2027 Intern - Machine Learning Engineer",
+   "location": "San Jose; San Francisco; Austin; Seattle",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Machine-Learning-Engineer_R171519",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
    "company": "Amazon",
    "title": "PhD Economics Intern – Reduced Form Causal Inference, Summer 2027",
    "location": "Seattle, WA United States",
@@ -938,18 +1022,6 @@
    "url": "https://www.amazon.jobs/en/jobs/10564110/phd-economics-intern-structural-io-summer-2027",
    "posted": "2026-09-29",
    "first_seen": "2026-09-29"
-  },
-  {
-   "company": "Adobe",
-   "title": "2027 Intern - Machine Learning Engineer",
-   "location": "San Jose; San Francisco; Austin; Seattle",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Machine-Learning-Engineer_R171519",
-   "posted": "",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Bosch",
@@ -2896,6 +2968,30 @@
    "first_seen": "2026-09-24"
   },
   {
+   "company": "Amazon",
+   "title": "Software Development Engineer Intern, AWS Database - 2027 (US)",
+   "location": "Seattle, WA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10565667/software-development-engineer-intern-aws-database-2027-us",
+   "posted": "2026-09-30",
+   "first_seen": "2026-09-30"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Electrical Engineering INTERN (PhD)",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556986148",
+   "posted": "2026-09-30",
+   "first_seen": "2026-09-30"
+  },
+  {
    "company": "Adobe",
    "title": "2027 Intern - Software Engineer",
    "location": "San Jose; Waltham; San Francisco; Austin",
@@ -3312,18 +3408,6 @@
    ],
    "tier": "eng",
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Manufacturing-and-Process-Development---Intern--Graduate_JR0286833",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Packaging Technology Development Graduate Intern",
-   "location": "US, Arizona, Phoenix",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Arizona-Phoenix/Packaging-Technology-Development-Graduate-Intern_JR0287080",
    "posted": "",
    "first_seen": "2026-09-24"
   },
