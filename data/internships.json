@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01 18:39 UTC",
+ "updated": "2026-10-02 18:10 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 16
+   "count": 17
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 20
+   "count": 19
   },
   {
    "source": "CRED (Lever)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 27
+   "count": 28
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 19
+   "count": 21
   },
   {
    "source": "Motional (Greenhouse)",
@@ -89,7 +89,7 @@
   {
    "source": "NVIDIA (Workday)",
    "ok": true,
-   "count": 33
+   "count": 34
   },
   {
    "source": "Nuro (Greenhouse)",
@@ -139,12 +139,12 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 33
+   "count": 34
   },
   {
    "source": "Wayve (Greenhouse)",
-   "ok": true,
-   "count": 0
+   "ok": false,
+   "error": "HTTP Error 404: Not Found"
   },
   {
    "source": "Zoox (Lever)",
@@ -196,16 +196,28 @@
  ],
  "jobs": [
   {
+   "company": "NVIDIA",
+   "title": "PhD Research Intern, Embodied and Agentic AI - 2027",
+   "location": "US, CA, Santa Clara; US, CA, Remote",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Embodied-and-Agentic-AI---2027_JR2025792",
+   "posted": "",
+   "first_seen": "2026-10-02"
+  },
+  {
    "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
+   "title": "2027 Summer Intern, MS/PhD, AI-driven ML Performance Engineering Intern",
    "location": "Mountain View, CA, USA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8243556",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8248060",
    "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
+   "first_seen": "2026-10-02"
   },
   {
    "company": "Amazon",
@@ -665,6 +677,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8243556",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Machine Learning, Simulator Evaluation",
    "location": "Mountain View, California, USA",
    "regions": [
@@ -846,18 +870,6 @@
   {
    "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
-   "location": "Mountain View, California",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8193295",
-   "posted": "2026-09-10",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
    "location": "Mountain View, California, United States",
    "regions": [
     "US"
@@ -865,6 +877,18 @@
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
    "posted": "2026-09-16",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
+   "location": "Mountain View, California",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8193295",
+   "posted": "2026-09-10",
    "first_seen": "2026-09-24"
   },
   {
@@ -953,68 +977,32 @@
   },
   {
    "company": "Intel",
-   "title": "AI Software Engineering Undergraduate Intern",
-   "location": "Costa Rica, San Jose",
+   "title": "Software Engineering - PhD Intern",
+   "location": "US, Oregon, Hillsboro",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/AI-Software-Engineering-Undergraduate-Intern_JR0287583",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Engineering-PhD-Intern-New-2027_JR0287458-1",
    "posted": "",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Intel",
-   "title": "AI Software Technical Intern",
-   "location": "US, California, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Software-Technical-Intern_JR0287544",
-   "posted": "",
-   "first_seen": "2026-10-01"
+   "first_seen": "2026-10-02"
   },
   {
    "company": "Microsoft",
-   "title": "Research Intern - Quantum Algorithms",
+   "title": "Research Intern - Security Research Group, Microsoft Research Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557021663",
-   "posted": "2026-09-30",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: AI/ML & LLM Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922929",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557022480",
    "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "PhD Research Intern, Programming Systems - 2027",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Programming-Systems---2027_JR2025379",
-   "posted": "",
-   "first_seen": "2026-10-01"
+   "first_seen": "2026-10-02"
   },
   {
    "company": "Adobe",
    "title": "2027 Intern - Machine Learning Engineer",
-   "location": "San Jose; San Francisco; Austin; Seattle",
+   "location": "San Jose; Waltham; San Francisco; Austin",
    "regions": [
     "US"
    ],
@@ -1068,18 +1056,6 @@
    ],
    "tier": "research",
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000146546699",
-   "posted": "2026-08-31",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Bosch",
-   "title": "Calibration Process Optimization Intern (8 months/40 hours per week)",
-   "location": "Farmington Hills, MI, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000146547249",
    "posted": "2026-08-31",
    "first_seen": "2026-09-24"
   },
@@ -1298,6 +1274,30 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/AI-SOC-Power-Delivery-Pathfinding-PhD-Intern_JR0287538",
    "posted": "",
    "first_seen": "2026-09-30"
+  },
+  {
+   "company": "Intel",
+   "title": "AI Software Engineering Undergraduate Intern",
+   "location": "Costa Rica, San Jose",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/AI-Software-Engineering-Undergraduate-Intern_JR0287583",
+   "posted": "",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Intel",
+   "title": "AI Software Technical Intern",
+   "location": "US, California, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Software-Technical-Intern_JR0287544",
+   "posted": "",
+   "first_seen": "2026-10-01"
   },
   {
    "company": "Intel",
@@ -1565,6 +1565,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Quantum Algorithms",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557021663",
+   "posted": "2026-09-30",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Sciences INTERN",
    "location": "India, Multiple Locations, Multiple Locations",
    "regions": [
@@ -1574,6 +1586,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556641091",
    "posted": "2026-02-27",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: AI/ML & LLM Intern Opportunities for University Students, Redmond",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922929",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
   },
   {
    "company": "NVIDIA",
@@ -1706,6 +1730,18 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Generative-AI-for-Physical-AI---2027_JR2025025",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "PhD Research Intern, Programming Systems - 2027",
+   "location": "US, CA, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Programming-Systems---2027_JR2025379",
+   "posted": "",
+   "first_seen": "2026-10-01"
   },
   {
    "company": "NVIDIA",
@@ -2370,24 +2406,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7672881840860940597",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7672883129493948677",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7672881840860940597",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -3028,76 +3064,28 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Intel",
-   "title": "GPU Physical Design Engineer Intern",
-   "location": "Costa Rica, San Jose",
+   "company": "Amazon",
+   "title": "Software Development Engineer Intern (Embedded Systems) - Summer 2027 (USA)",
+   "location": "Seattle, WA United States",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/GPU-Physical-Design-Engineer-Intern_JR0287532",
-   "posted": "",
-   "first_seen": "2026-10-01"
+   "url": "https://www.amazon.jobs/en/jobs/10567914/software-development-engineer-intern-embedded-systems-summer-2027-usa",
+   "posted": "2026-10-02",
+   "first_seen": "2026-10-02"
   },
   {
    "company": "Microsoft",
-   "title": "Software Engineer: Cloud & Distributed Backend Intern Opportunities for University Students, Redmond",
+   "title": "Explore Program Engineering Internship Opportunities: Second-Year Students, Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922923",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556925816",
    "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Data Platform/Analytics Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922931",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Fullstack Product (Web + Services)  Intern Opportunities for University Students,",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922922",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Redmond, WA",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Security & Identity Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922930",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
+   "first_seen": "2026-10-02"
   },
   {
    "company": "Adobe",
@@ -3509,6 +3497,18 @@
   },
   {
    "company": "Intel",
+   "title": "GPU Physical Design Engineer Intern",
+   "location": "Costa Rica, San Jose",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/GPU-Physical-Design-Engineer-Intern_JR0287532",
+   "posted": "",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Intel",
    "title": "Manufacturing and Process Development - Intern, Bachelor’s",
    "location": "US, Oregon, Hillsboro; US, New Mexico, Albuquerque; US, Arizona, Phoenix",
    "regions": [
@@ -3626,6 +3626,66 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556986148",
    "posted": "2026-09-30",
    "first_seen": "2026-09-30"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: Cloud & Distributed Backend Intern Opportunities for University Students, Redmond",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922923",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: Data Platform/Analytics Intern Opportunities for University Students, Redmond",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922931",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: Fullstack Product (Web + Services)  Intern Opportunities for University Students,",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922922",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Redmond, WA",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: Security & Identity Intern Opportunities for University Students, Redmond",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922930",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
   },
   {
    "company": "Microsoft",
