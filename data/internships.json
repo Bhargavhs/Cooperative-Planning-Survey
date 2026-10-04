@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03 16:53 UTC",
+ "updated": "2026-10-04 17:14 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -78,8 +78,8 @@
   },
   {
    "source": "Microsoft",
-   "ok": true,
-   "count": 22
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "source": "Motional (Greenhouse)",
@@ -195,30 +195,6 @@
   }
  ],
  "jobs": [
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, Perception - Evaluation",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8248327",
-   "posted": "2026-10-02",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Research, World Action Model",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8243732",
-   "posted": "2026-10-02",
-   "first_seen": "2026-10-03"
-  },
   {
    "company": "Amazon",
    "title": "Industrial Development Engineer Intern/Co-op, ROBOTICS - 2027",
@@ -857,6 +833,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, Perception - Evaluation",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8248327",
+   "posted": "2026-10-02",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Data Science",
    "location": "Mountain View, CA, USA; San Francisco, CA, USA",
    "regions": [
@@ -894,18 +882,6 @@
   {
    "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
-   "location": "Mountain View, California, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
-   "posted": "2026-09-16",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
    "location": "Mountain View, California",
    "regions": [
     "US"
@@ -913,6 +889,18 @@
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8193295",
    "posted": "2026-09-10",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
+   "location": "Mountain View, California, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
+   "posted": "2026-09-16",
    "first_seen": "2026-09-24"
   },
   {
@@ -950,6 +938,18 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8197554",
    "posted": "2026-09-16",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Research, World Action Model",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8243732",
+   "posted": "2026-10-02",
+   "first_seen": "2026-10-03"
   },
   {
    "company": "Waymo",
@@ -998,30 +998,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8189848",
    "posted": "2026-09-10",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Data Science: AI Experiences PhD Internship Opportunities - Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556986137",
-   "posted": "2026-10-02",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Maia 200 Development",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557023070",
-   "posted": "2026-10-02",
-   "first_seen": "2026-10-03"
   },
   {
    "company": "Adobe",
@@ -1553,6 +1529,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Data Science: AI Experiences PhD Internship Opportunities - Redmond",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556986137",
+   "posted": "2026-10-02",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "company": "Microsoft",
    "title": "Data Science: PhD Internship Opportunities - Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -1586,6 +1574,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557008574",
    "posted": "2026-09-25",
    "first_seen": "2026-09-26"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Maia 200 Development",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557023070",
+   "posted": "2026-10-02",
+   "first_seen": "2026-10-03"
   },
   {
    "company": "Microsoft",
@@ -2418,24 +2418,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Knowledge Graph) - 2027 Start (PhD)",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7676650607912601861",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Knowledge Graph) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7676652813409552645",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Knowledge Graph) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7676650607912601861",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -2466,24 +2466,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7686283601340369205",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7672920375646488885",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7686283601340369205",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4098,24 +4098,24 @@
   {
    "company": "TikTok",
    "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7668834837268138293",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7668834837268416821",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7668834837268138293",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4470,24 +4470,24 @@
   {
    "company": "TikTok",
    "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7670738362521520437",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7670700387322300677",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7670738362521520437",
    "posted": "",
    "first_seen": "2026-09-24"
   },
