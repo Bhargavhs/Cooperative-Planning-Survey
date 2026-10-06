@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05 20:54 UTC",
+ "updated": "2026-10-06 18:43 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 16
+   "count": 15
   },
   {
    "source": "CRED (Lever)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 30
+   "count": 31
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 22
+   "count": 23
   },
   {
    "source": "Motional (Greenhouse)",
@@ -89,7 +89,7 @@
   {
    "source": "NVIDIA (Workday)",
    "ok": true,
-   "count": 36
+   "count": 37
   },
   {
    "source": "Nuro (Greenhouse)",
@@ -195,30 +195,6 @@
   }
  ],
  "jobs": [
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, ML Systems & Behavior Discovery",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8257159",
-   "posted": "2026-10-05",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Eval Data Infra",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8257205",
-   "posted": "2026-10-05",
-   "first_seen": "2026-10-05"
-  },
   {
    "company": "Amazon",
    "title": "Industrial Development Engineer Intern/Co-op, ROBOTICS - 2027",
@@ -653,6 +629,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, ML Systems & Behavior Discovery",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8257159",
+   "posted": "2026-10-05",
+   "first_seen": "2026-10-05"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Machine Learning Engineer",
    "location": "San Francisco, CA, USA",
    "regions": [
@@ -701,6 +689,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Perception, Evaluation",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8248327",
+   "posted": "2026-10-02",
+   "first_seen": "2026-10-03"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Perception, Machine Learning",
    "location": "Mountain View, CA, USA",
    "regions": [
@@ -746,6 +746,18 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8224729",
    "posted": "2026-09-23",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Eval Data Infra",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8257205",
+   "posted": "2026-10-05",
+   "first_seen": "2026-10-05"
   },
   {
    "company": "Waymo",
@@ -833,18 +845,6 @@
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, Perception - Evaluation",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8248327",
-   "posted": "2026-10-02",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Data Science",
    "location": "Mountain View, CA, USA; San Francisco, CA, USA",
    "regions": [
@@ -882,18 +882,6 @@
   {
    "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
-   "location": "Mountain View, California, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
-   "posted": "2026-09-16",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
    "location": "Mountain View, California",
    "regions": [
     "US"
@@ -901,6 +889,18 @@
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8193295",
    "posted": "2026-09-10",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
+   "location": "Mountain View, California, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
+   "posted": "2026-09-16",
    "first_seen": "2026-09-24"
   },
   {
@@ -1000,6 +1000,30 @@
    "first_seen": "2026-09-24"
   },
   {
+   "company": "Intel",
+   "title": "(Epi) - Module Development Engineer - (PhD Intern)",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/XMLNAME--Epi----Module-Development-Engineer----PhD-Intern-_JR0287820",
+   "posted": "",
+   "first_seen": "2026-10-06"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "Research Intern, Efficient Deep Learning - 2027",
+   "location": "US, CA, Santa Clara; US, CA, Remote",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Intern--Efficient-Deep-Learning---2027_JR2025478",
+   "posted": "",
+   "first_seen": "2026-10-06"
+  },
+  {
    "company": "Adobe",
    "title": "2027 Intern - Applied and Research Scientist/Engineer",
    "location": "San Jose; College Park; San Francisco; Seattle",
@@ -1008,54 +1032,6 @@
    ],
    "tier": "research",
    "url": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Applied-and-Research-Scientist-Engineer_R172064",
-   "posted": "",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "company": "Intel",
-   "title": "AI Solution Architect - Graduate Intern",
-   "location": "US, California, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Solution-Architect---Graduate-Intern_JR0287524",
-   "posted": "",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "company": "Intel",
-   "title": "AI Solution Architect - Undergraduate Intern",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/AI-Solution-Architect---Graduate-Intern_JR0287531",
-   "posted": "",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "company": "Intel",
-   "title": "AI Solution Architect Graduate Intern",
-   "location": "US, California, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Solution-Architect-Graduate-Intern_JR0287530",
-   "posted": "",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "company": "Intel",
-   "title": "Module Engineering (PhD Intern)",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering--PhD-Intern-_JR0287683",
    "posted": "",
    "first_seen": "2026-10-05"
   },
@@ -1094,18 +1070,6 @@
    "url": "https://www.amazon.jobs/en/jobs/10564110/phd-economics-intern-structural-io-summer-2027",
    "posted": "2026-09-29",
    "first_seen": "2026-09-29"
-  },
-  {
-   "company": "Bosch",
-   "title": "AI Application Intern (8 months/40 hours per week)",
-   "location": "Farmington Hills, MI, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000146547599",
-   "posted": "2026-08-31",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Bosch",
@@ -1322,6 +1286,54 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/AI-SOC-Power-Delivery-Pathfinding-PhD-Intern_JR0287538",
    "posted": "",
    "first_seen": "2026-09-30"
+  },
+  {
+   "company": "Intel",
+   "title": "AI Solution Architect - Graduate Intern",
+   "location": "US, California, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Solution-Architect---Graduate-Intern_JR0287524",
+   "posted": "",
+   "first_seen": "2026-10-05"
+  },
+  {
+   "company": "Intel",
+   "title": "AI Solution Architect - Undergraduate Intern",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/AI-Solution-Architect---Graduate-Intern_JR0287531",
+   "posted": "",
+   "first_seen": "2026-10-05"
+  },
+  {
+   "company": "Intel",
+   "title": "AI Solution Architect Graduate Intern",
+   "location": "US, California, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Solution-Architect-Graduate-Intern_JR0287530",
+   "posted": "",
+   "first_seen": "2026-10-05"
+  },
+  {
+   "company": "Intel",
+   "title": "Module Engineering (PhD Intern)",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering--PhD-Intern-_JR0287683",
+   "posted": "",
+   "first_seen": "2026-10-05"
   },
   {
    "company": "Intel",
@@ -3113,39 +3125,15 @@
   },
   {
    "company": "Microsoft",
-   "title": "Firmware Engineering Internship (6-month Program)",
-   "location": "United States, California, Santa Clara",
+   "title": "Software Engineer: Internship Opportunities, Azure Databases",
+   "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557023161",
-   "posted": "2026-10-05",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Ignite Internships: Hardware Engineering",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Ignite-Internships--Hardware-Engineering_JR2027047",
-   "posted": "",
-   "first_seen": "2026-10-05"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Ignite Internships: Software Engineering",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Ignite-Internships--Software-Engineering_JR2026958",
-   "posted": "",
-   "first_seen": "2026-10-05"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557002476",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-06"
   },
   {
    "company": "Adobe",
@@ -3701,6 +3689,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Firmware Engineering Internship (6-month Program)",
+   "location": "United States, California, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557023161",
+   "posted": "2026-10-05",
+   "first_seen": "2026-10-05"
+  },
+  {
+   "company": "Microsoft",
    "title": "Software Engineer: Cloud & Distributed Backend Intern Opportunities for University Students, Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -3774,6 +3774,18 @@
   {
    "company": "Microsoft",
    "title": "Software Engineering Intern - CTJ - TS",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556983221",
+   "posted": "2026-09-11",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineering Intern - CTJ - TS",
    "location": "United States, Virginia, Reston",
    "regions": [
     "US"
@@ -3784,16 +3796,28 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Microsoft",
-   "title": "Software Engineering Intern - CTJ - TS",
-   "location": "United States, Washington, Redmond",
+   "company": "NVIDIA",
+   "title": "NVIDIA 2027 Ignite Internships: Hardware Engineering",
+   "location": "US, CA, Santa Clara",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556983221",
-   "posted": "2026-09-11",
-   "first_seen": "2026-09-24"
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Ignite-Internships--Hardware-Engineering_JR2027047",
+   "posted": "",
+   "first_seen": "2026-10-05"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "NVIDIA 2027 Ignite Internships: Software Engineering",
+   "location": "US, CA, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Ignite-Internships--Software-Engineering_JR2026958",
+   "posted": "",
+   "first_seen": "2026-10-05"
   },
   {
    "company": "NVIDIA",
