@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08 19:06 UTC",
+ "updated": "2026-10-09 18:37 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 21
+   "count": 22
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 14
+   "count": 15
   },
   {
    "source": "CRED (Lever)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 31
+   "count": 32
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -78,8 +78,8 @@
   },
   {
    "source": "Microsoft",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 19
   },
   {
    "source": "Motional (Greenhouse)",
@@ -124,7 +124,7 @@
   {
    "source": "TikTok",
    "ok": true,
-   "count": 193
+   "count": 194
   },
   {
    "source": "Toyota Research Institute (Lever)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 43
+   "count": 44
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -196,40 +196,16 @@
  ],
  "jobs": [
   {
-   "company": "NVIDIA",
-   "title": "PhD Research Intern, Autonomous Systems and Physical AI Research - 2027",
-   "location": "Singapore, Remote; Singapore, Pasir Panjang",
-   "regions": [
-    "SG"
-   ],
-   "tier": "core",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Singapore-Remote/PhD-Research-Intern--Autonomous-Systems-and-Physical-AI-Research---2027_JR2026322",
-   "posted": "",
-   "first_seen": "2026-10-08"
-  },
-  {
    "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Perception, Robotics",
+   "title": "2026 Summer Intern, PhD, Research, World Modeling Evaluation",
    "location": "Mountain View, CA, USA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8227633",
-   "posted": "2026-10-07",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Machine Learning, Planning/Prediction",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8262154",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8265173",
    "posted": "2026-10-08",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "company": "Amazon",
@@ -821,6 +797,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Perception, Robotics",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8227633",
+   "posted": "2026-10-07",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Product Data Science",
    "location": "San Francisco, California, United States",
    "regions": [
@@ -1001,6 +989,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Machine Learning, Planning/Prediction",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8262154",
+   "posted": "2026-10-08",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Perception Systems Engineering: Pedestrian Detection Precision",
    "location": "San Francisco, California",
    "regions": [
@@ -1097,111 +1097,99 @@
   },
   {
    "company": "Bosch",
-   "title": "Intern, HVAC Research",
-   "location": "Singapore, Singapore, Singapore",
+   "title": "Artificial Intelligence / Machine Learning: Foundation Models - Intern",
+   "location": "Sunnyvale, CA, United States",
    "regions": [
-    "SG"
+    "US"
    ],
    "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154354759",
-   "posted": "2026-10-08",
-   "first_seen": "2026-10-08"
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154759734",
+   "posted": "2026-10-09",
+   "first_seen": "2026-10-09"
   },
   {
    "company": "Intel",
-   "title": "Software Research Engineering - (PhD Intern)",
+   "title": "Module Engineering PhD Intern 2027",
    "location": "US, Oregon, Hillsboro",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Research-Engineering----PhD-Intern-_JR0287019",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-2027_JR0286876",
    "posted": "",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
+  },
+  {
+   "company": "Microsoft",
+   "title": "AI Software Engineering Intern",
+   "location": "United States, Washington, Redmond; United States, California, Mountain View",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556962891",
+   "posted": "2026-10-09",
+   "first_seen": "2026-10-09"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Audio and Acoustics",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027326",
+   "posted": "2026-10-08",
+   "first_seen": "2026-10-09"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Brain-Computer Interfaces",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027378",
+   "posted": "2026-10-08",
+   "first_seen": "2026-10-09"
   },
   {
    "company": "NVIDIA",
-   "title": "PhD Research Intern, AI-Aided Engineering – 2027",
+   "title": "Research Intern, Spatial Intelligence - Summer 2027",
    "location": "US, CA, Santa Clara",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--AI-Aided-Engineering---2027_JR2026940",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Intern--Spatial-Intelligence---Summer-2027_JR2027305",
    "posted": "",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Live) - 2027 Start (PhD)",
+   "title": "Machine Learning Engineer Intern (E-Commerce User Growth) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://lifeattiktok.com/search/7694048048843147573",
+   "url": "https://lifeattiktok.com/search/7694354937320868149",
    "posted": "",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Live) - 2027 Start (PhD)",
+   "title": "Machine Learning Engineer Intern (E-Commerce User Growth) - 2027 Start (PhD)",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://lifeattiktok.com/search/7694045969844209973",
+   "url": "https://lifeattiktok.com/search/7694356134081972533",
    "posted": "",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Video) - 2027 Start (PhD）",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7694040502082521397",
-   "posted": "",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Video) - 2027 Start (PhD）",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7694044547207268661",
-   "posted": "",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation/Search Alliance) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7694045967754889477",
-   "posted": "",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (Monetization Technology - Ads Core Global) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7687630614472149301",
-   "posted": "",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "company": "Adobe",
@@ -1262,6 +1250,18 @@
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000146546699",
    "posted": "2026-08-31",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Bosch",
+   "title": "Intern, HVAC Research",
+   "location": "Singapore, Singapore, Singapore",
+   "regions": [
+    "SG"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154354759",
+   "posted": "2026-10-08",
+   "first_seen": "2026-10-08"
   },
   {
    "company": "Cohere",
@@ -1649,6 +1649,18 @@
   },
   {
    "company": "Intel",
+   "title": "Software Research Engineering - (PhD Intern)",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Research-Engineering----PhD-Intern-_JR0287019",
+   "posted": "",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "Intel",
    "title": "Software Solutions PhD Intern New 2027",
    "location": "US, Oregon, Hillsboro",
    "regions": [
@@ -1752,7 +1764,7 @@
    ],
    "tier": "research",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556917520",
-   "posted": "2026-09-24",
+   "posted": "2026-10-08",
    "first_seen": "2026-09-24"
   },
   {
@@ -1776,7 +1788,7 @@
    ],
    "tier": "research",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556982928",
-   "posted": "2026-09-16",
+   "posted": "2026-10-08",
    "first_seen": "2026-09-24"
   },
   {
@@ -1802,18 +1814,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557008574",
    "posted": "2026-09-25",
    "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Maia 200 Development",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557023070",
-   "posted": "2026-10-02",
-   "first_seen": "2026-10-03"
   },
   {
    "company": "Microsoft",
@@ -1850,18 +1850,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556641091",
    "posted": "2026-02-27",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: AI/ML & LLM Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922929",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
   },
   {
    "company": "NVIDIA",
@@ -1922,6 +1910,18 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--AI-Accelerator-Design-and-VLSI---2027_JR2026584-1",
    "posted": "",
    "first_seen": "2026-09-30"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "PhD Research Intern, AI-Aided Engineering – 2027",
+   "location": "US, CA, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--AI-Aided-Engineering---2027_JR2026940",
+   "posted": "",
+   "first_seen": "2026-10-08"
   },
   {
    "company": "NVIDIA",
@@ -2705,6 +2705,30 @@
   },
   {
    "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Live) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7694048048843147573",
+   "posted": "",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Live) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7694045969844209973",
+   "posted": "",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
@@ -2729,6 +2753,30 @@
   },
   {
    "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Video) - 2027 Start (PhD）",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7694040502082521397",
+   "posted": "",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Video) - 2027 Start (PhD）",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7694044547207268661",
+   "posted": "",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation/Search Alliance) - 2027 Start (PhD)",
    "location": "Seattle, Washington, United States of America",
    "regions": [
@@ -2738,6 +2786,18 @@
    "url": "https://lifeattiktok.com/search/7670247810111768837",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation/Search Alliance) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7694045967754889477",
+   "posted": "",
+   "first_seen": "2026-10-08"
   },
   {
    "company": "TikTok",
@@ -2846,6 +2906,18 @@
    "url": "https://lifeattiktok.com/search/7669707492914727221",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (Monetization Technology - Ads Core Global) - 2027 Summer",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7687630614472149301",
+   "posted": "",
+   "first_seen": "2026-10-08"
   },
   {
    "company": "TikTok",
@@ -3329,27 +3401,15 @@
   },
   {
    "company": "Amazon",
-   "title": "Data Engineer Internship - 2027 (US)",
-   "location": "Seattle, WA United States",
+   "title": "Systems Development Engineer Intern, (US) 2027",
+   "location": "Bellevue, WA United States",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10553907/data-engineer-internship-2027-us",
-   "posted": "2026-09-18",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "company": "Amazon",
-   "title": "Embedded Firmware Co-op, Amazon Robotics - Spring 2027",
-   "location": "North Reading, MA United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10573570/embedded-firmware-co-op-amazon-robotics-spring-2027",
+   "url": "https://www.amazon.jobs/en/jobs/10573984/systems-development-engineer-intern-us-2027",
    "posted": "2026-10-08",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "company": "Adobe",
@@ -3398,6 +3458,30 @@
    "url": "https://www.amazon.jobs/en/jobs/10517649/cloud-hardware-development-engineer-intern-annapurna-labs-2027",
    "posted": "2026-08-27",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Amazon",
+   "title": "Data Engineer Internship - 2027 (US)",
+   "location": "Seattle, WA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10553907/data-engineer-internship-2027-us",
+   "posted": "2026-09-18",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "Amazon",
+   "title": "Embedded Firmware Co-op, Amazon Robotics - Spring 2027",
+   "location": "North Reading, MA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10573570/embedded-firmware-co-op-amazon-robotics-spring-2027",
+   "posted": "2026-10-08",
+   "first_seen": "2026-10-08"
   },
   {
    "company": "Amazon",
@@ -3917,18 +4001,6 @@
   },
   {
    "company": "Microsoft",
-   "title": "Explore Program Engineering Internship Opportunities: Second-Year Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556925816",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-02"
-  },
-  {
-   "company": "Microsoft",
    "title": "Firmware Engineering Internship (6-month Program)",
    "location": "United States, California, Santa Clara",
    "regions": [
@@ -3938,66 +4010,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557023161",
    "posted": "2026-10-05",
    "first_seen": "2026-10-05"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Cloud & Distributed Backend Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922923",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Data Platform/Analytics Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922931",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Fullstack Product (Web + Services)  Intern Opportunities for University Students,",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922922",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Redmond, WA",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Security & Identity Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922930",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
   },
   {
    "company": "Microsoft",
@@ -4704,18 +4716,6 @@
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7665271933388589317",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Design Engineering Intern (Design System & AI Workflow - TikTok-Design) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7667857406611343621",
    "posted": "",
    "first_seen": "2026-09-24"
   },
