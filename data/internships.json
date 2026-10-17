@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16 17:07 UTC",
+ "updated": "2026-10-17 16:03 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 23
+   "count": 24
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -69,7 +69,7 @@
   {
    "source": "Kodiak (Greenhouse)",
    "ok": true,
-   "count": 5
+   "count": 4
   },
   {
    "source": "Meesho (Lever)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 23
+   "count": 25
   },
   {
    "source": "Motional (Greenhouse)",
@@ -305,7 +305,7 @@
   },
   {
    "company": "Figure AI",
-   "title": "Embedded Software Engineering Intern, Platform",
+   "title": "Embedded Software Engineering Intern [Winter 2027]",
    "location": "San Jose, CA",
    "regions": [
     "US"
@@ -326,18 +326,6 @@
    "url": "https://job-boards.greenhouse.io/figureai/jobs/4606072006",
    "posted": "2025-10-01",
    "first_seen": "2026-10-07"
-  },
-  {
-   "company": "Kodiak",
-   "title": "Winter 2027 Intern, Controls",
-   "location": "Mountain View, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://job-boards.greenhouse.io/kodiak/jobs/4378402009",
-   "posted": "2026-08-24",
-   "first_seen": "2026-10-13"
   },
   {
    "company": "Kodiak",
@@ -1216,76 +1204,40 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Intel",
-   "title": "Module Engineering PhD Intern New 2027",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-New-2027_JR0288076",
-   "posted": "",
-   "first_seen": "2026-10-16"
-  },
-  {
-   "company": "Intel",
-   "title": "Process Integ and Yield Eng PhD Intern Grade 029 new 2027",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Process-Integ-and-Yield-Eng-PhD-Intern-Grade-029-new-2027_JR0288083",
-   "posted": "",
-   "first_seen": "2026-10-16"
-  },
-  {
    "company": "Microsoft",
-   "title": "Research Intern - Efficient AI Software Systems",
+   "title": "Research Intern - Agentic Data Memory",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557041731",
-   "posted": "2026-10-15",
-   "first_seen": "2026-10-16"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Gray Systems Lab (GSL)",
-   "location": "United States, Washington, Redmond; United States, California, Mountain View",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557041730",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557040344",
    "posted": "2026-10-16",
-   "first_seen": "2026-10-16"
+   "first_seen": "2026-10-17"
   },
   {
    "company": "Microsoft",
-   "title": "Research Intern - Interactive Multimodal Futures Group (Situated, Social & Ubiquitous Computing)",
-   "location": "United States, Washington, Redmond",
+   "title": "Research Intern - MSR AI Interaction and Learning",
+   "location": "United States, Washington, Redmond; United States, New York, New York",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557041012",
-   "posted": "2026-10-14",
-   "first_seen": "2026-10-16"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557042156",
+   "posted": "2026-10-16",
+   "first_seen": "2026-10-17"
   },
   {
    "company": "Microsoft",
-   "title": "Researcher Intern, CoreAI",
-   "location": "United States, Washington, Redmond; United States, California, Mountain View",
+   "title": "Research Intern - Machine Learning at MSR NYC",
+   "location": "United States, New York, New York; United States, Massachusetts, Cambridge",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
-   "posted": "2026-10-15",
-   "first_seen": "2026-10-16"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557042145",
+   "posted": "2026-10-16",
+   "first_seen": "2026-10-17"
   },
   {
    "company": "Adobe",
@@ -1757,6 +1709,18 @@
   },
   {
    "company": "Intel",
+   "title": "Module Engineering PhD Intern New 2027",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-New-2027_JR0288076",
+   "posted": "",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "company": "Intel",
    "title": "Module Engineering PhD Intern Summer 2027",
    "location": "US, Oregon, Hillsboro",
    "regions": [
@@ -1766,6 +1730,18 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-Summer-2027_JR0286916",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Intel",
+   "title": "Process Integ and Yield Eng PhD Intern Grade 029 new 2027",
+   "location": "US, Oregon, Hillsboro",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Process-Integ-and-Yield-Eng-PhD-Intern-Grade-029-new-2027_JR0288083",
+   "posted": "",
+   "first_seen": "2026-10-16"
   },
   {
    "company": "Intel",
@@ -1949,18 +1925,6 @@
   },
   {
    "company": "Microsoft",
-   "title": "Data Science: AI Experiences PhD Internship Opportunities - Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556986137",
-   "posted": "2026-10-02",
-   "first_seen": "2026-10-03"
-  },
-  {
-   "company": "Microsoft",
    "title": "Data Science: PhD Internship Opportunities - Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -2033,6 +1997,42 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Efficient AI Software Systems",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557041731",
+   "posted": "2026-10-15",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Gray Systems Lab (GSL)",
+   "location": "United States, Washington, Redmond; United States, California, Mountain View",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557041730",
+   "posted": "2026-10-16",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Interactive Multimodal Futures Group (Situated, Social & Ubiquitous Computing)",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557041012",
+   "posted": "2026-10-14",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Intern - Machine Learning and Statistics",
    "location": "United States, Massachusetts, Cambridge; United States, Washington, Redmond",
    "regions": [
@@ -2090,6 +2090,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556641091",
    "posted": "2026-02-27",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Researcher Intern, CoreAI",
+   "location": "United States, Washington, Redmond; United States, California, Mountain View",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
+   "posted": "2026-10-15",
+   "first_seen": "2026-10-16"
   },
   {
    "company": "NVIDIA",
@@ -3760,40 +3772,16 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Figure AI",
-   "title": "Hardware Reliability Intern [Winter 2027]",
-   "location": "San Jose, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://job-boards.greenhouse.io/figureai/jobs/4613067006",
-   "posted": "2025-10-24",
-   "first_seen": "2026-10-16"
-  },
-  {
-   "company": "Grab",
-   "title": "Intern, Software Engineer",
-   "location": "Singapore, , Singapore",
+   "company": "Amazon",
+   "title": "Data Center Infrastructure Engineering Intern, Colocation Regional Engineering",
+   "location": "Singapore,  Singapore",
    "regions": [
     "SG"
    ],
    "tier": "eng",
-   "url": "https://jobs.smartrecruiters.com/Grab/744000155926216",
-   "posted": "2026-10-16",
-   "first_seen": "2026-10-16"
-  },
-  {
-   "company": "TikTok",
-   "title": "Software Engineer Intern (Recommendation Performance Efficiency) - 2027 Summer",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7673636206961641781",
-   "posted": "",
-   "first_seen": "2026-10-16"
+   "url": "https://www.amazon.jobs/en/jobs/10507775/data-center-infrastructure-engineering-intern-colocation-regional-engineering",
+   "posted": "2026-10-06",
+   "first_seen": "2026-10-17"
   },
   {
    "company": "Adobe",
@@ -4193,6 +4181,18 @@
   },
   {
    "company": "Figure AI",
+   "title": "Hardware Reliability Intern [Winter 2027]",
+   "location": "San Jose, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://job-boards.greenhouse.io/figureai/jobs/4613067006",
+   "posted": "2025-10-24",
+   "first_seen": "2026-10-16"
+  },
+  {
+   "company": "Figure AI",
    "title": "Mechanical Engineer Intern [Winter 2027]",
    "location": "San Jose, CA",
    "regions": [
@@ -4274,6 +4274,18 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/104489346874122950-software-engineering-intern-2027-english",
    "posted": "2026-10-13",
    "first_seen": "2026-10-13"
+  },
+  {
+   "company": "Grab",
+   "title": "Intern, Software Engineer",
+   "location": "Singapore, , Singapore",
+   "regions": [
+    "SG"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000155926216",
+   "posted": "2026-10-16",
+   "first_seen": "2026-10-16"
   },
   {
    "company": "Grab",
@@ -5474,6 +5486,18 @@
    "url": "https://lifeattiktok.com/search/7675159726676101381",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Software Engineer Intern (Recommendation Performance Efficiency) - 2027 Summer",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7673636206961641781",
+   "posted": "",
+   "first_seen": "2026-10-16"
   },
   {
    "company": "TikTok",
