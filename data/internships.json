@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31 17:28 UTC",
+ "updated": "2026-11-01 18:15 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -195,18 +195,6 @@
   }
  ],
  "jobs": [
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Research Scientist Intern",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8337719",
-   "posted": "2026-10-30",
-   "first_seen": "2026-10-31"
-  },
   {
    "company": "Amazon",
    "title": "2027 Applied Science Internship - Robotics - United States",
@@ -1445,6 +1433,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Research Scientist Intern",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8337719",
+   "posted": "2026-10-30",
+   "first_seen": "2026-10-31"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, PhD, Research Scientist, Visual Reasoning",
    "location": "Mountain View, CA, USA",
    "regions": [
@@ -1601,27 +1601,15 @@
   },
   {
    "company": "Microsoft",
-   "title": "Research Intern - Office of Applied Research",
-   "location": "United States, Washington, Redmond; United States, New York, New York",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557051409",
-   "posted": "2026-10-30",
-   "first_seen": "2026-10-31"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Security Research Intern",
+   "title": "Research Intern - Interactive Multimodal Futures Group (Situated, Social & Ubiquitous Computing)",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557044769",
-   "posted": "2026-10-22",
-   "first_seen": "2026-10-31"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557041012",
+   "posted": "2026-10-14",
+   "first_seen": "2026-11-01"
   },
   {
    "company": "Adobe",
@@ -2645,6 +2633,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Office of Applied Research",
+   "location": "United States, Washington, Redmond; United States, New York, New York",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557051409",
+   "posted": "2026-10-30",
+   "first_seen": "2026-10-31"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Intern - Quantum Algorithms",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -2681,18 +2681,6 @@
   },
   {
    "company": "Microsoft",
-   "title": "Researcher Intern, CoreAI",
-   "location": "United States, Washington, Redmond; United States, California, Mountain View",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
-   "posted": "2026-10-15",
-   "first_seen": "2026-10-20"
-  },
-  {
-   "company": "Microsoft",
    "title": "Security Research INTERN",
    "location": "India, Multiple Locations, Multiple Locations",
    "regions": [
@@ -2702,6 +2690,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557043380",
    "posted": "2026-10-23",
    "first_seen": "2026-10-23"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Security Research Intern",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557044769",
+   "posted": "2026-10-22",
+   "first_seen": "2026-10-31"
   },
   {
    "company": "NVIDIA",
@@ -4420,16 +4420,16 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Toyota Research Institute",
-   "title": "Accelerated Science Intern, Representation Learning for Molecules and Materials",
-   "location": "Los Altos, CA",
+   "company": "Microsoft",
+   "title": "Software Engineer: Security & Identity Intern Opportunities for University Students, Redmond",
+   "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://jobs.lever.co/tri/9c851b9d-169d-4bb3-b164-828098e077e7",
-   "posted": "2026-10-30",
-   "first_seen": "2026-10-31"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922930",
+   "posted": "2026-11-01",
+   "first_seen": "2026-11-01"
   },
   {
    "company": "Adobe",
@@ -6518,6 +6518,18 @@
    "url": "https://lifeattiktok.com/search/7672397362020862213",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Accelerated Science Intern, Representation Learning for Molecules and Materials",
+   "location": "Los Altos, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.lever.co/tri/9c851b9d-169d-4bb3-b164-828098e077e7",
+   "posted": "2026-10-30",
+   "first_seen": "2026-10-31"
   }
  ]
 }
