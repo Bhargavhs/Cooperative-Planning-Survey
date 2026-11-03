@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02 22:05 UTC",
+ "updated": "2026-11-03 19:57 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 36
+   "count": 37
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -34,7 +34,7 @@
   {
    "source": "Cohere (Ashby)",
    "ok": true,
-   "count": 3
+   "count": 2
   },
   {
    "source": "Databricks (Greenhouse)",
@@ -44,7 +44,7 @@
   {
    "source": "Figure AI (Greenhouse)",
    "ok": true,
-   "count": 8
+   "count": 9
   },
   {
    "source": "Google",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 42
+   "count": 41
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 38
+   "count": 39
   },
   {
    "source": "Motional (Greenhouse)",
@@ -114,7 +114,7 @@
   {
    "source": "Shield AI (Lever)",
    "ok": true,
-   "count": 8
+   "count": 9
   },
   {
    "source": "Skydio (Ashby)",
@@ -129,7 +129,7 @@
   {
    "source": "Toyota Research Institute (Lever)",
    "ok": true,
-   "count": 14
+   "count": 15
   },
   {
    "source": "Waabi (Lever)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 54
+   "count": 55
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -195,6 +195,30 @@
   }
  ],
  "jobs": [
+  {
+   "company": "Toyota Research Institute",
+   "title": "Bridging Atomistic Modeling to Real Electrochemical Systems Modeling Intern",
+   "location": "Los Altos, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/44812007-50a8-49e6-87ed-3fac9fa6b418",
+   "posted": "2026-11-03",
+   "first_seen": "2026-11-03"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, BS/MS, Software Engineering, Commercialization",
+   "location": "Mountain View, California, United States; San Francisco, California, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8198218",
+   "posted": "2026-09-14",
+   "first_seen": "2026-11-03"
+  },
   {
    "company": "Amazon",
    "title": "2027 Applied Science Internship - Robotics - United States",
@@ -1588,52 +1612,16 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Microsoft",
-   "title": "Research Intern - Coding Agents & Post-Training Optimization",
-   "location": "United States, Washington, Redmond",
+   "company": "NVIDIA",
+   "title": "AI Compiler and Kernel Intern – Summer 2027",
+   "location": "US, TX, Austin",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557053024",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Foundational Models & Agent",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557052982",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Speech Processing",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557053016",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Researcher Intern, CoreAI",
-   "location": "United States, Washington, Redmond; United States, California, Mountain View",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-TX-Austin/AI-Compiler-and-Kernel-Intern---Summer-2027_JR2029220-1",
+   "posted": "",
+   "first_seen": "2026-11-03"
   },
   {
    "company": "Adobe",
@@ -2141,18 +2129,6 @@
   },
   {
    "company": "Intel",
-   "title": "Module Engineering - PhD Intern",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-Summer-2027_JR0286916",
-   "posted": "",
-   "first_seen": "2026-10-27"
-  },
-  {
-   "company": "Intel",
    "title": "Module Engineering - PhD Intern (Advanced Wet Etch and Cleans)",
    "location": "US, Oregon, Hillsboro",
    "regions": [
@@ -2537,6 +2513,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Coding Agents & Post-Training Optimization",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557053024",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Intern - Data Systems",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -2558,6 +2546,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557041731",
    "posted": "2026-10-15",
    "first_seen": "2026-10-16"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Foundational Models & Agent",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557052982",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
   },
   {
    "company": "Microsoft",
@@ -2693,6 +2693,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Speech Processing",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557053016",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Sciences INTERN",
    "location": "India, Multiple Locations, Multiple Locations",
    "regions": [
@@ -2702,6 +2714,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556641091",
    "posted": "2026-02-27",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Researcher Intern, CoreAI",
+   "location": "United States, Washington, Redmond; United States, California, Mountain View",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
   },
   {
    "company": "Microsoft",
@@ -2726,18 +2750,6 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-TX-Austin/AI-Systems-Software-Engineering-Intern---Summer-2027_JR2027170",
    "posted": "",
    "first_seen": "2026-10-30"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "Go-to-Market Strategy Intern, NPN AI Consulting - Summer 2027",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Go-to-Market-Strategy-Intern--NPN-AI-Consulting---Summer-2027_JR2028642",
-   "posted": "",
-   "first_seen": "2026-10-27"
   },
   {
    "company": "NVIDIA",
@@ -4432,64 +4444,52 @@
    "first_seen": "2026-09-24"
   },
   {
+   "company": "Amazon",
+   "title": "Systems Development Engineer Intern, (US) 2027",
+   "location": "Bellevue, WA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10573984/systems-development-engineer-intern-us-2027",
+   "posted": "2026-10-08",
+   "first_seen": "2026-11-03"
+  },
+  {
+   "company": "Figure AI",
+   "title": "Integration & Test - Mechanical Engineering Intern [Winter 2027]",
+   "location": "San Jose, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://job-boards.greenhouse.io/figureai/jobs/4726631006",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-03"
+  },
+  {
    "company": "Microsoft",
-   "title": "Explore Program Engineering Internship Opportunities: First-Year Students, Redmond",
+   "title": "Software Engineer, Teamwork Experiences Internship Opportunities",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556925823",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Redmond, WA",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Internship Opportunities",
-   "location": "United States, California, Aliso Viejo",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557044764",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557037859",
+   "posted": "2026-11-03",
+   "first_seen": "2026-11-03"
   },
   {
    "company": "Shield AI",
-   "title": "Structures / Mechanical Test Co-op - January 2027 Co-op",
+   "title": "Summer 2027 Intern - Embedded Firmware - 5810",
    "location": "Dallas, Texas",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://jobs.lever.co/shieldai/1be0e71a-cf7f-4966-8532-09e6f40bb9dc",
+   "url": "https://jobs.lever.co/shieldai/ac38d092-f435-4301-880b-48d0e92679a4",
    "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Skydio",
-   "title": "Electrical Engineer Intern - Summer 2027",
-   "location": "San Mateo, California, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.ashbyhq.com/skydio/57336f0f-a8ed-4ede-b6da-d399e5335fe4",
-   "posted": "2026-10-20",
-   "first_seen": "2026-11-02"
+   "first_seen": "2026-11-03"
   },
   {
    "company": "Adobe",
@@ -4984,18 +4984,6 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Cohere",
-   "title": "Software Engineer Intern (Winter 2027)",
-   "location": "Canada; Dubai; London; United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
-   "posted": "2026-05-01",
-   "first_seen": "2026-09-24"
-  },
-  {
    "company": "Databricks",
    "title": "Software Engineering Intern (2027)",
    "location": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada",
@@ -5273,6 +5261,42 @@
   },
   {
    "company": "Microsoft",
+   "title": "Explore Program Engineering Internship Opportunities: First-Year Students, Redmond",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556925823",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Redmond, WA",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Software Engineer: Internship Opportunities",
+   "location": "United States, California, Aliso Viejo",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557044764",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
+  },
+  {
+   "company": "Microsoft",
    "title": "Software Engineer: Security & Identity Intern Opportunities for University Students, Cambridge",
    "location": "United States, Massachusetts, Cambridge",
    "regions": [
@@ -5501,6 +5525,18 @@
   },
   {
    "company": "Shield AI",
+   "title": "Structures / Mechanical Test Co-op - January 2027 Co-op",
+   "location": "Dallas, Texas",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.lever.co/shieldai/1be0e71a-cf7f-4966-8532-09e6f40bb9dc",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-02"
+  },
+  {
+   "company": "Shield AI",
    "title": "Summer 2027 - Advanced Manufacturing Engineering Intern",
    "location": "Dallas, Texas; Seattle, Washington",
    "regions": [
@@ -5546,6 +5582,18 @@
    "url": "https://jobs.lever.co/shieldai/da54c482-fe62-4f60-98b1-55ac0b82b3bc",
    "posted": "2026-09-21",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Skydio",
+   "title": "Electrical Engineer Intern - Summer 2027",
+   "location": "San Mateo, California, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.ashbyhq.com/skydio/57336f0f-a8ed-4ede-b6da-d399e5335fe4",
+   "posted": "2026-10-20",
+   "first_seen": "2026-11-02"
   },
   {
    "company": "Skydio",
