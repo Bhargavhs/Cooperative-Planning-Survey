@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06 19:46 UTC",
+ "updated": "2026-11-07 17:55 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 41
+   "count": 40
   },
   {
    "source": "Motional (Greenhouse)",
@@ -114,7 +114,7 @@
   {
    "source": "Shield AI (Lever)",
    "ok": true,
-   "count": 10
+   "count": 11
   },
   {
    "source": "Skydio (Ashby)",
@@ -124,7 +124,7 @@
   {
    "source": "TikTok",
    "ok": true,
-   "count": 206
+   "count": 208
   },
   {
    "source": "Toyota Research Institute (Lever)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 54
+   "count": 56
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -149,7 +149,7 @@
   {
    "source": "Zoox (Lever)",
    "ok": true,
-   "count": 5
+   "count": 7
   }
  ],
  "manual": [
@@ -196,76 +196,64 @@
  ],
  "jobs": [
   {
-   "company": "Toyota Research Institute",
-   "title": "Accelerated Science Intern, Multi-Agent Learning and Coordination",
-   "location": "Los Altos, CA",
+   "company": "Shield AI",
+   "title": "2027 Summer Intern - Supplier Development Engineer - 6463",
+   "location": "Dallas, Texas",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://jobs.lever.co/tri/86e6a285-bb0a-4e84-8bf9-bd498d45c33d",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Toyota Research Institute",
-   "title": "Robotics Intern, Human-Robot Interaction",
-   "location": "Cambridge, MA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/tri/11da7518-14d4-4960-a3aa-57dc010f3642",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-06"
+   "url": "https://jobs.lever.co/shieldai/a2bb6f71-abcf-4938-a3a2-803b5d7c0753",
+   "posted": "2026-11-07",
+   "first_seen": "2026-11-07"
   },
   {
    "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Multiverse",
-   "location": "San Francisco, California, USA",
+   "title": "2027 Summer Intern, Machine Learning, MS/PhD, Simulation Realism (World Model)",
+   "location": "Mountain View, California, United States",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8350832",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8358262",
    "posted": "2026-11-06",
-   "first_seen": "2026-11-06"
+   "first_seen": "2026-11-07"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, PhD, Machine Learning - Generative World Models & Controllable Simulation",
+   "location": "Mountain View, California, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8351210",
+   "posted": "2026-11-06",
+   "first_seen": "2026-11-07"
   },
   {
    "company": "Zoox",
-   "title": "Software Engineer Intern, Autonomy Software [Summer 2027]",
+   "title": "AI Workflows & Safety Decision Making Intern [2027]",
    "location": "Foster City, CA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://jobs.lever.co/zoox/7b20b929-d9a4-4995-a472-16cd4925a877",
-   "posted": "2026-10-30",
-   "first_seen": "2026-11-06"
+   "url": "https://jobs.lever.co/zoox/0168ad29-2fd8-4c91-865c-b9fff8aa30c1",
+   "posted": "2026-11-07",
+   "first_seen": "2026-11-07"
   },
   {
    "company": "Zoox",
-   "title": "Software Engineer Intern, Software Platforms & Product [Summer 2027]",
-   "location": "Foster City, CA",
+   "title": "Data Science Intern [Summer 2027]",
+   "location": "Foster City, CA; Boston, MA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://jobs.lever.co/zoox/88f6cb68-1534-44af-80db-10e43c203520",
-   "posted": "2026-10-30",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Zoox",
-   "title": "Software Engineer Intern, Software Systems [Summer 2027]",
-   "location": "Foster City, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/zoox/8b32157b-ab44-4078-85ea-1d8d7b747a20",
-   "posted": "2026-10-30",
-   "first_seen": "2026-11-06"
+   "url": "https://jobs.lever.co/zoox/85c6aec7-8da2-445d-9c4d-812365dbce97",
+   "posted": "2026-11-06",
+   "first_seen": "2026-11-07"
   },
   {
    "company": "Amazon",
@@ -869,6 +857,18 @@
   },
   {
    "company": "Toyota Research Institute",
+   "title": "Accelerated Science Intern, Multi-Agent Learning and Coordination",
+   "location": "Los Altos, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/86e6a285-bb0a-4e84-8bf9-bd498d45c33d",
+   "posted": "2026-11-05",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Toyota Research Institute",
    "title": "Accelerated Science Intern, Multi-scale Physics Battery Modeling",
    "location": "Los Altos, CA",
    "regions": [
@@ -1022,6 +1022,18 @@
    "url": "https://jobs.lever.co/tri/dcc68e06-e6a6-4cb5-b0a9-282ab9c16dc8",
    "posted": "2026-10-29",
    "first_seen": "2026-10-30"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Robotics Intern, Human-Robot Interaction",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/11da7518-14d4-4960-a3aa-57dc010f3642",
+   "posted": "2026-11-05",
+   "first_seen": "2026-11-06"
   },
   {
    "company": "Toyota Research Institute",
@@ -1385,6 +1397,18 @@
   },
   {
    "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Multiverse",
+   "location": "San Francisco, California, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8350832",
+   "posted": "2026-11-06",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Software Engineer, Onboard Developer Platform",
    "location": "Mountain View, CA, USA",
    "regions": [
@@ -1732,52 +1756,76 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Bosch",
-   "title": "Vision‑Language‑Action (VLA) Research Intern",
-   "location": "Sunnyvale, CA, United States",
+   "company": "Zoox",
+   "title": "Software Engineer Intern, Autonomy Software [Summer 2027]",
+   "location": "Foster City, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/zoox/7b20b929-d9a4-4995-a472-16cd4925a877",
+   "posted": "2026-10-30",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Zoox",
+   "title": "Software Engineer Intern, Software Platforms & Product [Summer 2027]",
+   "location": "Foster City, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/zoox/88f6cb68-1534-44af-80db-10e43c203520",
+   "posted": "2026-10-30",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Zoox",
+   "title": "Software Engineer Intern, Software Systems [Summer 2027]",
+   "location": "Foster City, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/zoox/8b32157b-ab44-4078-85ea-1d8d7b747a20",
+   "posted": "2026-10-30",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - AI & Human Systems",
+   "location": "United States, New York, New York; United States, Massachusetts, Cambridge",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000160212170",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557056017",
    "posted": "2026-11-06",
-   "first_seen": "2026-11-06"
+   "first_seen": "2026-11-07"
   },
   {
-   "company": "Microsoft",
-   "title": "Data Science: PhD Internship Opportunities - Redmond",
-   "location": "United States, Washington, Redmond",
+   "company": "TikTok",
+   "title": "Research Engineer Intern (TikTok Generalized Arch) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556982928",
-   "posted": "2026-11-04",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Research in Software Engineering, ML Systems, Agents",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557054069",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "Research and Engineering Intern, Agentic Systems Intelligence – Summer 2027",
-   "location": "US, CA, Santa Clara; US, TX, Austin; US, WA, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-and-Engineering-Intern--Agentic-Systems-Intelligence---Summer-2027_JR2028260",
+   "url": "https://lifeattiktok.com/search/7704981006856145205",
    "posted": "",
-   "first_seen": "2026-11-06"
+   "first_seen": "2026-11-07"
+  },
+  {
+   "company": "TikTok",
+   "title": "Software Engineer - Intern (TikTok BRIC) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7705012688944810245",
+   "posted": "",
+   "first_seen": "2026-11-07"
   },
   {
    "company": "Adobe",
@@ -1958,6 +2006,18 @@
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154354759",
    "posted": "2026-10-08",
    "first_seen": "2026-10-08"
+  },
+  {
+   "company": "Bosch",
+   "title": "Vision‑Language‑Action (VLA) Research Intern",
+   "location": "Sunnyvale, CA, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000160212170",
+   "posted": "2026-11-06",
+   "first_seen": "2026-11-06"
   },
   {
    "company": "Cohere",
@@ -2585,15 +2645,15 @@
   },
   {
    "company": "Microsoft",
-   "title": "Data Science - Forward Deployed Engineer: PhD Internship Opportunities",
+   "title": "Data Science: PhD Internship Opportunities - Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557040991",
-   "posted": "2026-10-20",
-   "first_seen": "2026-10-20"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556982928",
+   "posted": "2026-11-04",
+   "first_seen": "2026-11-06"
   },
   {
    "company": "Microsoft",
@@ -2846,6 +2906,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557021663",
    "posted": "2026-09-30",
    "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Research in Software Engineering, ML Systems, Agents",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557054069",
+   "posted": "2026-11-05",
+   "first_seen": "2026-11-06"
   },
   {
    "company": "Microsoft",
@@ -3122,6 +3194,18 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Intern--Spatial-Intelligence---Summer-2027_JR2027305",
    "posted": "",
    "first_seen": "2026-10-09"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "Research and Engineering Intern, Agentic Systems Intelligence – Summer 2027",
+   "location": "US, CA, Santa Clara; US, TX, Austin; US, WA, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-and-Engineering-Intern--Agentic-Systems-Intelligence---Summer-2027_JR2028260",
+   "posted": "",
+   "first_seen": "2026-11-06"
   },
   {
    "company": "NVIDIA",
@@ -3774,24 +3858,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Knowledge Graph) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7676652813409552645",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Knowledge Graph) - 2027 Start (PhD)",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7676650607912601861",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Knowledge Graph) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7676652813409552645",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -3870,24 +3954,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7672920375646488885",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7686283601340369205",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Mall) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7672920375646488885",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -3942,18 +4026,6 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation/Search Alliance) - 2027 Start (PhD)",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7670247810111768837",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation/Search Alliance) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
@@ -3962,6 +4034,18 @@
    "url": "https://lifeattiktok.com/search/7694045967754889477",
    "posted": "",
    "first_seen": "2026-10-08"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation/Search Alliance) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7670247810111768837",
+   "posted": "",
+   "first_seen": "2026-09-24"
   },
   {
    "company": "TikTok",
@@ -3978,24 +4062,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce User Growth) - 2027 Start (PhD)",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7694356134081972533",
-   "posted": "",
-   "first_seen": "2026-10-09"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce User Growth) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7694354937320868149",
+   "posted": "",
+   "first_seen": "2026-10-09"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce User Growth) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7694356134081972533",
    "posted": "",
    "first_seen": "2026-10-09"
   },
@@ -4494,24 +4578,24 @@
   {
    "company": "TikTok",
    "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7662674242861074741",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7662672903447988485",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Research Scientist Intern (Trust and Safety - CV/NLP/Multimodal LLM) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7662674242861074741",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4634,66 +4718,6 @@
    "url": "https://lifeattiktok.com/search/7670062655184308533",
    "posted": "",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Bosch",
-   "title": "Motorsport Software and Data Analytics Graduate Intern",
-   "location": "Farmington Hills, MI, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000160208440",
-   "posted": "2026-11-06",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Intel",
-   "title": "GPU Architecture Graduate Intern",
-   "location": "US, California, Folsom",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Folsom/GPU-Architecture-Graduate-Intern_JR0287529",
-   "posted": "",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Toyota Research Institute",
-   "title": "Robotics Intern, Mechanical Engineering",
-   "location": "Cambridge, MA",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.lever.co/tri/8955d154-acfc-4e6b-a68c-14f1438034c9",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Zoox",
-   "title": "Hardware Engineer Intern, Vehicle Development [Summer 2027]",
-   "location": "Foster City, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.lever.co/zoox/0accbf9e-9b09-4733-b495-fb6dce13ba62",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Zoox",
-   "title": "Hardware Engineer Intern, Vehicle Systems [Summer 2027]",
-   "location": "Foster City, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.lever.co/zoox/0c32245b-f51d-40d2-8e57-a0be1b744c5b",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-06"
   },
   {
    "company": "Adobe",
@@ -5153,6 +5177,18 @@
   },
   {
    "company": "Bosch",
+   "title": "Motorsport Software and Data Analytics Graduate Intern",
+   "location": "Farmington Hills, MI, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000160208440",
+   "posted": "2026-11-06",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Bosch",
    "title": "Software Engineering Co-Op - Spring 2027",
    "location": "Fountain Inn, SC, United States",
    "regions": [
@@ -5381,6 +5417,18 @@
   },
   {
    "company": "Intel",
+   "title": "GPU Architecture Graduate Intern",
+   "location": "US, California, Folsom",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Folsom/GPU-Architecture-Graduate-Intern_JR0287529",
+   "posted": "",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Intel",
    "title": "Manufacturing and Process Development - Intern, Bachelor’s",
    "location": "US, Oregon, Hillsboro; US, New Mexico, Albuquerque; US, Arizona, Phoenix",
    "regions": [
@@ -5508,18 +5556,6 @@
    ],
    "tier": "eng",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Internship Opportunities",
-   "location": "United States, California, Aliso Viejo",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557044764",
    "posted": "2026-11-02",
    "first_seen": "2026-11-02"
   },
@@ -5753,6 +5789,18 @@
   },
   {
    "company": "Shield AI",
+   "title": "June 2027 Co-0p - Electrical Engineering Intern",
+   "location": "Dallas, Texas; San Diego, California; Boston, Massachusetts; Seattle, Washington",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.lever.co/shieldai/8c6cfcee-c6da-4a73-9bdf-3ef098ff59e6",
+   "posted": "2026-09-01",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Shield AI",
    "title": "Structures / Mechanical Test Co-op - January 2027 Co-op",
    "location": "Dallas, Texas",
    "regions": [
@@ -5773,18 +5821,6 @@
    "tier": "eng",
    "url": "https://jobs.lever.co/shieldai/c41c41a2-83d8-41a0-8a3b-ff8b84dc1c8a",
    "posted": "2026-08-27",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Shield AI",
-   "title": "Summer 2027 - Electrical Engineering Co-op (June 2027)",
-   "location": "Dallas, Texas; San Diego, California; Boston, Massachusetts; Seattle, Washington",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.lever.co/shieldai/8c6cfcee-c6da-4a73-9bdf-3ef098ff59e6",
-   "posted": "2026-09-01",
    "first_seen": "2026-09-24"
   },
   {
@@ -5994,24 +6030,24 @@
   {
    "company": "TikTok",
    "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7668834837268416821",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7668834837268138293",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Backend Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7668834837268416821",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -6366,24 +6402,24 @@
   {
    "company": "TikTok",
    "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7670700387322300677",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "eng",
    "url": "https://lifeattiktok.com/search/7670738362521520437",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Fullstack Software Engineer Intern (Global E-Commerce) - 2027 Summer",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7670700387322300677",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -6890,6 +6926,42 @@
    "url": "https://jobs.lever.co/tri/9c851b9d-169d-4bb3-b164-828098e077e7",
    "posted": "2026-10-30",
    "first_seen": "2026-10-31"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Robotics Intern, Mechanical Engineering",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.lever.co/tri/8955d154-acfc-4e6b-a68c-14f1438034c9",
+   "posted": "2026-11-05",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Zoox",
+   "title": "Hardware Engineer Intern, Vehicle Development [Summer 2027]",
+   "location": "Foster City, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.lever.co/zoox/0accbf9e-9b09-4733-b495-fb6dce13ba62",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Zoox",
+   "title": "Hardware Engineer Intern, Vehicle Systems [Summer 2027]",
+   "location": "Foster City, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://jobs.lever.co/zoox/0c32245b-f51d-40d2-8e57-a0be1b744c5b",
+   "posted": "2026-11-02",
+   "first_seen": "2026-11-06"
   }
  ]
 }
