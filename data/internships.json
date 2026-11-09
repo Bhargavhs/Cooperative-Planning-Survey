@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08 18:13 UTC",
+ "updated": "2026-11-09 22:51 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 37
+   "count": 38
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 24
+   "count": 23
   },
   {
    "source": "CRED (Lever)",
@@ -39,7 +39,7 @@
   {
    "source": "Databricks (Greenhouse)",
    "ok": true,
-   "count": 3
+   "count": 2
   },
   {
    "source": "Figure AI (Greenhouse)",
@@ -49,7 +49,7 @@
   {
    "source": "Google",
    "ok": true,
-   "count": 19
+   "count": 18
   },
   {
    "source": "Grab (SmartRecruiters)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 43
+   "count": 42
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -78,8 +78,8 @@
   },
   {
    "source": "Microsoft",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 38
   },
   {
    "source": "Motional (Greenhouse)",
@@ -114,22 +114,22 @@
   {
    "source": "Shield AI (Lever)",
    "ok": true,
-   "count": 11
+   "count": 10
   },
   {
    "source": "Skydio (Ashby)",
    "ok": true,
-   "count": 18
+   "count": 19
   },
   {
    "source": "TikTok",
    "ok": true,
-   "count": 208
+   "count": 209
   },
   {
    "source": "Toyota Research Institute (Lever)",
    "ok": true,
-   "count": 23
+   "count": 25
   },
   {
    "source": "Waabi (Lever)",
@@ -195,6 +195,42 @@
   }
  ],
  "jobs": [
+  {
+   "company": "Skydio",
+   "title": "Systems Engineering Intern - Summer 2027",
+   "location": "San Mateo, California, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.ashbyhq.com/skydio/33f1f123-8cec-4e6a-b125-e8831603a62a",
+   "posted": "2026-11-09",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Automated Driving Advanced Development Intern, Machine Learning Research",
+   "location": "Los Altos, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/9c48b236-e6ad-4b97-9380-c675e5432415",
+   "posted": "2026-11-09",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Robotics Intern, Teleoperation and Spatial Computing",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/4ea8d663-1060-4c55-aede-91fd8f945871",
+   "posted": "2026-11-09",
+   "first_seen": "2026-11-09"
+  },
   {
    "company": "Amazon",
    "title": "2027 Applied Science Internship - Robotics - United States",
@@ -1338,18 +1374,6 @@
   {
    "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Software Engineer, Multiverse",
-   "location": "Mountain View, California, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8214519",
-   "posted": "2026-09-18",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Multiverse",
    "location": "San Francisco, California, USA",
    "regions": [
     "US"
@@ -1358,6 +1382,18 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8350832",
    "posted": "2026-11-06",
    "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Software Engineer, Multiverse",
+   "location": "Mountain View, California, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8214519",
+   "posted": "2026-09-18",
+   "first_seen": "2026-09-24"
   },
   {
    "company": "Waymo",
@@ -1733,7 +1769,7 @@
   },
   {
    "company": "Zoox",
-   "title": "AI Workflows & Safety Decision Making Intern [2027]",
+   "title": "AI Workflows Intern [2027]",
    "location": "Foster City, CA",
    "regions": [
     "US"
@@ -1790,6 +1826,30 @@
    "url": "https://jobs.lever.co/zoox/8b32157b-ab44-4078-85ea-1d8d7b747a20",
    "posted": "2026-10-30",
    "first_seen": "2026-11-06"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Next-Generation AI Agents",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557070079",
+   "posted": "2026-11-09",
+   "first_seen": "2026-11-09"
+  },
+  {
+   "company": "TikTok",
+   "title": "Research Engineer Intern (TikTok Generalized Arch) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7704986879082907909",
+   "posted": "",
+   "first_seen": "2026-11-09"
   },
   {
    "company": "Adobe",
@@ -2020,18 +2080,6 @@
    "first_seen": "2026-10-23"
   },
   {
-   "company": "Databricks",
-   "title": "PhD GenAI Research Scientist Intern",
-   "location": "San Francisco, California",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
-   "posted": "2023-11-07",
-   "first_seen": "2026-09-24"
-  },
-  {
    "company": "Google",
    "title": "Data Scientist, Research Intern, PhD, Summer 2027",
    "location": "Mountain View, CA, USA; Ann Arbor, MI, USA; Atlanta, GA, USA; Austin, TX, USA",
@@ -2066,18 +2114,6 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/86701057991680710-research-intern-phd-summer-2027",
    "posted": "2026-08-24",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Google",
-   "title": "Research Scientist PhD Intern, Summer 2027",
-   "location": "Hyderabad, Telangana, India",
-   "regions": [
-    "IN"
-   ],
-   "tier": "research",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/87534302853505734-research-scientist-phd-intern-summer-2027",
-   "posted": "2026-10-28",
-   "first_seen": "2026-10-28"
   },
   {
    "company": "Google",
@@ -2258,18 +2294,6 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Data-Science---Software-Engineering-PhD-Intern-New-2027_JR0288138",
    "posted": "",
    "first_seen": "2026-10-21"
-  },
-  {
-   "company": "Intel",
-   "title": "AI Solution Architect Graduate Intern",
-   "location": "US, California, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/AI-Solution-Architect-Graduate-Intern_JR0287530",
-   "posted": "",
-   "first_seen": "2026-10-05"
   },
   {
    "company": "Intel",
@@ -2918,18 +2942,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557053016",
    "posted": "2026-11-02",
    "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Sciences INTERN",
-   "location": "India, Multiple Locations, Multiple Locations",
-   "regions": [
-    "IN"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556641091",
-   "posted": "2026-02-27",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Microsoft",
@@ -4720,6 +4732,18 @@
    "first_seen": "2026-09-24"
   },
   {
+   "company": "Amazon",
+   "title": "Software Development Engineer Intern - Summer 2027",
+   "location": "Seattle, WA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10597379/software-development-engineer-intern-summer-2027",
+   "posted": "2026-11-05",
+   "first_seen": "2026-11-09"
+  },
+  {
    "company": "Adobe",
    "title": "2027 Intern - Security Engineer",
    "location": "San Jose",
@@ -5213,18 +5237,6 @@
   },
   {
    "company": "Bosch",
-   "title": "Technical Engineering Function (TEF) Winter Intern",
-   "location": "Pineville, NC, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000143360199",
-   "posted": "2026-08-13",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Bosch",
    "title": "Test Engineer Intern",
    "location": "Vernon Hills, IL, United States",
    "regions": [
@@ -5525,18 +5537,6 @@
   },
   {
    "company": "Microsoft",
-   "title": "Explore Program Engineering Internship Opportunities: First-Year Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556925823",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
-  },
-  {
-   "company": "Microsoft",
    "title": "Software Engineer, Teamwork Experiences Internship Opportunities",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -5546,18 +5546,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557037859",
    "posted": "2026-11-03",
    "first_seen": "2026-11-03"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Redmond, WA",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556951950",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-02"
   },
   {
    "company": "Microsoft",
@@ -5848,20 +5836,8 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Shield AI",
-   "title": "Summer 2027 Intern - Embedded Firmware - 5810",
-   "location": "Dallas, Texas",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.lever.co/shieldai/ac38d092-f435-4301-880b-48d0e92679a4",
-   "posted": "2026-11-02",
-   "first_seen": "2026-11-03"
-  },
-  {
    "company": "Skydio",
-   "title": "Electrical Engineer Intern - Summer 2027",
+   "title": "Electrical Engineer Intern",
    "location": "San Mateo, California, United States",
    "regions": [
     "US"
@@ -6941,7 +6917,7 @@
   },
   {
    "company": "Zoox",
-   "title": "Hardware Engineer Intern, Vehicle Development [Summer 2027]",
+   "title": "Hardware Engineer Intern [Summer 2027]",
    "location": "Foster City, CA",
    "regions": [
     "US"
