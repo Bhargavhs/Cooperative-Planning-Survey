@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-13 20:17 UTC",
+ "updated": "2026-11-14 18:37 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
    "ok": true,
-   "count": 7
+   "count": 91
   },
   {
    "source": "Agility Robotics (Greenhouse)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 38
+   "count": 40
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -63,8 +63,8 @@
   },
   {
    "source": "Intel (Workday)",
-   "ok": true,
-   "count": 42
+   "ok": false,
+   "error": "Expecting value: line 1 column 1 (char 0)"
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 41
+   "count": 43
   },
   {
    "source": "Motional (Greenhouse)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 54
+   "count": 52
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -205,42 +205,6 @@
    "tier": "core",
    "url": "https://www.amazon.jobs/en/jobs/10604778/2027-applied-science-internship-robotics-united-states",
    "posted": "2026-11-13",
-   "first_seen": "2026-11-13"
-  },
-  {
-   "company": "Toyota Research Institute",
-   "title": "Research Intern, Continual Adaptation for Robotics",
-   "location": "Cambridge, MA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/tri/6c9002a1-6ed1-42b7-829c-5ba6661446ac",
-   "posted": "2026-11-13",
-   "first_seen": "2026-11-13"
-  },
-  {
-   "company": "Zoox",
-   "title": "Data Scientist Intern [Summer 2027]",
-   "location": "Foster City, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/zoox/0f42ac76-3821-4805-8b59-446477d1e1db",
-   "posted": "2026-11-12",
-   "first_seen": "2026-11-13"
-  },
-  {
-   "company": "Zoox",
-   "title": "Systems & Safety Engineering Intern [Summer 2027]",
-   "location": "Foster City, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/zoox/442845d1-33b0-4801-a553-7fd9b806e46f",
-   "posted": "2026-11-12",
    "first_seen": "2026-11-13"
   },
   {
@@ -1013,6 +977,18 @@
   },
   {
    "company": "Toyota Research Institute",
+   "title": "Research Intern, Continual Adaptation for Robotics",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/6c9002a1-6ed1-42b7-829c-5ba6661446ac",
+   "posted": "2026-11-13",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "company": "Toyota Research Institute",
    "title": "Robotics Intern, Human Aware Interactions and Learning",
    "location": "Cambridge, MA",
    "regions": [
@@ -1236,18 +1212,6 @@
    ],
    "tier": "core",
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8223735",
-   "posted": "2026-09-22",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Machine Learning Engineer - Simulator Realism Evaluation",
-   "location": "San Francisco, California, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8214350",
    "posted": "2026-09-22",
    "first_seen": "2026-09-24"
   },
@@ -1490,18 +1454,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8231711",
    "posted": "2026-09-25",
    "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Weather Perception",
-   "location": "San Francisco, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8335511",
-   "posted": "2026-10-29",
-   "first_seen": "2026-10-30"
   },
   {
    "company": "Waymo",
@@ -1817,6 +1769,18 @@
   },
   {
    "company": "Zoox",
+   "title": "Data Scientist Intern [Summer 2027]",
+   "location": "Foster City, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/zoox/0f42ac76-3821-4805-8b59-446477d1e1db",
+   "posted": "2026-11-12",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "company": "Zoox",
    "title": "Software Engineer Intern, Autonomy Software [Summer 2027]",
    "location": "Foster City, CA",
    "regions": [
@@ -1852,28 +1816,28 @@
    "first_seen": "2026-11-06"
   },
   {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (Data-Global E-Commerce-Search) - 2027 Start",
-   "location": "San Jose, California, United States of America",
+   "company": "Zoox",
+   "title": "Systems & Safety Engineering Intern [Summer 2027]",
+   "location": "Foster City, CA",
    "regions": [
     "US"
    ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7698822572474583301",
-   "posted": "",
+   "tier": "core",
+   "url": "https://jobs.lever.co/zoox/442845d1-33b0-4801-a553-7fd9b806e46f",
+   "posted": "2026-11-12",
    "first_seen": "2026-11-13"
   },
   {
-   "company": "TikTok",
-   "title": "Machine Learning Scientist Intern (TikTok-Local Services) - 2027 Start",
-   "location": "San Jose, California, United States of America",
+   "company": "Microsoft",
+   "title": "Research Intern - AI Coding Agents",
+   "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://lifeattiktok.com/search/7703925583541979445",
-   "posted": "",
-   "first_seen": "2026-11-13"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557073416",
+   "posted": "2026-11-13",
+   "first_seen": "2026-11-14"
   },
   {
    "company": "Adobe",
@@ -3905,6 +3869,18 @@
   },
   {
    "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (Data-Global E-Commerce-Search) - 2027 Start",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7698822572474583301",
+   "posted": "",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "company": "TikTok",
    "title": "Machine Learning Engineer Intern (Data-Global E-Commerce-Search) - 2027 Summer",
    "location": "Seattle, Washington, United States of America",
    "regions": [
@@ -4445,6 +4421,18 @@
   },
   {
    "company": "TikTok",
+   "title": "Machine Learning Scientist Intern (TikTok-Local Services) - 2027 Start",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7703925583541979445",
+   "posted": "",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "company": "TikTok",
    "title": "Machine Learning Scientist Intern (TikTok-Local Services) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
@@ -4829,39 +4817,39 @@
   },
   {
    "company": "Amazon",
-   "title": "Security Engineer Internship – 2027 (US)",
-   "location": "Seattle, WA United States",
+   "title": "Data Center Infrastructure Engineer Intern, Summer 2027 - East",
+   "location": "Herndon, VA United States",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10557133/security-engineer-internship-2027-us",
-   "posted": "2026-09-22",
-   "first_seen": "2026-11-13"
+   "url": "https://www.amazon.jobs/en/jobs/10605141/data-center-infrastructure-engineer-intern-summer-2027-east",
+   "posted": "2026-11-14",
+   "first_seen": "2026-11-14"
   },
   {
-   "company": "Intel",
-   "title": "Power Integrity Intern Worker Engineer",
-   "location": "Costa Rica, San Jose",
+   "company": "Amazon",
+   "title": "Data Center Infrastructure Engineer Intern, Summer 2027 - West Coast",
+   "location": "Umatilla, OR United States",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/Power-Integrity-Intern-Worker-Engineer_JR0289171",
-   "posted": "",
-   "first_seen": "2026-11-13"
+   "url": "https://www.amazon.jobs/en/jobs/10605132/data-center-infrastructure-engineer-intern-summer-2027-west-coast",
+   "posted": "2026-11-14",
+   "first_seen": "2026-11-14"
   },
   {
    "company": "Microsoft",
-   "title": "Electrical Engineering INTERN (PhD)",
+   "title": "Research Intern - MSR Software-Hardware Co-design",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556986148",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557073455",
    "posted": "2026-11-13",
-   "first_seen": "2026-11-13"
+   "first_seen": "2026-11-14"
   },
   {
    "company": "Adobe",
@@ -5102,6 +5090,18 @@
    "url": "https://www.amazon.jobs/en/jobs/10597425/project-engineer-intern",
    "posted": "2026-11-05",
    "first_seen": "2026-11-05"
+  },
+  {
+   "company": "Amazon",
+   "title": "Security Engineer Internship – 2027 (US)",
+   "location": "Seattle, WA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10557133/security-engineer-internship-2027-us",
+   "posted": "2026-09-22",
+   "first_seen": "2026-11-13"
   },
   {
    "company": "Amazon",
@@ -5585,6 +5585,18 @@
   },
   {
    "company": "Intel",
+   "title": "Power Integrity Intern Worker Engineer",
+   "location": "Costa Rica, San Jose",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/Power-Integrity-Intern-Worker-Engineer_JR0289171",
+   "posted": "",
+   "first_seen": "2026-11-13"
+  },
+  {
+   "company": "Intel",
    "title": "Silicon Hardware Engineering - Intern, Bachelor’s",
    "location": "US, Oregon, Hillsboro; US, California, Folsom; US, California, Santa Clara; US, Texas, Austin",
    "regions": [
@@ -5630,6 +5642,18 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Engineering---Intern--Graduate_JR0286836",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Electrical Engineering INTERN (PhD)",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393556986148",
+   "posted": "2026-11-13",
+   "first_seen": "2026-11-13"
   },
   {
    "company": "Microsoft",
