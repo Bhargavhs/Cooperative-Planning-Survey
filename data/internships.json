@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-14 18:37 UTC",
+ "updated": "2026-11-15 19:13 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
    "ok": true,
-   "count": 91
+   "count": 7
   },
   {
    "source": "Agility Robotics (Greenhouse)",
@@ -63,13 +63,13 @@
   },
   {
    "source": "Intel (Workday)",
-   "ok": false,
-   "error": "Expecting value: line 1 column 1 (char 0)"
+   "ok": true,
+   "count": 34
   },
   {
    "source": "Kodiak (Greenhouse)",
    "ok": true,
-   "count": 1
+   "count": 0
   },
   {
    "source": "Meesho (Lever)",
@@ -362,30 +362,6 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Robotics-PhD-Intern_JR0288833",
    "posted": "",
    "first_seen": "2026-11-04"
-  },
-  {
-   "company": "Kodiak",
-   "title": "Winter 2027 Intern, Data Engineering",
-   "location": "Mountain View, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://job-boards.greenhouse.io/kodiak/jobs/4396622009",
-   "posted": "2026-09-04",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Extended Perception Interaction Cognition (EPIC)",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557043754",
-   "posted": "2026-10-19",
-   "first_seen": "2026-10-20"
   },
   {
    "company": "Motional",
@@ -1828,18 +1804,6 @@
    "first_seen": "2026-11-13"
   },
   {
-   "company": "Microsoft",
-   "title": "Research Intern - AI Coding Agents",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557073416",
-   "posted": "2026-11-13",
-   "first_seen": "2026-11-14"
-  },
-  {
    "company": "Adobe",
    "title": "2027 Intern - AI & Architecture",
    "location": "San Jose",
@@ -2681,6 +2645,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - AI Coding Agents",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557073416",
+   "posted": "2026-11-13",
+   "first_seen": "2026-11-14"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Intern - Agentic Data Memory",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -2702,18 +2678,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557039243",
    "posted": "2026-10-12",
    "first_seen": "2026-10-14"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Algorithms Group: Generative Modeling",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557043740",
-   "posted": "2026-10-19",
-   "first_seen": "2026-10-20"
   },
   {
    "company": "Microsoft",
@@ -4038,24 +4002,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Video) - 2027 Start (PhD）",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7694044547207268661",
-   "posted": "",
-   "first_seen": "2026-10-08"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Video) - 2027 Start (PhD）",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7694040502082521397",
+   "posted": "",
+   "first_seen": "2026-10-08"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Video) - 2027 Start (PhD）",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7694044547207268661",
    "posted": "",
    "first_seen": "2026-10-08"
   },
@@ -4816,42 +4780,6 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Amazon",
-   "title": "Data Center Infrastructure Engineer Intern, Summer 2027 - East",
-   "location": "Herndon, VA United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10605141/data-center-infrastructure-engineer-intern-summer-2027-east",
-   "posted": "2026-11-14",
-   "first_seen": "2026-11-14"
-  },
-  {
-   "company": "Amazon",
-   "title": "Data Center Infrastructure Engineer Intern, Summer 2027 - West Coast",
-   "location": "Umatilla, OR United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10605132/data-center-infrastructure-engineer-intern-summer-2027-west-coast",
-   "posted": "2026-11-14",
-   "first_seen": "2026-11-14"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - MSR Software-Hardware Co-design",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557073455",
-   "posted": "2026-11-13",
-   "first_seen": "2026-11-14"
-  },
-  {
    "company": "Adobe",
    "title": "2027 Intern - Security Engineer",
    "location": "San Jose",
@@ -4937,6 +4865,18 @@
   },
   {
    "company": "Amazon",
+   "title": "Data Center Infrastructure Engineer Intern, Summer 2027 - East",
+   "location": "Herndon, VA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10605141/data-center-infrastructure-engineer-intern-summer-2027-east",
+   "posted": "2026-11-14",
+   "first_seen": "2026-11-14"
+  },
+  {
+   "company": "Amazon",
    "title": "Data Center Infrastructure Engineer Intern, Summer 2027 - Midwest / Southeast",
    "location": "Austin, TX United States",
    "regions": [
@@ -4946,6 +4886,18 @@
    "url": "https://www.amazon.jobs/en/jobs/10593054/data-center-infrastructure-engineer-intern-summer-2027-midwest-southeast",
    "posted": "2026-10-29",
    "first_seen": "2026-10-30"
+  },
+  {
+   "company": "Amazon",
+   "title": "Data Center Infrastructure Engineer Intern, Summer 2027 - West Coast",
+   "location": "Umatilla, OR United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10605132/data-center-infrastructure-engineer-intern-summer-2027-west-coast",
+   "posted": "2026-11-14",
+   "first_seen": "2026-11-14"
   },
   {
    "company": "Amazon",
@@ -5537,54 +5489,6 @@
   },
   {
    "company": "Intel",
-   "title": "Manufacturing and Process Development - Intern, Bachelor’s",
-   "location": "US, Oregon, Hillsboro; US, New Mexico, Albuquerque; US, Arizona, Phoenix",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Manufacturing-and-Process-Development---Intern--Bachelor-s_JR0286825",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Manufacturing and Process Development - Intern, Graduate",
-   "location": "US, Oregon, Hillsboro; US, New Mexico, Albuquerque; US, Arizona, Phoenix",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Manufacturing-and-Process-Development---Intern--Graduate_JR0286833",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Platform Hardware and Systems Engineering - Intern, Bachelor’s",
-   "location": "US, Oregon, Hillsboro; US, California, Folsom; US, California, Santa Clara; US, Texas, Austin",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Platform-Hardware-and-Systems-Engineering---Intern--Bachelor-s_JR0286827",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Platform Hardware and Systems Engineering - Intern, Graduate",
-   "location": "US, Oregon, Hillsboro; US, California, Folsom; US, California, Santa Clara; US, Texas, Austin",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Platform-Hardware-and-Systems-Engineering---Intern--Graduate_JR0286828",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
    "title": "Power Integrity Intern Worker Engineer",
    "location": "Costa Rica, San Jose",
    "regions": [
@@ -5594,54 +5498,6 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/Power-Integrity-Intern-Worker-Engineer_JR0289171",
    "posted": "",
    "first_seen": "2026-11-13"
-  },
-  {
-   "company": "Intel",
-   "title": "Silicon Hardware Engineering - Intern, Bachelor’s",
-   "location": "US, Oregon, Hillsboro; US, California, Folsom; US, California, Santa Clara; US, Texas, Austin",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Silicon-Hardware-Engineering---Intern--Bachelor-s_JR0286829",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Silicon Hardware Engineering - Intern, Graduate",
-   "location": "US, Oregon, Hillsboro; US, California, Folsom; US, California, Santa Clara; US, Texas, Austin",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Silicon-Hardware-Engineering---Intern--Graduate_JR0286830",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Software Engineering - Intern, Bachelor’s",
-   "location": "US, Oregon, Hillsboro; US, California, Folsom; US, California, Santa Clara; US, Texas, Austin",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Engineering---Intern--Bachelor-s_JR0286834",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Software Engineering - Intern, Graduate",
-   "location": "US, Oregon, Hillsboro; US, California, Folsom; US, California, Santa Clara; US, Texas, Austin",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Engineering---Intern--Graduate_JR0286836",
-   "posted": "",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Microsoft",
@@ -5654,6 +5510,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556986148",
    "posted": "2026-11-13",
    "first_seen": "2026-11-13"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - MSR Software-Hardware Co-design",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557073455",
+   "posted": "2026-11-13",
+   "first_seen": "2026-11-14"
   },
   {
    "company": "Microsoft",
