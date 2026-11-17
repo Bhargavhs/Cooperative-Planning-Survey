@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-16 22:42 UTC",
+ "updated": "2026-11-17 21:28 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
    "ok": true,
-   "count": 91
+   "count": 7
   },
   {
    "source": "Agility Robotics (Greenhouse)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 40
+   "count": 39
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 33
+   "count": 31
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 42
+   "count": 41
   },
   {
    "source": "Motional (Greenhouse)",
@@ -124,12 +124,12 @@
   {
    "source": "TikTok",
    "ok": true,
-   "count": 211
+   "count": 213
   },
   {
    "source": "Toyota Research Institute (Lever)",
    "ok": true,
-   "count": 33
+   "count": 34
   },
   {
    "source": "Waabi (Lever)",
@@ -196,64 +196,16 @@
  ],
  "jobs": [
   {
-   "company": "Bosch",
-   "title": "Powertrain Controls Software Engineering Intern (6-Months, Full-Time)",
-   "location": "Farmington Hills, MI, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000142898574",
-   "posted": "2026-08-11",
-   "first_seen": "2026-11-16"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Extended Perception Interaction Cognition (EPIC)",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557043754",
-   "posted": "2026-10-19",
-   "first_seen": "2026-11-16"
-  },
-  {
    "company": "Toyota Research Institute",
-   "title": "Automated Driving Advanced Development Intern, Machine Learning Research (Cambridge)",
+   "title": "Robotics Intern, Agentic Robotics",
    "location": "Cambridge, MA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://jobs.lever.co/tri/3a7510ff-7cef-4d6e-8c32-0b6e6b8a2476",
-   "posted": "2026-11-16",
-   "first_seen": "2026-11-16"
-  },
-  {
-   "company": "Toyota Research Institute",
-   "title": "Research Intern, Spatial Intelligence for Robotics",
-   "location": "Cambridge, MA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/tri/2d65fd58-00bb-49bc-b4db-e381df1ebd1e",
-   "posted": "2026-11-16",
-   "first_seen": "2026-11-16"
-  },
-  {
-   "company": "Toyota Research Institute",
-   "title": "Robotics Intern, World Models, Multimodal Sensing",
-   "location": "Cambridge, MA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/tri/c6569529-4b6b-4229-b2c9-f97467c26cd3",
-   "posted": "2026-11-16",
-   "first_seen": "2026-11-16"
+   "url": "https://jobs.lever.co/tri/7f676d3c-6a86-4b00-a9fd-c1009035fe49",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-17"
   },
   {
    "company": "Amazon",
@@ -353,6 +305,18 @@
   },
   {
    "company": "Bosch",
+   "title": "Powertrain Controls Software Engineering Intern (6-Months, Full-Time)",
+   "location": "Farmington Hills, MI, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000142898574",
+   "posted": "2026-08-11",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "company": "Bosch",
    "title": "Robotics Research Intern",
    "location": "Sunnyvale, CA, United States",
    "regions": [
@@ -422,6 +386,18 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Robotics-PhD-Intern_JR0288833",
    "posted": "",
    "first_seen": "2026-11-04"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Extended Perception Interaction Cognition (EPIC)",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557043754",
+   "posted": "2026-10-19",
+   "first_seen": "2026-11-16"
   },
   {
    "company": "Motional",
@@ -857,6 +833,18 @@
   },
   {
    "company": "Toyota Research Institute",
+   "title": "Automated Driving Advanced Development Intern, Machine Learning Research (Cambridge)",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/3a7510ff-7cef-4d6e-8c32-0b6e6b8a2476",
+   "posted": "2026-11-16",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "company": "Toyota Research Institute",
    "title": "Automated Driving Advanced Development Intern, Machine Learning Research (Explainable AI)",
    "location": "Los Altos, CA",
    "regions": [
@@ -1025,6 +1013,18 @@
   },
   {
    "company": "Toyota Research Institute",
+   "title": "Research Intern, Spatial Intelligence for Robotics",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/2d65fd58-00bb-49bc-b4db-e381df1ebd1e",
+   "posted": "2026-11-16",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "company": "Toyota Research Institute",
    "title": "Robotics Intern, Human Aware Interactions and Learning",
    "location": "Cambridge, MA",
    "regions": [
@@ -1118,6 +1118,18 @@
    "url": "https://jobs.lever.co/tri/016bbb58-857a-4367-b1aa-0cdc9f818478",
    "posted": "2026-10-26",
    "first_seen": "2026-10-27"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Robotics Intern, World Models, Multimodal Sensing",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/c6569529-4b6b-4229-b2c9-f97467c26cd3",
+   "posted": "2026-11-16",
+   "first_seen": "2026-11-16"
   },
   {
    "company": "Toyota Research Institute",
@@ -1817,51 +1829,51 @@
   },
   {
    "company": "Bosch",
-   "title": "Research Intern: Multimodal Foundation Models for Healthcare",
-   "location": "Pittsburgh, PA, United States",
+   "title": "AI Application Intern (8 months/40 hours per week)",
+   "location": "Farmington Hills, MI, United States",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161844052",
-   "posted": "2026-11-16",
-   "first_seen": "2026-11-16"
-  },
-  {
-   "company": "Bosch",
-   "title": "Research Intern: Multimodal Sensor Foundation Models",
-   "location": "Pittsburgh, PA, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161841434",
-   "posted": "2026-11-16",
-   "first_seen": "2026-11-16"
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162076254",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-17"
   },
   {
    "company": "Microsoft",
-   "title": "Research Intern - Algorithms Group: Generative Modeling",
+   "title": "Security Research: PhD Internship Opportunities",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557043740",
-   "posted": "2026-10-19",
-   "first_seen": "2026-11-16"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557074642",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-17"
   },
   {
-   "company": "NVIDIA",
-   "title": "Applied Research Scientist Intern, Agentic Biology - Summer 2027",
-   "location": "US, CA, Santa Clara",
+   "company": "TikTok",
+   "title": "Client Security & Data Foundation Machine Learning Engineer - Intern (TikTok BRIC) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Scientist-Intern--Agentic-Biology---Summer-2027_JR2029307",
+   "url": "https://lifeattiktok.com/search/7708750900450134325",
    "posted": "",
-   "first_seen": "2026-11-16"
+   "first_seen": "2026-11-17"
+  },
+  {
+   "company": "TikTok",
+   "title": "Research Scientist Intern (TikTok-Privacy Innovation Lab) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7703923326767483141",
+   "posted": "",
+   "first_seen": "2026-11-17"
   },
   {
    "company": "Adobe",
@@ -2054,6 +2066,30 @@
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154354759",
    "posted": "2026-10-08",
    "first_seen": "2026-10-08"
+  },
+  {
+   "company": "Bosch",
+   "title": "Research Intern: Multimodal Foundation Models for Healthcare",
+   "location": "Pittsburgh, PA, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161844052",
+   "posted": "2026-11-16",
+   "first_seen": "2026-11-16"
+  },
+  {
+   "company": "Bosch",
+   "title": "Research Intern: Multimodal Sensor Foundation Models",
+   "location": "Pittsburgh, PA, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000161841434",
+   "posted": "2026-11-16",
+   "first_seen": "2026-11-16"
   },
   {
    "company": "Bosch",
@@ -2393,18 +2429,6 @@
   },
   {
    "company": "Intel",
-   "title": "Module Engineering PhD Intern",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern_JR0287026",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Intel",
    "title": "Module Engineering PhD Intern - Wet Etch",
    "location": "US, Oregon, Hillsboro",
    "regions": [
@@ -2556,18 +2580,6 @@
    ],
    "tier": "research",
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Software-Solutions-PhD-Intern-New-2027_JR0287314",
-   "posted": "",
-   "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Intel",
-   "title": "System Software Engineering - PhD Intern",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/System-Software-Engineering---PhD-Intern_JR0287457",
    "posted": "",
    "first_seen": "2026-09-26"
   },
@@ -2726,6 +2738,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557039243",
    "posted": "2026-10-12",
    "first_seen": "2026-10-14"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Algorithms Group: Generative Modeling",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557043740",
+   "posted": "2026-10-19",
+   "first_seen": "2026-11-16"
   },
   {
    "company": "Microsoft",
@@ -2945,18 +2969,6 @@
   },
   {
    "company": "Microsoft",
-   "title": "Research Intern - Research in Software Engineering, ML Systems, Agents",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557054069",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Microsoft",
    "title": "Research Intern - Security Research Group, Microsoft Research Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -3002,6 +3014,18 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-TX-Austin/AI-Compiler-and-Kernel-Intern---Summer-2027_JR2029220-1",
    "posted": "",
    "first_seen": "2026-11-03"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "Applied Research Scientist Intern, Agentic Biology - Summer 2027",
+   "location": "US, CA, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Scientist-Intern--Agentic-Biology---Summer-2027_JR2029307",
+   "posted": "",
+   "first_seen": "2026-11-16"
   },
   {
    "company": "NVIDIA",
@@ -3509,6 +3533,18 @@
   },
   {
    "company": "TikTok",
+   "title": "Agentic AI Decision Platform Software Engineer - Intern (TikTok BRIC) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7705012688944810245",
+   "posted": "",
+   "first_seen": "2026-11-07"
+  },
+  {
+   "company": "TikTok",
    "title": "Algorithm Engineer Intern (Global Live - Strategy) - 2026 Start (PhD)",
    "location": "Singapore, Singapore, Singapore",
    "regions": [
@@ -3930,24 +3966,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7672881840860940597",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7672883129493948677",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7672881840860940597",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4709,18 +4745,6 @@
   },
   {
    "company": "TikTok",
-   "title": "Software Engineer - Intern (TikTok BRIC) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7705012688944810245",
-   "posted": "",
-   "first_seen": "2026-11-07"
-  },
-  {
-   "company": "TikTok",
    "title": "Software Engineer Intern (AI Agent & Global Revenue Platform) - 2027 Summer",
    "location": "San Jose, California, United States of America",
    "regions": [
@@ -4814,18 +4838,6 @@
    "url": "https://lifeattiktok.com/search/7670062655184308533",
    "posted": "",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "Google",
-   "title": "Forward Deployed Engineer Intern, 2027",
-   "location": "Bengaluru, Karnataka, India",
-   "regions": [
-    "IN"
-   ],
-   "tier": "eng",
-   "url": "https://www.google.com/about/careers/applications/jobs/results/96299220855595718-forward-deployed-engineer-intern-2027",
-   "posted": "2026-11-16",
-   "first_seen": "2026-11-16"
   },
   {
    "company": "Adobe",
@@ -4970,18 +4982,6 @@
    "url": "https://www.amazon.jobs/en/jobs/10553907/data-engineer-internship-2027-us",
    "posted": "2026-09-18",
    "first_seen": "2026-10-08"
-  },
-  {
-   "company": "Amazon",
-   "title": "Database Engineer Intern - Summer 2027",
-   "location": "Seattle, WA United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10590290/database-engineer-intern-summer-2027",
-   "posted": "2026-10-27",
-   "first_seen": "2026-10-27"
   },
   {
    "company": "Amazon",
@@ -5297,18 +5297,6 @@
   },
   {
    "company": "Bosch",
-   "title": "Mechanical Design Engineering Intern",
-   "location": "Fort Lauderdale, FL, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000157900487",
-   "posted": "2026-10-26",
-   "first_seen": "2026-10-28"
-  },
-  {
-   "company": "Bosch",
    "title": "Motorsport Software and Data Analytics Graduate Intern",
    "location": "Farmington Hills, MI, United States",
    "regions": [
@@ -5414,6 +5402,18 @@
    "url": "https://job-boards.greenhouse.io/figureai/jobs/4303098006",
    "posted": "2023-11-09",
    "first_seen": "2026-10-07"
+  },
+  {
+   "company": "Google",
+   "title": "Forward Deployed Engineer Intern, 2027",
+   "location": "Bengaluru, Karnataka, India",
+   "regions": [
+    "IN"
+   ],
+   "tier": "eng",
+   "url": "https://www.google.com/about/careers/applications/jobs/results/96299220855595718-forward-deployed-engineer-intern-2027",
+   "posted": "2026-11-16",
+   "first_seen": "2026-11-16"
   },
   {
    "company": "Google",
@@ -5532,7 +5532,7 @@
    ],
    "tier": "eng",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556986148",
-   "posted": "2026-11-13",
+   "posted": "2026-11-17",
    "first_seen": "2026-11-13"
   },
   {
@@ -5558,30 +5558,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557037859",
    "posted": "2026-11-03",
    "first_seen": "2026-11-03"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Security & Identity Intern Opportunities for University Students, Cambridge",
-   "location": "United States, Massachusetts, Cambridge",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557044765",
-   "posted": "2026-10-21",
-   "first_seen": "2026-10-22"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Software Engineer: Security & Identity Intern Opportunities for University Students, Redmond",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556922930",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-01"
   },
   {
    "company": "Microsoft",
