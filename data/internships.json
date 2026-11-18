@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 21:28 UTC",
+ "updated": "2026-11-18 21:04 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 25
+   "count": 26
   },
   {
    "source": "CRED (Lever)",
@@ -44,7 +44,7 @@
   {
    "source": "Figure AI (Greenhouse)",
    "ok": true,
-   "count": 9
+   "count": 8
   },
   {
    "source": "Google",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 31
+   "count": 29
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -79,7 +79,7 @@
   {
    "source": "Microsoft",
    "ok": true,
-   "count": 41
+   "count": 43
   },
   {
    "source": "Motional (Greenhouse)",
@@ -129,7 +129,7 @@
   {
    "source": "Toyota Research Institute (Lever)",
    "ok": true,
-   "count": 34
+   "count": 35
   },
   {
    "source": "Waabi (Lever)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 49
+   "count": 48
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -196,16 +196,28 @@
  ],
  "jobs": [
   {
-   "company": "Toyota Research Institute",
-   "title": "Robotics Intern, Agentic Robotics",
-   "location": "Cambridge, MA",
+   "company": "Bosch",
+   "title": "Robot Learning Research Intern",
+   "location": "Pittsburgh, PA, United States",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://jobs.lever.co/tri/7f676d3c-6a86-4b00-a9fd-c1009035fe49",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162212029",
+   "posted": "2026-11-18",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Future Product Innovation Research Intern, Computational Cognitive Science",
+   "location": "Los Altos, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/0d74ff26-05cc-4616-bda0-97d821c9452b",
    "posted": "2026-11-17",
-   "first_seen": "2026-11-17"
+   "first_seen": "2026-11-18"
   },
   {
    "company": "Amazon",
@@ -1025,6 +1037,18 @@
   },
   {
    "company": "Toyota Research Institute",
+   "title": "Robotics Intern, Agentic Robotics",
+   "location": "Cambridge, MA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/7f676d3c-6a86-4b00-a9fd-c1009035fe49",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "company": "Toyota Research Institute",
    "title": "Robotics Intern, Human Aware Interactions and Learning",
    "location": "Cambridge, MA",
    "regions": [
@@ -1254,18 +1278,6 @@
   {
    "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8243556",
-   "posted": "2026-10-01",
-   "first_seen": "2026-10-01"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
    "location": "San Francisco, CA, USA",
    "regions": [
     "US"
@@ -1274,6 +1286,18 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8304574",
    "posted": "2026-10-23",
    "first_seen": "2026-10-24"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
+   "location": "Mountain View, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8243556",
+   "posted": "2026-10-01",
+   "first_seen": "2026-10-01"
   },
   {
    "company": "Waymo",
@@ -1334,18 +1358,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8227633",
    "posted": "2026-10-07",
    "first_seen": "2026-10-08"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Product Data Science",
-   "location": "San Francisco, California, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8199365",
-   "posted": "2026-09-18",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Waymo",
@@ -1828,52 +1840,40 @@
    "first_seen": "2026-11-13"
   },
   {
-   "company": "Bosch",
-   "title": "AI Application Intern (8 months/40 hours per week)",
-   "location": "Farmington Hills, MI, United States",
+   "company": "Microsoft",
+   "title": "Research Intern - Frontier Tuning",
+   "location": "United States, Washington, Redmond; United States, California, Mountain View; United States, California, San Francisco; United States, California, Sunnyvale",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162076254",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075074",
    "posted": "2026-11-17",
-   "first_seen": "2026-11-17"
+   "first_seen": "2026-11-18"
   },
   {
    "company": "Microsoft",
-   "title": "Security Research: PhD Internship Opportunities",
+   "title": "Research Intern - Research in Software Engineering, ML Systems, Agents",
    "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557074642",
-   "posted": "2026-11-17",
-   "first_seen": "2026-11-17"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557054069",
+   "posted": "2026-11-05",
+   "first_seen": "2026-11-18"
   },
   {
-   "company": "TikTok",
-   "title": "Client Security & Data Foundation Machine Learning Engineer - Intern (TikTok BRIC) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
+   "company": "Microsoft",
+   "title": "Research Intern - Self-Improving & Secure AI Agents - Microsoft Research",
+   "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://lifeattiktok.com/search/7708750900450134325",
-   "posted": "",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "company": "TikTok",
-   "title": "Research Scientist Intern (TikTok-Privacy Innovation Lab) - 2027 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7703923326767483141",
-   "posted": "",
-   "first_seen": "2026-11-17"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075136",
+   "posted": "2026-11-18",
+   "first_seen": "2026-11-18"
   },
   {
    "company": "Adobe",
@@ -1982,6 +1982,18 @@
    "url": "https://www.amazon.jobs/en/jobs/10592767/ux-researcher-intern-summer-2027",
    "posted": "2026-10-29",
    "first_seen": "2026-10-30"
+  },
+  {
+   "company": "Bosch",
+   "title": "AI Application Intern (8 months/40 hours per week)",
+   "location": "Farmington Hills, MI, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162076254",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-17"
   },
   {
    "company": "Bosch",
@@ -2345,18 +2357,6 @@
   },
   {
    "company": "Intel",
-   "title": "Data Science and Analytics - PhD Intern",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Data-Science-and-Analytics---PhD-Intern_JR0287859",
-   "posted": "",
-   "first_seen": "2026-10-07"
-  },
-  {
-   "company": "Intel",
    "title": "Module Development Engineer PhD Intern New 2027",
    "location": "US, Oregon, Hillsboro",
    "regions": [
@@ -2414,18 +2414,6 @@
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering---PhD-Intern--Wet-Etch-_JR0288073",
    "posted": "",
    "first_seen": "2026-10-19"
-  },
-  {
-   "company": "Intel",
-   "title": "Module Engineering PhD Intern",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern_JR0287022-1",
-   "posted": "",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Intel",
@@ -2678,18 +2666,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556982928",
    "posted": "2026-11-04",
    "first_seen": "2026-11-06"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern",
-   "location": "Singapore, Singapore, Singapore",
-   "regions": [
-    "SG"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393556978904",
-   "posted": "2026-09-01",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Microsoft",
@@ -3002,6 +2978,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557043380",
    "posted": "2026-10-23",
    "first_seen": "2026-10-23"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Security Research: PhD Internship Opportunities",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557074642",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-17"
   },
   {
    "company": "NVIDIA",
@@ -3617,6 +3605,18 @@
   },
   {
    "company": "TikTok",
+   "title": "Client Security & Data Foundation Machine Learning Engineer - Intern (TikTok BRIC) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7708750900450134325",
+   "posted": "",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "company": "TikTok",
    "title": "Data Science Intern (Advertisement Team) - 2026 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
@@ -3966,24 +3966,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7672883129493948677",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
    "location": "Seattle, Washington, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7672881840860940597",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7672883129493948677",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4685,6 +4685,18 @@
   },
   {
    "company": "TikTok",
+   "title": "Research Scientist Intern (TikTok-Privacy Innovation Lab) - 2027 Start (PhD)",
+   "location": "San Jose, California, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7703923326767483141",
+   "posted": "",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "company": "TikTok",
    "title": "Research Scientist Intern (TikTok-Recommendation) - 2027 Start (PhD)",
    "location": "San Jose, California, United States of America",
    "regions": [
@@ -4838,6 +4850,18 @@
    "url": "https://lifeattiktok.com/search/7670062655184308533",
    "posted": "",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Firmware Security",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075140",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-18"
   },
   {
    "company": "Adobe",
@@ -5366,18 +5390,6 @@
    "url": "https://job-boards.greenhouse.io/figureai/jobs/4601309006",
    "posted": "2025-09-12",
    "first_seen": "2026-10-07"
-  },
-  {
-   "company": "Figure AI",
-   "title": "Hardware Reliability Intern [Winter 2027]",
-   "location": "San Jose, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://job-boards.greenhouse.io/figureai/jobs/4613067006",
-   "posted": "2025-10-24",
-   "first_seen": "2026-10-16"
   },
   {
    "company": "Figure AI",
