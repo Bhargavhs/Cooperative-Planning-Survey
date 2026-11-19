@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 21:04 UTC",
+ "updated": "2026-11-19 21:09 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 26
+   "count": 25
   },
   {
    "source": "CRED (Lever)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 29
+   "count": 30
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -78,8 +78,8 @@
   },
   {
    "source": "Microsoft",
-   "ok": true,
-   "count": 43
+   "ok": false,
+   "error": "HTTP Error 429: Too Many Requests"
   },
   {
    "source": "Motional (Greenhouse)",
@@ -89,7 +89,7 @@
   {
    "source": "NVIDIA (Workday)",
    "ok": true,
-   "count": 50
+   "count": 35
   },
   {
    "source": "Nuro (Greenhouse)",
@@ -124,12 +124,12 @@
   {
    "source": "TikTok",
    "ok": true,
-   "count": 213
+   "count": 212
   },
   {
    "source": "Toyota Research Institute (Lever)",
    "ok": true,
-   "count": 35
+   "count": 36
   },
   {
    "source": "Waabi (Lever)",
@@ -139,7 +139,7 @@
   {
    "source": "Waymo (Greenhouse)",
    "ok": true,
-   "count": 48
+   "count": 46
   },
   {
    "source": "Wayve (Greenhouse)",
@@ -196,28 +196,16 @@
  ],
  "jobs": [
   {
-   "company": "Bosch",
-   "title": "Robot Learning Research Intern",
-   "location": "Pittsburgh, PA, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162212029",
-   "posted": "2026-11-18",
-   "first_seen": "2026-11-18"
-  },
-  {
    "company": "Toyota Research Institute",
-   "title": "Future Product Innovation Research Intern, Computational Cognitive Science",
+   "title": "Robotics Intern, Generalist Robot Learning (GRL)",
    "location": "Los Altos, CA",
    "regions": [
     "US"
    ],
    "tier": "core",
-   "url": "https://jobs.lever.co/tri/0d74ff26-05cc-4616-bda0-97d821c9452b",
-   "posted": "2026-11-17",
-   "first_seen": "2026-11-18"
+   "url": "https://jobs.lever.co/tri/4cac9569-cc90-4dcd-96b8-d9777c35c943",
+   "posted": "2026-11-18",
+   "first_seen": "2026-11-19"
   },
   {
    "company": "Amazon",
@@ -329,6 +317,18 @@
   },
   {
    "company": "Bosch",
+   "title": "Robot Learning Research Intern",
+   "location": "Pittsburgh, PA, United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000162212029",
+   "posted": "2026-11-18",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "company": "Bosch",
    "title": "Robotics Research Intern",
    "location": "Sunnyvale, CA, United States",
    "regions": [
@@ -425,18 +425,6 @@
   },
   {
    "company": "NVIDIA",
-   "title": "Applied Deep Learning PhD Research Intern, Reinforcement Learning for LLMs - Fall 2026",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Deep-Learning-PhD-Research-Intern--Reinforcement-Learning-for-LLMs---Fall-2026_JR2012398",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
    "title": "Differentiable Simulation Research Intern - Summer 2027",
    "location": "US, CA, Santa Clara",
    "regions": [
@@ -446,18 +434,6 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Differentiable-Simulation-Research-Intern---Summer-2027_JR2027561",
    "posted": "",
    "first_seen": "2026-10-13"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Autonomous Vehicles and Robotics",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Autonomous-Vehicles-and-Robotics_JR2023496",
-   "posted": "",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "NVIDIA",
@@ -516,18 +492,6 @@
    ],
    "tier": "core",
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Learning-Embodied-Skills-from-Human-Data---2027_JR2025405",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "PhD Research Intern, Quantum Simulation and AI - 2027",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Quantum-Simulation-and-AI---2027_JR2026004",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -878,6 +842,18 @@
    "url": "https://jobs.lever.co/tri/e7cc38d2-2b08-4349-b322-4d56cac9fb1b",
    "posted": "2026-11-04",
    "first_seen": "2026-11-04"
+  },
+  {
+   "company": "Toyota Research Institute",
+   "title": "Future Product Innovation Research Intern, Computational Cognitive Science",
+   "location": "Los Altos, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/tri/0d74ff26-05cc-4616-bda0-97d821c9452b",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-18"
   },
   {
    "company": "Toyota Research Institute",
@@ -1278,18 +1254,6 @@
   {
    "company": "Waymo",
    "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
-   "location": "San Francisco, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8304574",
-   "posted": "2026-10-23",
-   "first_seen": "2026-10-24"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
    "location": "Mountain View, CA, USA",
    "regions": [
     "US"
@@ -1298,6 +1262,18 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8243556",
    "posted": "2026-10-01",
    "first_seen": "2026-10-01"
+  },
+  {
+   "company": "Waymo",
+   "title": "2027 Summer Intern, MS/PhD, Machine Learning, Driver Refinement Foundations",
+   "location": "San Francisco, CA, USA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://careers.withwaymo.com/jobs?gh_jid=8304574",
+   "posted": "2026-10-23",
+   "first_seen": "2026-10-24"
   },
   {
    "company": "Waymo",
@@ -1334,18 +1310,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8227411",
    "posted": "2026-09-25",
    "first_seen": "2026-09-26"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, MS/PhD, Perception, Model Lifecycle",
-   "location": "Mountain View, CA, USA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8248411",
-   "posted": "2026-10-12",
-   "first_seen": "2026-10-13"
   },
   {
    "company": "Waymo",
@@ -1562,18 +1526,6 @@
    "url": "https://careers.withwaymo.com/jobs?gh_jid=8237997",
    "posted": "2026-09-28",
    "first_seen": "2026-09-29"
-  },
-  {
-   "company": "Waymo",
-   "title": "2027 Summer Intern, PhD, Machine Learning, Computer Vision",
-   "location": "Mountain View, California, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8202025",
-   "posted": "2026-09-16",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Waymo",
@@ -1840,40 +1792,16 @@
    "first_seen": "2026-11-13"
   },
   {
-   "company": "Microsoft",
-   "title": "Research Intern - Frontier Tuning",
-   "location": "United States, Washington, Redmond; United States, California, Mountain View; United States, California, San Francisco; United States, California, Sunnyvale",
+   "company": "Intel",
+   "title": "Signal integrity AI enabling intern",
+   "location": "US, Arizona, Phoenix",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075074",
-   "posted": "2026-11-17",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Research in Software Engineering, ML Systems, Agents",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557054069",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Self-Improving & Secure AI Agents - Microsoft Research",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075136",
-   "posted": "2026-11-18",
-   "first_seen": "2026-11-18"
+   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Arizona-Phoenix/Signal-integrity-AI-enabling-intern_JR0289302",
+   "posted": "",
+   "first_seen": "2026-11-19"
   },
   {
    "company": "Adobe",
@@ -2813,6 +2741,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Frontier Tuning",
+   "location": "United States, Washington, Redmond; United States, California, Mountain View; United States, California, San Francisco; United States, California, Sunnyvale",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075074",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Intern - Gray Systems Lab (GSL)",
    "location": "United States, Washington, Redmond; United States, California, Mountain View",
    "regions": [
@@ -2945,6 +2885,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Research in Software Engineering, ML Systems, Agents",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557054069",
+   "posted": "2026-11-05",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Intern - Security Research Group, Microsoft Research Redmond",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -2954,6 +2906,18 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557022480",
    "posted": "2026-10-01",
    "first_seen": "2026-10-22"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - Self-Improving & Secure AI Agents - Microsoft Research",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075136",
+   "posted": "2026-11-18",
+   "first_seen": "2026-11-18"
   },
   {
    "company": "Microsoft",
@@ -3026,30 +2990,6 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Deep-Learning-Scientist-Intern--LLM--Multimodal-and-Agentic-AI---Summer-2027_JR2027548",
    "posted": "",
    "first_seen": "2026-11-05"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Deep Learning",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Deep-Learning_JR2023497-1",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Deep Learning Computer Architecture",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Deep-Learning-Computer-Architecture_JR2023491",
-   "posted": "",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "NVIDIA",
@@ -3966,24 +3906,24 @@
   {
    "company": "TikTok",
    "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
-   "location": "Seattle, Washington, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7672881840860940597",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
    "location": "San Jose, California, United States of America",
    "regions": [
     "US"
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7672883129493948677",
+   "posted": "",
+   "first_seen": "2026-09-24"
+  },
+  {
+   "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (E-Commerce Recommendation Foundation) - 2027 Start (PhD）",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7672881840860940597",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4320,18 +4260,6 @@
    ],
    "tier": "research",
    "url": "https://lifeattiktok.com/search/7662623341929630005",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (TikTok Search) - 2026 Start (PhD)",
-   "location": "San Jose, California, United States of America",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://lifeattiktok.com/search/7557122323507349778",
    "posted": "",
    "first_seen": "2026-09-24"
   },
@@ -4852,18 +4780,6 @@
    "first_seen": "2026-09-24"
   },
   {
-   "company": "Microsoft",
-   "title": "Research Intern - Firmware Security",
-   "location": "United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075140",
-   "posted": "2026-11-17",
-   "first_seen": "2026-11-18"
-  },
-  {
    "company": "Adobe",
    "title": "2027 Intern - Security Engineer",
    "location": "San Jose",
@@ -5261,18 +5177,6 @@
   },
   {
    "company": "Bosch",
-   "title": "Engineering Intern - Airbag ECU",
-   "location": "Plymouth, MI, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000151900549",
-   "posted": "2026-09-25",
-   "first_seen": "2026-09-25"
-  },
-  {
-   "company": "Bosch",
    "title": "IT Systems Engineering Intern (19 hours per week)",
    "location": "Roseville, CA, United States",
    "regions": [
@@ -5549,6 +5453,18 @@
   },
   {
    "company": "Microsoft",
+   "title": "Research Intern - Firmware Security",
+   "location": "United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557075140",
+   "posted": "2026-11-17",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "company": "Microsoft",
    "title": "Research Intern - MSR Software-Hardware Co-design",
    "location": "United States, Washington, Redmond",
    "regions": [
@@ -5606,126 +5522,6 @@
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-WA-Redmond/Compiler-Software-Engineering-Intern---Summer-2027_JR2028607",
    "posted": "",
    "first_seen": "2026-10-30"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Digital Circuit Design",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Digital-Circuit-Design_JR2023504",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Hardware ASIC Design",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-ASIC-Design_JR2023486",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Hardware Design for Test (DFT)",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-Design-for-Test--DFT-_JR2023487-1",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Hardware Engineering",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-Engineering_JR2023508-1",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Hardware Physical Design / VLSI",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-Physical-Design---VLSI_JR2023501",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Hardware Verification",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Hardware-Verification_JR2023500",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Software Engineering",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Software-Engineering_JR2023495",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Internships: Systems Software Engineering",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Systems-Software-Engineering_JR2023492",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA 2027 Summer Internships: Ph.D. Engineering",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Summer-Internships--PhD-Engineering_JR2023856",
-   "posted": "",
-   "first_seen": "2026-09-24"
-  },
-  {
-   "company": "NVIDIA",
-   "title": "NVIDIA Spring 2027 Internships: Developer and Performance Technology",
-   "location": "US, CA, Santa Clara",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-Spring-2027-Internships--Developer-and-Performance-Technology_JR2023499",
-   "posted": "",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "NVIDIA",
