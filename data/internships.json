@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24 00:31 UTC",
+ "updated": "2026-11-24 22:52 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
@@ -14,7 +14,7 @@
   {
    "source": "Amazon",
    "ok": true,
-   "count": 40
+   "count": 41
   },
   {
    "source": "Anthropic (Greenhouse)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 22
+   "count": 21
   },
   {
    "source": "CRED (Lever)",
@@ -64,7 +64,7 @@
   {
    "source": "Intel (Workday)",
    "ok": true,
-   "count": 30
+   "count": 28
   },
   {
    "source": "Kodiak (Greenhouse)",
@@ -78,8 +78,8 @@
   },
   {
    "source": "Microsoft",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 53
   },
   {
    "source": "Motional (Greenhouse)",
@@ -89,7 +89,7 @@
   {
    "source": "NVIDIA (Workday)",
    "ok": true,
-   "count": 47
+   "count": 48
   },
   {
    "source": "Nuro (Greenhouse)",
@@ -129,7 +129,7 @@
   {
    "source": "Toyota Research Institute (Lever)",
    "ok": true,
-   "count": 37
+   "count": 36
   },
   {
    "source": "Waabi (Lever)",
@@ -149,7 +149,7 @@
   {
    "source": "Zoox (Lever)",
    "ok": true,
-   "count": 8
+   "count": 9
   }
  ],
  "manual": [
@@ -195,6 +195,18 @@
   }
  ],
  "jobs": [
+  {
+   "company": "Zoox",
+   "title": "AI Engineering Intern, Operational Safety [Summer 2027]",
+   "location": "Foster City, CA",
+   "regions": [
+    "US"
+   ],
+   "tier": "core",
+   "url": "https://jobs.lever.co/zoox/0168ad29-2fd8-4c91-865c-b9fff8aa30c1",
+   "posted": "2026-11-07",
+   "first_seen": "2026-11-24"
+  },
   {
    "company": "Amazon",
    "title": "2027 Applied Science Internship - Robotics - United States",
@@ -770,18 +782,6 @@
    "url": "https://jobs.lever.co/tri/3a7510ff-7cef-4d6e-8c32-0b6e6b8a2476",
    "posted": "2026-11-16",
    "first_seen": "2026-11-16"
-  },
-  {
-   "company": "Toyota Research Institute",
-   "title": "Automated Driving Advanced Development Intern, Machine Learning Research (Explainable AI)",
-   "location": "Los Altos, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://jobs.lever.co/tri/62b161d6-21e0-4d10-9997-ff7ae91a2ff4",
-   "posted": "2025-11-04",
-   "first_seen": "2026-11-04"
   },
   {
    "company": "Toyota Research Institute",
@@ -1744,6 +1744,42 @@
    "first_seen": "2026-11-13"
   },
   {
+   "company": "Amazon",
+   "title": "Data Scientist I 6M Intern",
+   "location": "Chennai, TN India",
+   "regions": [
+    "IN"
+   ],
+   "tier": "research",
+   "url": "https://www.amazon.jobs/en/jobs/10443572/data-scientist-i-6m-intern",
+   "posted": "2026-11-24",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Researcher Intern, CoreAI",
+   "location": "United States, Washington, Redmond; United States, California, Mountain View",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
+   "posted": "2026-11-23",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "company": "NVIDIA",
+   "title": "Developer Technology Intern, AI - Summer 2027",
+   "location": "US, CA, Santa Clara",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Developer-Technology-Intern--AI---Summer-2027_JR2030178",
+   "posted": "",
+   "first_seen": "2026-11-24"
+  },
+  {
    "company": "Adobe",
    "title": "2027 Intern - AI & Architecture",
    "location": "San Jose",
@@ -2273,18 +2309,6 @@
   },
   {
    "company": "Intel",
-   "title": "Module Engineering PhD Intern 2027",
-   "location": "US, Oregon, Hillsboro",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-Oregon-Hillsboro/Module-Engineering-PhD-Intern-2027_JR0286876",
-   "posted": "",
-   "first_seen": "2026-10-09"
-  },
-  {
-   "company": "Intel",
    "title": "Module Engineering PhD Intern New 2027",
    "location": "US, Oregon, Hillsboro",
    "regions": [
@@ -2496,7 +2520,7 @@
    ],
    "tier": "research",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393556917519",
-   "posted": "2026-10-26",
+   "posted": "2026-11-23",
    "first_seen": "2026-10-26"
   },
   {
@@ -2538,18 +2562,6 @@
   {
    "company": "Microsoft",
    "title": "Research Intern - AI /Machine Learning Numerics & Efficiency",
-   "location": "United States, California, Mountain View; United States, Washington, Redmond",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557076215",
-   "posted": "2026-11-20",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - AI /Machine Learning Numerics & Efficiency",
    "location": "United States, Washington, Redmond; United States, California, Mountain View",
    "regions": [
     "US"
@@ -2557,6 +2569,18 @@
    "tier": "research",
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557076159",
    "posted": "2026-11-19",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "company": "Microsoft",
+   "title": "Research Intern - AI /Machine Learning Numerics & Efficiency",
+   "location": "United States, California, Mountain View; United States, Washington, Redmond",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557076215",
+   "posted": "2026-11-20",
    "first_seen": "2026-11-20"
   },
   {
@@ -4841,6 +4865,18 @@
   },
   {
    "company": "Amazon",
+   "title": "Front-End Engineer Internship – 2027 (US)",
+   "location": "Seattle, WA United States",
+   "regions": [
+    "US"
+   ],
+   "tier": "eng",
+   "url": "https://www.amazon.jobs/en/jobs/10609992/front-end-engineer-internship-2027-us",
+   "posted": "2026-11-20",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "company": "Amazon",
    "title": "Software Development Engineer Intern - Artificial General Intelligence (Summer 2027)",
    "location": "Sunnyvale, CA United States",
    "regions": [
@@ -4849,18 +4885,6 @@
    "tier": "eng",
    "url": "https://www.amazon.jobs/en/jobs/10606968/software-development-engineer-intern-artificial-general-intelligence-summer-2027",
    "posted": "2026-11-17",
-   "first_seen": "2026-11-24"
-  },
-  {
-   "company": "Intel",
-   "title": "Logic Design Engineering Graduate Intern | SPE ISCP SFD Domain42",
-   "location": "Costa Rica, San Jose",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://intel.wd1.myworkdayjobs.com/External/job/Costa-Rica-San-Jose/Logic-Design-Engineering-Graduate-Intern---SPE-ISCP-SFD-Domain42_JR0289549",
-   "posted": "",
    "first_seen": "2026-11-24"
   },
   {
@@ -5042,18 +5066,6 @@
    "url": "https://www.amazon.jobs/en/jobs/10589523/field-engineer-intern-fielding-engineering",
    "posted": "2026-10-27",
    "first_seen": "2026-10-27"
-  },
-  {
-   "company": "Amazon",
-   "title": "Hardware Development Engineer Intern , Winter 2027",
-   "location": "Bellevue, WA United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "eng",
-   "url": "https://www.amazon.jobs/en/jobs/10584121/hardware-development-engineer-intern-winter-2027",
-   "posted": "2026-10-20",
-   "first_seen": "2026-10-20"
   },
   {
    "company": "Amazon",
@@ -5282,18 +5294,6 @@
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000158620079",
    "posted": "2026-10-29",
    "first_seen": "2026-10-30"
-  },
-  {
-   "company": "Bosch",
-   "title": "Intern, AIot Software Developer",
-   "location": "Singapore, , Singapore",
-   "regions": [
-    "SG"
-   ],
-   "tier": "eng",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000159821219",
-   "posted": "2026-11-05",
-   "first_seen": "2026-11-05"
   },
   {
    "company": "Bosch",
