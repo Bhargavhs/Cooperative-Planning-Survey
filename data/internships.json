@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-26 22:06 UTC",
+ "updated": "2026-11-27 21:47 UTC",
  "sources": [
   {
    "source": "Adobe (Workday)",
    "ok": true,
-   "count": 105
+   "count": 7
   },
   {
    "source": "Agility Robotics (Greenhouse)",
@@ -24,7 +24,7 @@
   {
    "source": "Bosch (SmartRecruiters)",
    "ok": true,
-   "count": 21
+   "count": 20
   },
   {
    "source": "CRED (Lever)",
@@ -44,7 +44,7 @@
   {
    "source": "Figure AI (Greenhouse)",
    "ok": true,
-   "count": 8
+   "count": 7
   },
   {
    "source": "Google",
@@ -78,8 +78,8 @@
   },
   {
    "source": "Microsoft",
-   "ok": false,
-   "error": "HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 57
   },
   {
    "source": "Motional (Greenhouse)",
@@ -312,18 +312,6 @@
    ],
    "tier": "core",
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154911489",
-   "posted": "2026-10-12",
-   "first_seen": "2026-10-12"
-  },
-  {
-   "company": "Figure AI",
-   "title": "Deployment Engineering Intern",
-   "location": "San Jose, CA",
-   "regions": [
-    "US"
-   ],
-   "tier": "core",
-   "url": "https://job-boards.greenhouse.io/figureai/jobs/4721113006",
    "posted": "2026-10-12",
    "first_seen": "2026-10-12"
   },
@@ -1768,28 +1756,16 @@
    "first_seen": "2026-11-13"
   },
   {
-   "company": "Grab",
-   "title": "Intern, People Scientist (Research)",
-   "location": "Singapore, , Singapore",
-   "regions": [
-    "SG"
-   ],
-   "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/Grab/744000163809639",
-   "posted": "2026-11-26",
-   "first_seen": "2026-11-26"
-  },
-  {
-   "company": "TikTok",
-   "title": "Machine Learning Engineer Intern (Data-Global E-Commerce-Search) - 2027 Start (PhD)",
-   "location": "Seattle, Washington, United States of America",
+   "company": "Microsoft",
+   "title": "Research Intern - Machine Learning for Biology and Healthcare",
+   "location": "United States, Washington, Redmond",
    "regions": [
     "US"
    ],
    "tier": "research",
-   "url": "https://lifeattiktok.com/search/7712192759532357893",
-   "posted": "",
-   "first_seen": "2026-11-26"
+   "url": "https://apply.careers.microsoft.com/careers/job/1970393557097217",
+   "posted": "2026-11-25",
+   "first_seen": "2026-11-27"
   },
   {
    "company": "Adobe",
@@ -1958,18 +1934,6 @@
    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000154759734",
    "posted": "2026-10-09",
    "first_seen": "2026-10-09"
-  },
-  {
-   "company": "Bosch",
-   "title": "Calibration Process Data Science Intern (8 months/40 hours per week)",
-   "location": "Farmington Hills, MI, United States",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://jobs.smartrecruiters.com/BoschGroup/744000146546699",
-   "posted": "2026-08-31",
-   "first_seen": "2026-09-24"
   },
   {
    "company": "Bosch",
@@ -2222,6 +2186,18 @@
    "url": "https://www.google.com/about/careers/applications/jobs/results/137409539979780806-user-experience-research-intern-phd-summer-2027",
    "posted": "2026-09-14",
    "first_seen": "2026-09-24"
+  },
+  {
+   "company": "Grab",
+   "title": "Intern, People Scientist (Research)",
+   "location": "Singapore, , Singapore",
+   "regions": [
+    "SG"
+   ],
+   "tier": "research",
+   "url": "https://jobs.smartrecruiters.com/Grab/744000163809639",
+   "posted": "2026-11-26",
+   "first_seen": "2026-11-26"
   },
   {
    "company": "Intel",
@@ -2882,18 +2858,6 @@
    "url": "https://apply.careers.microsoft.com/careers/job/1970393557040502",
    "posted": "2026-10-13",
    "first_seen": "2026-10-14"
-  },
-  {
-   "company": "Microsoft",
-   "title": "Research Intern - Machine Learning at MSR NYC",
-   "location": "United States, New York, New York; United States, Massachusetts, Cambridge",
-   "regions": [
-    "US"
-   ],
-   "tier": "research",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557042145",
-   "posted": "2026-10-16",
-   "first_seen": "2026-10-17"
   },
   {
    "company": "Microsoft",
@@ -4013,6 +3977,18 @@
   },
   {
    "company": "TikTok",
+   "title": "Machine Learning Engineer Intern (Data-Global E-Commerce-Search) - 2027 Start (PhD)",
+   "location": "Seattle, Washington, United States of America",
+   "regions": [
+    "US"
+   ],
+   "tier": "research",
+   "url": "https://lifeattiktok.com/search/7712192759532357893",
+   "posted": "",
+   "first_seen": "2026-11-26"
+  },
+  {
+   "company": "TikTok",
    "title": "Machine Learning Engineer Intern (Data-Global E-Commerce-Search) - 2027 Summer",
    "location": "Seattle, Washington, United States of America",
    "regions": [
@@ -4922,18 +4898,6 @@
    "url": "https://lifeattiktok.com/search/7670062655184308533",
    "posted": "",
    "first_seen": "2026-09-24"
-  },
-  {
-   "company": "TikTok",
-   "title": "Backend Software Engineer - Intern (TikTok Privacy and Security) - 2027 Start",
-   "location": "Singapore, Singapore, Singapore",
-   "regions": [
-    "SG"
-   ],
-   "tier": "eng",
-   "url": "https://lifeattiktok.com/search/7711598958485408053",
-   "posted": "",
-   "first_seen": "2026-11-26"
   },
   {
    "company": "Adobe",
@@ -5978,6 +5942,18 @@
    "url": "https://lifeattiktok.com/search/7700820444199225653",
    "posted": "",
    "first_seen": "2026-10-26"
+  },
+  {
+   "company": "TikTok",
+   "title": "Backend Software Engineer - Intern (TikTok Privacy and Security) - 2027 Start",
+   "location": "Singapore, Singapore, Singapore",
+   "regions": [
+    "SG"
+   ],
+   "tier": "eng",
+   "url": "https://lifeattiktok.com/search/7711598958485408053",
+   "posted": "",
+   "first_seen": "2026-11-26"
   },
   {
    "company": "TikTok",
